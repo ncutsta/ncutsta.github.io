@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://ncutsta.github.io/"/>
-  <updated>2016-03-01T07:23:47.131Z</updated>
+  <updated>2016-03-01T08:36:40.090Z</updated>
   <id>http://ncutsta.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://ncutsta.github.io/2016/03/01/video/"/>
     <id>http://ncutsta.github.io/2016/03/01/video/</id>
     <published>2016-03-01T07:23:36.919Z</published>
-    <updated>2016-03-01T07:23:47.131Z</updated>
+    <updated>2016-03-01T08:36:40.090Z</updated>
     
     <content type="html">&lt;iframe height=&quot;498&quot; width=&quot;510&quot; src=&quot;http://www.ncut.edu.cn/cms/plugin/mediaplayer-5.10/player.swf?file=/html/p/p_18/20151016085959084569945/20151016091713923653568.flv&amp;autostart=true &quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
 
@@ -44,7 +44,7 @@
     <link href="http://ncutsta.github.io/2016/03/01/pic/"/>
     <id>http://ncutsta.github.io/2016/03/01/pic/</id>
     <published>2016-03-01T06:54:48.267Z</published>
-    <updated>2016-03-01T07:18:13.342Z</updated>
+    <updated>2016-03-01T08:36:37.953Z</updated>
     
     <content type="html">&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;http://www.ncut.edu.cn/html/p/p_16/20150828141121308738719.jpg&quot;&gt;&lt;/div&gt;
 
@@ -92,14 +92,10 @@ http:/
 &lt;p&gt;简单的示例：&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;hello, the value of 2 * pi is `r 2*pi`
 
-```{r foo-label}
-rnorm(5)
-```
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;figcaption&gt;&lt;span&gt;foo-label&amp;#125;&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;rnorm(5)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;我们也可以在文件中生成图片，并进行展示。如果要生成的图片是通过R语言代码来实现的，那么就可以通过添加&lt;code&gt;echo = FALSE&lt;/code&gt;来进行显示统计图形。&lt;/p&gt;
 &lt;p&gt;示例：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;```{r,echo = FALSE}
-plot(cars,xlab = &amp;quot;速度&amp;quot;)
-```
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;figcaption&gt;&lt;span&gt;= FALSE&amp;#125;&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;plot(cars,xlab = &amp;quot;速度&amp;quot;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;如果要添加本地图片就可以通过Markdown语法来实现，[]是对图片的定义，()里面是图片的路径，建议采用相对路径。center指定图片居中。                                                                                         &lt;/p&gt;
 &lt;p&gt;示例：&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;center&amp;gt;
@@ -125,9 +121,7 @@ plot(cars,xlab = &amp;quot;速度&amp;quot;)
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;示例：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;```{r , eval = TRUE ,highlight=TRUE,tidy=TRUE,echo=1:2}
- k = 0 ;for ( i in 1:5){k = i+k } ;return(k)
-```
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;figcaption&gt;&lt;span&gt;, eval = TRUE ,highlight=TRUE,tidy=TRUE,echo=1:2&amp;#125;&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;k = 0 ;for ( i in 1:5)&amp;#123;k = i+k &amp;#125; ;return(k)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;输出结果为：&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;k = 0
 for (i in 1:5) {
@@ -137,10 +131,7 @@ for (i in 1:5) {
 ## [1] 15
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;对于表格文件，可以采用xtable来实现，但是这个包将表格转为latex格式，使用print函数将其以html格式显示，不过显示结果保留着原始HTML表格的风格。&lt;/p&gt;
 &lt;p&gt;示例：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;```{r,results=&amp;#39;asis&amp;#39;}
-library(xtable)
-print(xtable(head(mtcars[, 1:5])),type = &amp;quot;html&amp;quot;)
-```
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;library(xtable)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;print(xtable(head(mtcars[, 1:5])),type = &amp;quot;html&amp;quot;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;到这里，大多数的需求基本都满足了，剩下的就是写了。&lt;/p&gt;
 &lt;h2 id=&quot;参考资料&quot;&gt;&lt;a href=&quot;#参考资料&quot; class=&quot;headerlink&quot; title=&quot;参考资料&quot;&gt;&lt;/a&gt;参考资料&lt;/h2&gt;&lt;p&gt;【1】&lt;a href=&quot;https://github.com/yihui/r-ninja/blob/master/11-auto-report.md&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;knitr中文文档&lt;/a&gt;&lt;/p&gt;
 </content>
@@ -163,7 +154,7 @@ print(xtable(head(mtcars[, 1:5])),type = &amp;quot;html&amp;quot;)
     <link href="http://ncutsta.github.io/2016/03/01/hello-world/"/>
     <id>http://ncutsta.github.io/2016/03/01/hello-world/</id>
     <published>2016-02-29T16:00:00.000Z</published>
-    <updated>2016-03-01T02:37:15.649Z</updated>
+    <updated>2016-03-01T08:37:06.154Z</updated>
     
     <content type="html">&lt;p&gt;  请大家对这个网站提出修改意见，然后对此网站进行优化。&lt;/p&gt;
 &lt;p&gt;  比如网站的副标题，网站的logo，网站的一些功能，网站的布局&lt;/p&gt;

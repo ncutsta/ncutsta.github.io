@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://ncutsta.github.io/2016/03/01/hello-world/</loc>
+    
+    <lastmod>2016-03-01T08:37:06.154Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://ncutsta.github.io/2016/03/01/video/</loc>
     
-    <lastmod>2016-03-01T07:23:47.131Z</lastmod>
+    <lastmod>2016-03-01T08:36:40.090Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://ncutsta.github.io/2016/03/01/pic/</loc>
     
-    <lastmod>2016-03-01T07:18:13.342Z</lastmod>
+    <lastmod>2016-03-01T08:36:37.953Z</lastmod>
     
   </url>
   
@@ -19,13 +26,6 @@
     <loc>http://ncutsta.github.io/2016/03/01/2015-12-03-knitr/</loc>
     
     <lastmod>2016-03-01T06:39:14.907Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ncutsta.github.io/2016/03/01/hello-world/</loc>
-    
-    <lastmod>2016-03-01T02:37:15.649Z</lastmod>
     
   </url>
   
