@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>统苑</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://ncutsta.github.io/"/>
+  <updated>2016-03-01T07:23:47.131Z</updated>
+  <id>http://ncutsta.github.io/</id>
+  
+  <author>
+    <name>dengdeng</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>视频测试</title>
+    <link href="http://ncutsta.github.io/2016/03/01/video/"/>
+    <id>http://ncutsta.github.io/2016/03/01/video/</id>
+    <published>2016-03-01T07:23:36.919Z</published>
+    <updated>2016-03-01T07:23:47.131Z</updated>
+    
+    <content type="html">&lt;iframe height=&quot;498&quot; width=&quot;510&quot; src=&quot;http://www.ncut.edu.cn/cms/plugin/mediaplayer-5.10/player.swf?file=/html/p/p_18/20151016085959084569945/20151016091713923653568.flv&amp;autostart=true &quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+</content>
+    
+    <summary type="html">
+    
+      &lt;iframe height=&quot;498&quot; width=&quot;510&quot; src=&quot;http://www.ncut.edu.cn/cms/plugin/mediaplayer-5.10/player.swf?file=/html/p/p_18/2015101608595908456994
+    
+    </summary>
+    
+      <category term="测试" scheme="http://ncutsta.github.io/categories/%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="测试" scheme="http://ncutsta.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>图片测试</title>
+    <link href="http://ncutsta.github.io/2016/03/01/pic/"/>
+    <id>http://ncutsta.github.io/2016/03/01/pic/</id>
+    <published>2016-03-01T06:54:48.267Z</published>
+    <updated>2016-03-01T07:18:13.342Z</updated>
+    
+    <content type="html">&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;http://www.ncut.edu.cn/html/p/p_16/20150828141121308738719.jpg&quot;&gt;&lt;/div&gt;
+
+
+&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;
+http://202.204.24.37/xuan/xg/xg/img/song_back1.png&quot;&gt;&lt;/div&gt;
+
+
+&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;http://202.204.24.37/xuan/xg/xg/img/song_back2.png&quot;&gt;&lt;/div&gt;
+
+&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;http://yangjian.me/pacman/photos/wallpaper-2572384.jpg&quot;&gt;&lt;/div&gt;
+
+</content>
+    
+    <summary type="html">
+    
+      &lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;http://www.ncut.edu.cn/html/p/p_16/20150828141121308738719.jpg&quot;&gt;&lt;/div&gt;
+
+
+&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;
+http:/
+    
+    </summary>
+    
+      <category term="测试" scheme="http://ncutsta.github.io/categories/%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="测试" scheme="http://ncutsta.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>knitr</title>
+    <link href="http://ncutsta.github.io/2016/03/01/2015-12-03-knitr/"/>
+    <id>http://ncutsta.github.io/2016/03/01/2015-12-03-knitr/</id>
+    <published>2016-03-01T05:03:19.514Z</published>
+    <updated>2016-03-01T06:39:14.907Z</updated>
+    
+    <content type="html">&lt;p&gt;用R实现自动化报告&lt;/p&gt;
+&lt;p&gt;word的整理简单而繁琐，简单的是：我只要将书上的例题用R实现就可以了，繁琐的是我需要将运行无误的代码和图片复制粘贴到word文档中。尤其在复制代码时，不可避免地要将提示符&amp;gt;也复制进来，而这个无疑对以后看这篇文档，进而复制运行代码的人是一个大麻烦，要不停地去除提示符。对于这个问题，当时没有解决办法，于是乎，就全部复制进去，这也算是一个小小的遗憾吧……&lt;/p&gt;
+&lt;p&gt;近来，翻看网上文档，发现对于这个问题：整理R代码进而展示，别人已经解决了，而且解决的很漂亮，解决这个问题的大神就是谢益辉。&lt;/p&gt;
+&lt;p&gt;大神发明了一个包：knitr，用来展示代码及运行结果，而且展示结果非常直接美观。同时，查看文档的人可以直接复制运行代码，而不必一个一个地去掉提示符了，这简直不能更赞了……&lt;/p&gt;
+&lt;p&gt;knitr包可以生成MarkDown、html、pdf、word格式的文件，每一种文件都有相应的语法格式，我比较倾向于使用MarkDown，简单而实用。参考资料1中详细说明了语法格式：&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;以三个反引号和一对大括号开始R代码，以三个反引号开始正文，上面的hello world例子已经显示了代码段的基本结构。行内代码放在`r `之中，全局选项在`ro or`中（R options）。&lt;/em&gt; &lt;/p&gt;
+&lt;p&gt;简单的示例：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hello, the value of 2 * pi is `r 2*pi`
+
+```{r foo-label}
+rnorm(5)
+```
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;我们也可以在文件中生成图片，并进行展示。如果要生成的图片是通过R语言代码来实现的，那么就可以通过添加&lt;code&gt;echo = FALSE&lt;/code&gt;来进行显示统计图形。&lt;/p&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```{r,echo = FALSE}
+plot(cars,xlab = &amp;quot;速度&amp;quot;)
+```
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;如果要添加本地图片就可以通过Markdown语法来实现，[]是对图片的定义，()里面是图片的路径，建议采用相对路径。center指定图片居中。                                                                                         &lt;/p&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;center&amp;gt;
+![i](i.jpg)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;当然这个报告里面可以添加交互式图形，利用rCharts包就可以实现。&lt;/p&gt;
+&lt;p&gt;对于文本输出，knitr设计的也很人性化。参考资料1中的说明如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;代码高亮（highlight=TRUE），增强可读性，有无数的高亮主题可选，仅适用于LaTeX和HTML输出，MD文档在转为HTML文档之后可以用专门的JavaScript库去高亮代码&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;代码重排（tidy=TRUE），对那些不注意代码格式的人来说很有用，再乱的代码，到了这里也会变得相对整齐，本功能由formatR包支持&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;执行或不执行代码（eval=TRUE/FALSE），不执行的代码段将被跳过，原样输出源代码&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;显示/隐藏源代码（echo=TRUE/FALSE），甚至精确控制显示哪几段代码（echo取数值）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;显示/隐藏普通文本输出或将文本输出以原样形式输出（results=’markup’, ‘hide’, ‘asis’）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;显示/隐藏警告文本（warning=TRUE/FALSE）、错误消息（error）和普通消息（message）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;显示/隐藏整个代码段的输出（include=TRUE/FALSE），比如我们可能想运行代码，但不把结果写入输出中&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```{r , eval = TRUE ,highlight=TRUE,tidy=TRUE,echo=1:2}
+ k = 0 ;for ( i in 1:5){k = i+k } ;return(k)
+```
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;输出结果为：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;k = 0
+for (i in 1:5) {
+    k = i + k
+}
+
+## [1] 15
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;对于表格文件，可以采用xtable来实现，但是这个包将表格转为latex格式，使用print函数将其以html格式显示，不过显示结果保留着原始HTML表格的风格。&lt;/p&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```{r,results=&amp;#39;asis&amp;#39;}
+library(xtable)
+print(xtable(head(mtcars[, 1:5])),type = &amp;quot;html&amp;quot;)
+```
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;到这里，大多数的需求基本都满足了，剩下的就是写了。&lt;/p&gt;
+&lt;h2 id=&quot;参考资料&quot;&gt;&lt;a href=&quot;#参考资料&quot; class=&quot;headerlink&quot; title=&quot;参考资料&quot;&gt;&lt;/a&gt;参考资料&lt;/h2&gt;&lt;p&gt;【1】&lt;a href=&quot;https://github.com/yihui/r-ninja/blob/master/11-auto-report.md&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;knitr中文文档&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      这是一篇测试文档！
+    
+    </summary>
+    
+      <category term="学习" scheme="http://ncutsta.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="便利化程序" scheme="http://ncutsta.github.io/tags/%E4%BE%BF%E5%88%A9%E5%8C%96%E7%A8%8B%E5%BA%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>统苑网站优化意见征询</title>
+    <link href="http://ncutsta.github.io/2016/03/01/hello-world/"/>
+    <id>http://ncutsta.github.io/2016/03/01/hello-world/</id>
+    <published>2016-02-29T16:00:00.000Z</published>
+    <updated>2016-03-01T02:37:15.649Z</updated>
+    
+    <content type="html">&lt;p&gt;  请大家对这个网站提出修改意见，然后对此网站进行优化。&lt;/p&gt;
+&lt;p&gt;  比如网站的副标题，网站的logo，网站的一些功能，网站的布局&lt;/p&gt;
+&lt;p&gt;  意见请发表在文章下方的评论区内。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;  请大家对这个网站提出修改意见，然后对此网站进行优化。&lt;/p&gt;
+&lt;p&gt;  比如网站的副标题，网站的logo，网站的一些功能，网站的布局&lt;/p&gt;
+&lt;p&gt;  意见请发表在文章下方的评论区内。&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="网站日志" scheme="http://ncutsta.github.io/categories/%E7%BD%91%E7%AB%99%E6%97%A5%E5%BF%97/"/>
+    
+    
+      <category term="网站优化" scheme="http://ncutsta.github.io/tags/%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96/"/>
+    
+  </entry>
+  
+</feed>
