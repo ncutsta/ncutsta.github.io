@@ -2,6 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://ncutsta.github.io/2016/06/01/2016-05-25-data-table-learning/</loc>
+    
+    <lastmod>2016-05-31T11:51:51.580Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ncutsta.github.io/2016/06/01/2015-09-26-R-data-import-output/</loc>
+    
+    <lastmod>2016-05-19T01:13:46.964Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ncutsta.github.io/2016/06/01/2016-04-29-time-series/</loc>
+    
+    <lastmod>2016-04-30T04:39:57.386Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ncutsta.github.io/2016/06/01/2015-11-10-R-dplyr-2/</loc>
+    
+    <lastmod>2016-04-27T15:02:43.622Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ncutsta.github.io/2016/06/01/2016-04-12-logistic-regression/</loc>
+    
+    <lastmod>2016-04-15T02:40:10.995Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ncutsta.github.io/2016/06/01/2016-03-17-Mysql-install/</loc>
+    
+    <lastmod>2016-03-18T05:08:26.350Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ncutsta.github.io/2016/03/01/2015-12-03-knitr/</loc>
+    
+    <lastmod>2016-03-11T03:29:23.104Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://ncutsta.github.io/2016/03/01/hello-world/</loc>
     
     <lastmod>2016-03-01T08:37:06.154Z</lastmod>
@@ -23,13 +72,6 @@
   </url>
   
   <url>
-    <loc>http://ncutsta.github.io/2016/03/01/2015-12-03-knitr/</loc>
-    
-    <lastmod>2016-03-01T06:39:14.907Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://ncutsta.github.io/categories/index.html</loc>
     
     <lastmod>2016-03-01T01:10:30.808Z</lastmod>
@@ -40,6 +82,34 @@
     <loc>http://ncutsta.github.io/tags/index.html</loc>
     
     <lastmod>2016-02-29T10:55:45.284Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ncutsta.github.io/2016/06/01/2015-12-27-R-plotly/</loc>
+    
+    <lastmod>2016-02-29T09:42:32.582Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ncutsta.github.io/2016/06/01/2015-11-10-R-dplyr-1/</loc>
+    
+    <lastmod>2016-02-29T09:42:32.556Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ncutsta.github.io/2016/06/01/2015-10-28-R-reshape2-pivot/</loc>
+    
+    <lastmod>2016-02-29T09:42:32.554Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ncutsta.github.io/2016/06/01/2015-10-01-Anaconda-install/</loc>
+    
+    <lastmod>2016-02-29T09:42:32.552Z</lastmod>
     
   </url>
   

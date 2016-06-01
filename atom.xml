@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://ncutsta.github.io/"/>
-  <updated>2016-03-01T08:36:40.090Z</updated>
+  <updated>2016-04-30T04:39:57.386Z</updated>
   <id>http://ncutsta.github.io/</id>
   
   <author>
@@ -16,164 +16,1418 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>视频测试</title>
-    <link href="http://ncutsta.github.io/2016/03/01/video/"/>
-    <id>http://ncutsta.github.io/2016/03/01/video/</id>
-    <published>2016-03-01T07:23:36.919Z</published>
-    <updated>2016-03-01T08:36:40.090Z</updated>
+    <title>时间序列数据格式处理</title>
+    <link href="http://ncutsta.github.io/2016/06/01/2016-04-29-time-series/"/>
+    <id>http://ncutsta.github.io/2016/06/01/2016-04-29-time-series/</id>
+    <published>2016-06-01T06:29:25.096Z</published>
+    <updated>2016-04-30T04:39:57.386Z</updated>
     
-    <content type="html">&lt;iframe height=&quot;498&quot; width=&quot;510&quot; src=&quot;http://www.ncut.edu.cn/cms/plugin/mediaplayer-5.10/player.swf?file=/html/p/p_18/20151016085959084569945/20151016091713923653568.flv&amp;autostart=true &quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
-
-</content>
-    
-    <summary type="html">
-    
-      &lt;iframe height=&quot;498&quot; width=&quot;510&quot; src=&quot;http://www.ncut.edu.cn/cms/plugin/mediaplayer-5.10/player.swf?file=/html/p/p_18/2015101608595908456994
-    
-    </summary>
-    
-      <category term="测试" scheme="http://ncutsta.github.io/categories/%E6%B5%8B%E8%AF%95/"/>
-    
-    
-      <category term="测试" scheme="http://ncutsta.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>图片测试</title>
-    <link href="http://ncutsta.github.io/2016/03/01/pic/"/>
-    <id>http://ncutsta.github.io/2016/03/01/pic/</id>
-    <published>2016-03-01T06:54:48.267Z</published>
-    <updated>2016-03-01T08:36:37.953Z</updated>
-    
-    <content type="html">&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;http://www.ncut.edu.cn/html/p/p_16/20150828141121308738719.jpg&quot;&gt;&lt;/div&gt;
-
-
-&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;
-http://202.204.24.37/xuan/xg/xg/img/song_back1.png&quot;&gt;&lt;/div&gt;
-
-
-&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;http://202.204.24.37/xuan/xg/xg/img/song_back2.png&quot;&gt;&lt;/div&gt;
-
-&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;http://yangjian.me/pacman/photos/wallpaper-2572384.jpg&quot;&gt;&lt;/div&gt;
-
-</content>
-    
-    <summary type="html">
-    
-      &lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;http://www.ncut.edu.cn/html/p/p_16/20150828141121308738719.jpg&quot;&gt;&lt;/div&gt;
-
-
-&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;
-http:/
-    
-    </summary>
-    
-      <category term="测试" scheme="http://ncutsta.github.io/categories/%E6%B5%8B%E8%AF%95/"/>
-    
-    
-      <category term="测试" scheme="http://ncutsta.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>knitr</title>
-    <link href="http://ncutsta.github.io/2016/03/01/2015-12-03-knitr/"/>
-    <id>http://ncutsta.github.io/2016/03/01/2015-12-03-knitr/</id>
-    <published>2016-03-01T05:03:19.514Z</published>
-    <updated>2016-03-01T06:39:14.907Z</updated>
-    
-    <content type="html">&lt;p&gt;用R实现自动化报告&lt;/p&gt;
-&lt;p&gt;word的整理简单而繁琐，简单的是：我只要将书上的例题用R实现就可以了，繁琐的是我需要将运行无误的代码和图片复制粘贴到word文档中。尤其在复制代码时，不可避免地要将提示符&amp;gt;也复制进来，而这个无疑对以后看这篇文档，进而复制运行代码的人是一个大麻烦，要不停地去除提示符。对于这个问题，当时没有解决办法，于是乎，就全部复制进去，这也算是一个小小的遗憾吧……&lt;/p&gt;
-&lt;p&gt;近来，翻看网上文档，发现对于这个问题：整理R代码进而展示，别人已经解决了，而且解决的很漂亮，解决这个问题的大神就是谢益辉。&lt;/p&gt;
-&lt;p&gt;大神发明了一个包：knitr，用来展示代码及运行结果，而且展示结果非常直接美观。同时，查看文档的人可以直接复制运行代码，而不必一个一个地去掉提示符了，这简直不能更赞了……&lt;/p&gt;
-&lt;p&gt;knitr包可以生成MarkDown、html、pdf、word格式的文件，每一种文件都有相应的语法格式，我比较倾向于使用MarkDown，简单而实用。参考资料1中详细说明了语法格式：&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;以三个反引号和一对大括号开始R代码，以三个反引号开始正文，上面的hello world例子已经显示了代码段的基本结构。行内代码放在`r `之中，全局选项在`ro or`中（R options）。&lt;/em&gt; &lt;/p&gt;
-&lt;p&gt;简单的示例：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;hello, the value of 2 * pi is `r 2*pi`
-
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;figcaption&gt;&lt;span&gt;foo-label&amp;#125;&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;rnorm(5)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;我们也可以在文件中生成图片，并进行展示。如果要生成的图片是通过R语言代码来实现的，那么就可以通过添加&lt;code&gt;echo = FALSE&lt;/code&gt;来进行显示统计图形。&lt;/p&gt;
-&lt;p&gt;示例：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;figcaption&gt;&lt;span&gt;= FALSE&amp;#125;&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;plot(cars,xlab = &amp;quot;速度&amp;quot;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;如果要添加本地图片就可以通过Markdown语法来实现，[]是对图片的定义，()里面是图片的路径，建议采用相对路径。center指定图片居中。                                                                                         &lt;/p&gt;
-&lt;p&gt;示例：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;center&amp;gt;
-![i](i.jpg)
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;当然这个报告里面可以添加交互式图形，利用rCharts包就可以实现。&lt;/p&gt;
-&lt;p&gt;对于文本输出，knitr设计的也很人性化。参考资料1中的说明如下：&lt;/p&gt;
+    <content type="html">&lt;p&gt;最近一段时间，和时间序列打上了交道，当然，原始的数据免不了&lt;strong&gt;脏乱差&lt;/strong&gt;，是不能直接使用的，必须经过一番清洗整理，才能用于最终的分析。&lt;/p&gt;
+&lt;p&gt;对于时间序列数据，&lt;strong&gt;R&lt;/strong&gt;和&lt;strong&gt;Python&lt;/strong&gt;都有一整套的处理方法，从原始数据到建模预测，这里仅仅对两个软件中的时间序列数据格式处理做一总结，以供后续翻看之用。&lt;/p&gt;
+&lt;h2 id=&quot;R&quot;&gt;&lt;a href=&quot;#R&quot; class=&quot;headerlink&quot; title=&quot;R&quot;&gt;&lt;/a&gt;&lt;strong&gt;R&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;R中用来表示日期和时间的对象有三类：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Date　　　 仅仅表示日期&lt;/li&gt;
+&lt;li&gt;POSIXct　　表示时间与1970年1月1日中午12：00的时间间隔换算为秒后得到的数据&lt;/li&gt;
+&lt;li&gt;POSIXlt　　POSIXlt对象将日期和时间独立存储在不同的向量中。向量包括秒(0-61),分(0-59),时(0-23),月日(1-31),月(0-11),年(自1900起经过的年份)，周日(0-6),年日(0-365)和isdst(表明是否采用夏时令）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;基于这三种时间表示方式，我们就可以对时间变量进行一系列的方便操作。&lt;/p&gt;
+&lt;p&gt;通常数据中的时间变量不是字符型就是数值型，而这两种类型都不便于我们对时间进行相关操作，我们要做的第一步就是将字符型或数值型变量转换为以上三种类别，以上三种类别中我们经常使用的是Date和POSIXlt两种。&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;代码高亮（highlight=TRUE），增强可读性，有无数的高亮主题可选，仅适用于LaTeX和HTML输出，MD文档在转为HTML文档之后可以用专门的JavaScript库去高亮代码&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;代码重排（tidy=TRUE），对那些不注意代码格式的人来说很有用，再乱的代码，到了这里也会变得相对整齐，本功能由formatR包支持&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;变量转为POSIXct和POSIXlt类型&lt;/p&gt;
+&lt;p&gt;as.POSIXlt(x, tz = “”, format, …)，适用字符型变量&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;as.POSIXlt(&amp;apos;20150430&amp;apos;,format=&amp;apos;%Y%m%d&amp;apos;)
+[1] &amp;quot;2015-04-30 CST&amp;quot;
+as.POSIXlt(&amp;apos;20150430&amp;apos;,format=&amp;apos;%Y%m%d&amp;apos;)-24*3600
+[1] &amp;quot;2015-04-29 CST&amp;quot;
+as.POSIXlt(&amp;apos;20150430&amp;apos;,format=&amp;apos;%Y%m%d&amp;apos;,tz=&amp;apos;UTC&amp;apos;)-1
+[1] &amp;quot;2015-04-29 23:59:59 UTC&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;as.POSIXlt(x, tz = “”, origin, …)，适用数值型变量，origin是指起始时间，注意指定时区，否则返回的是CST时区的时间，要转换时间戳需要将origin设定为&lt;code&gt;1970-01-01 00:00:00&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;as.POSIXlt(24*3600,origin = &amp;quot;2016-04-28 13:00:00 UTC&amp;quot;,tz=&amp;apos;UTC&amp;apos;)
+[1] &amp;quot;2016-04-29 13:00:00 UTC&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;执行或不执行代码（eval=TRUE/FALSE），不执行的代码段将被跳过，原样输出源代码&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;显示/隐藏源代码（echo=TRUE/FALSE），甚至精确控制显示哪几段代码（echo取数值）&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;显示/隐藏普通文本输出或将文本输出以原样形式输出（results=’markup’, ‘hide’, ‘asis’）&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;显示/隐藏警告文本（warning=TRUE/FALSE）、错误消息（error）和普通消息（message）&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;显示/隐藏整个代码段的输出（include=TRUE/FALSE），比如我们可能想运行代码，但不把结果写入输出中&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;变量转为时间变量&lt;/p&gt;
+&lt;p&gt;strptime(x,format)，将字符型变量转为POSIXlt格式的时间格式&lt;/p&gt;
+&lt;p&gt;x是要转换的字符型变量，format是转换后的时间格式。表现形式类似于%y %m %d,默认的是%Y-%m-%d %H:%M:%S，利用strptime函数，我们可以轻松把字符型变量转成我们需要的时间格式。format类型的具体解释如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;%a  缩写的weekday
+%A  全称的weekday
+%b  缩写的月份
+%B  全称的月份
+%c  日期和时间。输出格式为  &amp;quot;%a %b %e %H:%M:%S %Y&amp;quot;  `format(Sys.time(), &amp;quot;%c&amp;quot;)`
+%C  世纪（00-99），年份/100的整数部分
+%d  月份中的日期，格式为01–31
+%D  %m/%d/%y形式的日期格式，比如：&amp;quot;04/29/16&amp;quot;%e
+%e  月份中的日期，格式为1-31
+%F  ISO 8601的时间格式： %Y-%m-%d ，比如：&amp;quot;2016-04-29&amp;quot;
+%g  The last two digits of the week-based year (see %V). (Accepted but ignored on input
+%G  The week-based year (see %V) as a decimal number. (Accepted but ignored on input.)
+%h 同%b.
+%H 小时，24小时制表达形式：00-23 a special exception strings such as 24:00:00 are accepted for input, since ISO 8601 allows these.
+%I 小时，12小时制表达形式为 (01–12)
+%j 一年中第几天，表达形式为：001–366
+%m 月份，表达形式为：01–12
+%M 分钟，表达形式为：00–59
+%p AM/PM 指示，同%I使用，不可以同%H使用
+%r 12小时制时间，如&amp;quot;11:21:14 PM&amp;quot;
+%R 同%H:%M
+%S 秒数(00–61)
+%T 等同于%H:%M:%S.
+%u 1-7形式的星期表达，星期一是1
+%U 一年中第几个星期，采用周日作为第一天
+%V 采用ISO 8601定义的一年中的第几个星期，(01-53),如果包含1月1号的星期有至少4天，那么定义为本年的第一个星期，否则上一年的最后一个星期
+%w 0-6的星期表达，星期天为0
+%W 一年中的第几个星期，采用星期一作为一周第一天，英国的惯例
+%x 日期表达，形式为：&amp;quot;%y/%m/%d&amp;quot;
+%X 时间，表达形式为&amp;quot;%H:%M:%S&amp;quot;
+%y 去除年份中的世纪标识的年份表达式，比如：‘16’
+%Y 完整年份表达
+%z Signed offset in hours and minutes from UTC, so -0800 is 8 hours behind UTC. Values up to +1400 are accepted as from R 3.1.1: previous versions only accepted up to +1200. (Standard only for output.)
+%Z 时区缩写
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;变量转为日期变量&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;示例：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;figcaption&gt;&lt;span&gt;, eval = TRUE ,highlight=TRUE,tidy=TRUE,echo=1:2&amp;#125;&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;k = 0 ;for ( i in 1:5)&amp;#123;k = i+k &amp;#125; ;return(k)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;输出结果为：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;k = 0
-for (i in 1:5) {
-    k = i + k
-}
+&lt;p&gt;我们可以采用as.Date()函数将变量转为日期变量，转换后的日期变量可以直接做日期的加减运算，很方便。&lt;/p&gt;
+&lt;p&gt;as.Date(x, format, …)，适用于字符型&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;as.Date(&amp;apos;20160430&amp;apos;,&amp;apos;%Y%m%d&amp;apos;) #注意format形式一定要和字符串一样
+[1] &amp;quot;2016-04-30&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;as.Date(x, origin, …)，适用于数值型&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;as.Date(1, origin = &amp;quot;1904-01-01&amp;quot;) # 1998-07-05
+[1] &amp;quot;1904-01-02&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;as.Date(x, tz = “UTC”, …)，适用于POSIXlt类型&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;as.Date(as.POSIXlt(Sys.time(), &amp;quot;GMT&amp;quot;))
+[1] &amp;quot;2016-04-30&amp;quot;
 
-## [1] 15
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;对于表格文件，可以采用xtable来实现，但是这个包将表格转为latex格式，使用print函数将其以html格式显示，不过显示结果保留着原始HTML表格的风格。&lt;/p&gt;
-&lt;p&gt;示例：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;library(xtable)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;print(xtable(head(mtcars[, 1:5])),type = &amp;quot;html&amp;quot;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;到这里，大多数的需求基本都满足了，剩下的就是写了。&lt;/p&gt;
-&lt;h2 id=&quot;参考资料&quot;&gt;&lt;a href=&quot;#参考资料&quot; class=&quot;headerlink&quot; title=&quot;参考资料&quot;&gt;&lt;/a&gt;参考资料&lt;/h2&gt;&lt;p&gt;【1】&lt;a href=&quot;https://github.com/yihui/r-ninja/blob/master/11-auto-report.md&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;knitr中文文档&lt;/a&gt;&lt;/p&gt;
+as.Date(&amp;apos;20160430&amp;apos;,&amp;apos;%Y%m%d&amp;apos;)-10  
+[1] &amp;quot;2016-04-20&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;时间变量转为字符型&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;时间变量转为字符串的函数有三个format,strftime,as.character&lt;/p&gt;
+&lt;p&gt;format(x,format)，x是时间变量，format是要转换的形式&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;format(Sys.time(),&amp;apos;%Y-%m-%d&amp;apos;)
+[1] &amp;quot;2016-04-30&amp;quot;
+format(Sys.time(),&amp;apos;%Y&amp;apos;)
+[1] &amp;quot;2016&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;as.character(x，format)，将时间变量转为字符串&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;as.character(Sys.time(),&amp;apos;%X&amp;apos;)
+[1] &amp;quot;08:51:27&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;strftime(x,format,tz=’’)，x是待转换的对象，format是转换的形式&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;strftime(Sys.time())
+[1] &amp;quot;2016-04-30 08:48:30&amp;quot;
+strftime(Sys.time(),&amp;apos;%x&amp;apos;)
+[1] &amp;quot;30/04/2016&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;提取月份，星期，季度&lt;/p&gt;
+&lt;p&gt;strptime提供了从字符型变量中提取月份，星期的方法，R中提供了从Date,POSIXt类型中提取的函数，注意必须是Date,POSIXt类型&lt;/p&gt;
+&lt;p&gt;   weekdays(x, abbreviate = FALSE)&lt;br&gt;   months(x, abbreviate = FALSE)&lt;br&gt;   quarters(x, …)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;创造时间序列对象ts()&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;ts(data = NA, start = 1, end = numeric(), frequency = 1)&lt;/p&gt;
+&lt;p&gt;data 是待转换的变量，可以是向量或矩阵，strat是起始时间，可以是单个数值或者包含两个整数的向量，end是结束时间，frequency指采集频率，1代表年度间隔，4代表季度间隔，7代表星期间隔，12代表月度间隔。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; ts(1:10, frequency = 1, start = c(1959, 1)) # 2nd Quarter of 1959
+ Time Series:
+ Start = 1959 
+ End = 1968 
+ Frequency = 1 
+[1]  1  2  3  4  5  6  7  8  9 10
+ts(1:10, frequency = 4, start = c(1959, 2)) # 2nd Quarter of 1959
+        Qtr1 Qtr2 Qtr3 Qtr4
+ 1959         1    2    3
+ 1960    4    5    6    7
+ 1961    8    9   10    
+ts(1:10, frequency = 12, start = c(1959, 1)) # 2nd Quarter of 1959
+      Jan Feb Mar Apr May Jun Jul Aug Sep Oct
+1959   1   2   3   4   5   6   7   8   9  10
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;时序数据运算&lt;/p&gt;
+&lt;p&gt; 我们可以用ts.intersect()，ts.union提取两组或多组时间序列数据的时间交集或并集数据。&lt;/p&gt;
+&lt;p&gt;   ts.intersect(…, dframe = FALSE)&lt;br&gt;   ts.union(…, dframe = FALSE)#缺少的时间序列部分用NA代替&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;dframe设定是否返回数据框形式&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;a &amp;lt;- ts(1:5, frequency = 1, start = 1) 
+b &amp;lt;- ts(1:5, frequency = 1, start = 3)
+
+ts.intersect(a,b)
+Time Series:
+Start = 3 
+End = 5 
+Frequency = 1 
+  a b
+3 3 1
+4 4 2
+5 5 3
+ts.union(a,b)
+Time Series:
+Start = 1 
+End = 7 
+Frequency = 1 
+   a  b
+1  1 NA
+2  2 NA
+3  3  1
+4  4  2
+5  5  3
+6 NA  4
+7 NA  5 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;我们可以用window()提取ts对象的某段时间的数值&lt;/p&gt;
+&lt;p&gt;window(x, start, end, frequency, deltat, …)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;window(a,2,4)
+Time Series:
+Start = 2 
+End = 4 
+Frequency = 1 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;使用以上这些函数就可以实现对时间序列数据的基础处理了，当然，R中也有开发的专门对时间序列处理的包&lt;code&gt;zoo&lt;/code&gt;，有人已经总结的很详细了，可以查看这篇博文&lt;a href=&quot;http://blog.fens.me/r-zoo/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;R语言时间序列基础库zoo&lt;/a&gt;。&lt;/p&gt;
+&lt;h2 id=&quot;Python&quot;&gt;&lt;a href=&quot;#Python&quot; class=&quot;headerlink&quot; title=&quot;Python&quot;&gt;&lt;/a&gt;Python&lt;/h2&gt;&lt;p&gt;Python中也提供了完整的时间序列处理方式，详见《利用Python 做数据处理》中时间序列一章。&lt;/p&gt;
+&lt;p&gt;鉴于有人已经对Python中的时间序列总结的很详细了，详见博文&lt;a href=&quot;http://my.oschina.net/lionets/blog/280855#OSC_h3_12&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;pandas 时间序列操作&lt;/a&gt;，在此不再赘述。&lt;/p&gt;
+&lt;h2 id=&quot;后记&quot;&gt;&lt;a href=&quot;#后记&quot; class=&quot;headerlink&quot; title=&quot;后记&quot;&gt;&lt;/a&gt;后记&lt;/h2&gt;&lt;p&gt;后续用R和Python做时间序列的其他方法会陆陆续续补上。&lt;/p&gt;
+&lt;h2 id=&quot;参考资料&quot;&gt;&lt;a href=&quot;#参考资料&quot; class=&quot;headerlink&quot; title=&quot;参考资料&quot;&gt;&lt;/a&gt;参考资料&lt;/h2&gt;&lt;p&gt;【1】 &lt;a href=&quot;http://127.0.0.1:14653/library/base/html/strptime.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;时间格式对照&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;【2】&lt;a href=&quot;http://blog.fens.me/r-xts/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;可扩展的时间序列xts&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;【3】 &lt;a href=&quot;https://cran.r-project.org/web/views/TimeSeries.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;CRAN Task View: Time Series Analysis&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;【4】R语言核心技术手册&lt;/p&gt;
+&lt;p&gt;【5】&lt;a href=&quot;http://blog.fens.me/r-zoo/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;R语言时间序列基础库zoo&lt;/a&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      这是一篇测试文档！
+      用R和Python处理时间序列格式数据的总结
     
     </summary>
     
       <category term="学习" scheme="http://ncutsta.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="便利化程序" scheme="http://ncutsta.github.io/tags/%E4%BE%BF%E5%88%A9%E5%8C%96%E7%A8%8B%E5%BA%8F/"/>
+      <category term="数据处理" scheme="http://ncutsta.github.io/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/"/>
     
   </entry>
   
   <entry>
-    <title>统苑网站优化意见征询</title>
-    <link href="http://ncutsta.github.io/2016/03/01/hello-world/"/>
-    <id>http://ncutsta.github.io/2016/03/01/hello-world/</id>
-    <published>2016-02-29T16:00:00.000Z</published>
-    <updated>2016-03-01T08:37:06.154Z</updated>
+    <title>逻辑回归</title>
+    <link href="http://ncutsta.github.io/2016/06/01/2016-04-12-logistic-regression/"/>
+    <id>http://ncutsta.github.io/2016/06/01/2016-04-12-logistic-regression/</id>
+    <published>2016-06-01T06:29:25.004Z</published>
+    <updated>2016-04-15T02:40:10.995Z</updated>
     
-    <content type="html">&lt;p&gt;  请大家对这个网站提出修改意见，然后对此网站进行优化。&lt;/p&gt;
-&lt;p&gt;  比如网站的副标题，网站的logo，网站的一些功能，网站的布局&lt;/p&gt;
-&lt;p&gt;  意见请发表在文章下方的评论区内。&lt;/p&gt;
+    <content type="html">&lt;p&gt;逻辑回归，也称Logistic Regression，属于回归分析的一种，用于预测分类变量，其中主要是二分类变量。&lt;/p&gt;
+&lt;p&gt;本篇文章依次从目的、原理、参数求解、模型评价、模型优化和软件实现共6个方面依次论述。&lt;/p&gt;
+&lt;p&gt;如无特殊说明，log均指以自然数为底。&lt;/p&gt;
+&lt;h2 id=&quot;目的&quot;&gt;&lt;a href=&quot;#目的&quot; class=&quot;headerlink&quot; title=&quot;目的&quot;&gt;&lt;/a&gt;&lt;strong&gt;目的&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;现实生活中存在大量的分类变量预测问题，比如：一部影片是否能获奖，一个客户是否会违约，一个用户是否会流失……，机器学习中有很多解决分类问题的算法，逻辑回归既是其中的一种，逻辑回归可以解决分类问题，主要应用是二分类问题的解决。&lt;/p&gt;
+&lt;h2 id=&quot;原理&quot;&gt;&lt;a href=&quot;#原理&quot; class=&quot;headerlink&quot; title=&quot;原理&quot;&gt;&lt;/a&gt;&lt;strong&gt;原理&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;我们需要预测一件事情发生的概率，如果用一般线性回归去做预测，即因变量为P(Y=1)，自变量为影响因变量的特征，会出现一个问题，P(Y=1)的取值范围是[0,1]，而线性回归的预测范围却是R，因此，我们有必要通过考虑某种变换，将响应变量作为P(Y=1)的一个函数变换结果，同时将取值范围扩展到R，为此，我们考虑采用logit函数：&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;a href=&quot;http://www.codecogs.com/eqnedit.php?latex=logit(p)=log(\frac{p}{1-p})&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://latex.codecogs.com/png.latex?logit(p)=log(\frac{p}{1-p})&quot; title=&quot;logit(p)=log(\frac{p}{1-p})&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;/div&gt;
+
+&lt;p&gt;之后，我们结合一般线性回归的思路，我们可以得到：&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;a href=&quot;http://www.codecogs.com/eqnedit.php?latex=log(\frac{p}{1-p})=\theta&amp;space;^{T}X&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://latex.codecogs.com/gif.latex?log(\frac{p}{1-p})=\theta&amp;space;^{T}X&quot; title=&quot;log(\frac{p}{1-p})=\theta ^{T}X&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;简单推导，得：&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;a href=&quot;http://www.codecogs.com/eqnedit.php?latex=P(Y=1)=\frac{1}{1&amp;plus;e^{-\theta&amp;space;^{T}X}}&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://latex.codecogs.com/gif.latex?P(Y=1)=\frac{1}{1&amp;plus;e^{-\theta&amp;space;^{T}X}}&quot; title=&quot;P(Y=1)=\frac{1}{1+e^{-\theta ^{T}X}}&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;这个函数实际上也就是&lt;a href=&quot;https://en.wikipedia.org/wiki/Sigmoid_function&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Sigmoid function&lt;/a&gt;，函数表达式为：&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;a href=&quot;http://www.codecogs.com/eqnedit.php?latex=g(x)&amp;space;=&amp;space;\frac{1}{1&amp;plus;e^{-x}}&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://latex.codecogs.com/png.latex?g(x)&amp;space;=&amp;space;\frac{1}{1&amp;plus;e^{-x}}&quot; title=&quot;g(x) = \frac{1}{1+e^{-x}}&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;函数图形为（图片引用自&lt;a href=&quot;https://en.wikipedia.org/wiki/Logistic_regression&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;维基百科&lt;/a&gt;）：&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;http://7xo51k.com1.z0.glb.clouddn.com/320px-Logistic-curve.svg.png&quot;&gt;&lt;/div&gt;
+
+&lt;p&gt;一般情况下，当预测概率P(Y=1)&amp;gt;0.5，我们预估Y=1，反之，预估Y=0,具体阈值可以根据预测结果做相应调整。&lt;/p&gt;
+&lt;p&gt;现在我们得到了逻辑回归的数学表达式：&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;a href=&quot;http://www.codecogs.com/eqnedit.php?latex=h_\theta(x)&amp;space;=&amp;space;\frac{1}{1&amp;plus;e^{-\theta^Tx}}&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://latex.codecogs.com/png.latex?h_\theta(x)&amp;space;=&amp;space;\frac{1}{1&amp;plus;e^{-\theta^Tx}}&quot; title=&quot;h_\theta(x) = \frac{1}{1+e^{-\theta^Tx}}&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;其中θ表示带估计参数,&lt;a href=&quot;http://www.codecogs.com/eqnedit.php?latex=h_\theta(x)&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://latex.codecogs.com/png.latex?h_\theta(x)&quot; title=&quot;h_\theta(x)&quot;&gt;&lt;/a&gt;表示Y=1的概率，即：&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;a href=&quot;http://www.codecogs.com/eqnedit.php?latex=h_\theta(x)&amp;space;=&amp;space;P(y=1|&amp;space;x;\theta)&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://latex.codecogs.com/png.latex?h_\theta(x)&amp;space;=&amp;space;P(y=1|&amp;space;x;\theta)&quot; title=&quot;h_\theta(x) = P(y=1| x;\theta)&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;因此，当预测变量是2分类变量时，我们可以得到Y=0的概率表达形式：&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;a href=&quot;http://www.codecogs.com/eqnedit.php?latex=P(y=0|x;\theta)&amp;space;=&amp;space;1&amp;space;-&amp;space;P(y=1|x;\theta)&amp;space;=&amp;space;1-&amp;space;h_\theta(x)&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://latex.codecogs.com/gif.latex?P(y=0|x;\theta)&amp;space;=&amp;space;1&amp;space;-&amp;space;P(y=1|x;\theta)&amp;space;=&amp;space;1-&amp;space;h_\theta(x)&quot; title=&quot;P(y=0|x;\theta) = 1 - P(y=1|x;\theta) = 1- h_\theta(x)&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;进一步，我们可以将Y的概率分布表达为一个式子：&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;a href=&quot;http://www.codecogs.com/eqnedit.php?latex=P(y|x;\theta)&amp;space;=&amp;space;(h_\theta(x))^y(1-h_\theta(x))^{1-y}&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://latex.codecogs.com/gif.latex?P(y|x;\theta)&amp;space;=&amp;space;(h_\theta(x))^y(1-h_\theta(x))^{1-y}&quot; title=&quot;P(y|x;\theta) = (h_\theta(x))^y(1-h_\theta(x))^{1-y}&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;有了概率表达式，我们就可以写出样本的联合分布，采用极大似然的思想，通过求解MLE，我们便可以得到一个逻辑回归的解。&lt;/p&gt;
+&lt;p&gt;以上是从一般的思路推导出来的，从广义线性回归模型推导sigmod函数请参阅参考资料【1】&lt;/p&gt;
+&lt;h2 id=&quot;参数求解&quot;&gt;&lt;a href=&quot;#参数求解&quot; class=&quot;headerlink&quot; title=&quot;参数求解&quot;&gt;&lt;/a&gt;&lt;strong&gt;参数求解&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;结合概率表达式和极大似然的思想，我们很自然的就写出似然函数表达式：&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;a href=&quot;http://www.codecogs.com/eqnedit.php?latex=L(\theta)&amp;space;=&amp;space;\prod_{i=1}^{m}P(y^{(i)}|x^{(i)};\theta)&amp;space;=\prod_{i=1}^{m}(h_\theta(x^{(i)}))^{y(i)}(1-(h_\theta(x^{(i)}))^{1-y(i)}&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://latex.codecogs.com/png.latex?L(\theta)&amp;space;=&amp;space;\prod_{i=1}^{m}P(y^{(i)}|x^{(i)};\theta)&amp;space;=\prod_{i=1}^{m}(h_\theta(x^{(i)}))^{y(i)}(1-(h_\theta(x^{(i)}))^{1-y(i)}&quot; title=&quot;L(\theta) = \prod_{i=1}^{m}P(y^{(i)}|x^{(i)};\theta) =\prod_{i=1}^{m}(h_\theta(x^{(i)}))^{y(i)}(1-(h_\theta(x^{(i)}))^{1-y(i)}&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;取对数，得：&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;a href=&quot;http://www.codecogs.com/eqnedit.php?latex=l(\theta)&amp;space;=&amp;space;\sum_{i=1}^m&amp;space;(y^{(i)}&amp;space;log(h_\theta(x^{(i)}))&amp;space;&amp;plus;&amp;space;(1&amp;space;-&amp;space;y^{(i)})&amp;space;log(1&amp;space;-&amp;space;h_\theta(x^{(i)})))&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://latex.codecogs.com/png.latex?l(\theta)&amp;space;=&amp;space;\sum_{i=1}^m&amp;space;(y^{(i)}&amp;space;log(h_\theta(x^{(i)}))&amp;space;&amp;plus;&amp;space;(1&amp;space;-&amp;space;y^{(i)})&amp;space;log(1&amp;space;-&amp;space;h_\theta(x^{(i)})))&quot; title=&quot;l(\theta) = \sum_{i=1}^m (y^{(i)} log(h_\theta(x^{(i)})) + (1 - y^{(i)}) log(1 - h_\theta(x^{(i)})))&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;接下来，我们求解参数θ的MLE&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;a href=&quot;http://www.codecogs.com/eqnedit.php?latex=\frac{\alpha&amp;space;h_\theta(X)}{\alpha\theta}=-(\frac{1}{1&amp;space;&amp;plus;&amp;space;e^{-\theta^T&amp;space;X}})^{2}e^{-\theta^T&amp;space;X}\frac{\alpha(-\theta^T&amp;space;X)}{\alpha\theta}&amp;space;\\=-(\frac{1}{1&amp;space;&amp;plus;&amp;space;e^{-\theta^T&amp;space;X}})^{2}e^{-\theta^T&amp;space;X}&amp;space;(-X)&amp;space;\\=h_\theta(X)(1-h_\theta(X))X&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://latex.codecogs.com/png.latex?\frac{\alpha&amp;space;h_\theta(X)}{\alpha\theta}=-(\frac{1}{1&amp;space;&amp;plus;&amp;space;e^{-\theta^T&amp;space;X}})^{2}e^{-\theta^T&amp;space;X}\frac{\alpha(-\theta^T&amp;space;X)}{\alpha\theta}&amp;space;\\=-(\frac{1}{1&amp;space;&amp;plus;&amp;space;e^{-\theta^T&amp;space;X}})^{2}e^{-\theta^T&amp;space;X}&amp;space;(-X)&amp;space;\\=h_\theta(X)(1-h_\theta(X))X&quot; title=&quot;\frac{\alpha h_\theta(X)}{\alpha\theta}=-(\frac{1}{1 + e^{-\theta^T X}})^{2}e^{-\theta^T X}\frac{\alpha(-\theta^T X)}{\alpha\theta} \\=-(\frac{1}{1 + e^{-\theta^T X}})^{2}e^{-\theta^T X} (-X) \\=h_\theta(X)(1-h_\theta(X))X&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;其中，&lt;a href=&quot;http://www.codecogs.com/eqnedit.php?latex=h_\theta(X)&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://latex.codecogs.com/png.latex?h_\theta(X)&quot; title=&quot;h_\theta(X)&quot;&gt;&lt;/a&gt;中X为解释变量，为列向量，θ为参数向量，为列向量。&lt;/p&gt;
+&lt;p&gt;为了便于程序计算，我们将对数似然函数&lt;a href=&quot;http://www.codecogs.com/eqnedit.php?latex=l_\theta&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://latex.codecogs.com/png.latex?l_\theta&quot; title=&quot;l_\theta&quot;&gt;&lt;/a&gt;写成矩阵表达形式:&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;a href=&quot;http://www.codecogs.com/eqnedit.php?latex=l_\theta&amp;space;=\begin{pmatrix}&amp;space;log(h_\theta(X_{(1)}))&amp;space;&amp;&amp;space;log(1-h_\theta(X_{(1)}))&amp;space;&amp;&amp;space;log(h_\theta(X_{(2)}))&amp;space;&amp;log(1-h_\theta(X_{(2)}))&amp;space;&amp;&amp;space;......&amp;space;&amp;&amp;space;log(h_\theta(X_{(m)}))&amp;space;&amp;&amp;space;log(1-h_\theta(X_{(m)}))&amp;space;\end{pmatrix}\begin{pmatrix}&amp;space;\\&amp;space;y_{(1)}&amp;space;\\&amp;space;1-y_{(1)}&amp;space;\\&amp;space;y_{(2)}&amp;space;\\&amp;space;1-y_{(2)}&amp;space;\\&amp;space;......&amp;space;\\&amp;space;y_{(m)}&amp;space;\\&amp;space;1-y_{(m)}&amp;space;\end{pmatrix}&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://latex.codecogs.com/png.latex?l_\theta&amp;space;=\begin{pmatrix}&amp;space;log(h_\theta(X_{(1)}))&amp;space;&amp;&amp;space;log(1-h_\theta(X_{(1)}))&amp;space;&amp;&amp;space;log(h_\theta(X_{(2)}))&amp;space;&amp;log(1-h_\theta(X_{(2)}))&amp;space;&amp;&amp;space;......&amp;space;&amp;&amp;space;log(h_\theta(X_{(m)}))&amp;space;&amp;&amp;space;log(1-h_\theta(X_{(m)}))&amp;space;\end{pmatrix}\begin{pmatrix}&amp;space;\\&amp;space;y_{(1)}&amp;space;\\&amp;space;1-y_{(1)}&amp;space;\\&amp;space;y_{(2)}&amp;space;\\&amp;space;1-y_{(2)}&amp;space;\\&amp;space;......&amp;space;\\&amp;space;y_{(m)}&amp;space;\\&amp;space;1-y_{(m)}&amp;space;\end{pmatrix}&quot; title=&quot;l_\theta =\begin{pmatrix} log(h_\theta(X_{(1)})) &amp; log(1-h_\theta(X_{(1)})) &amp; log(h_\theta(X_{(2)})) &amp;log(1-h_\theta(X_{(2)})) &amp; ...... &amp; log(h_\theta(X_{(m)})) &amp; log(1-h_\theta(X_{(m)})) \end{pmatrix}\begin{pmatrix} \\ y_{(1)} \\ 1-y_{(1)} \\ y_{(2)} \\ 1-y_{(2)} \\ ...... \\ y_{(m)} \\ 1-y_{(m)} \end{pmatrix}&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;对其求导，我们可以得到：&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;a href=&quot;http://www.codecogs.com/eqnedit.php?latex=\frac{\alpha&amp;space;l_\theta}{\alpha&amp;space;_\theta}&amp;space;=\begin{pmatrix}&amp;space;(1-h_\theta(X_{(1)}))X_1&amp;space;&amp;&amp;space;-h_\theta(X_{(1)})X_1&amp;space;&amp;&amp;space;(1-h_\theta(X_{(2)}))X_2&amp;space;&amp;&amp;space;-h_\theta(X_{(2)})X_2&amp;space;&amp;&amp;space;......&amp;space;&amp;&amp;space;(1-h_\theta(X_{(m)}))X_1&amp;space;&amp;&amp;space;-h_\theta(X_{(1)})X_m&amp;space;\end{pmatrix}\begin{pmatrix}&amp;space;\\&amp;space;y_{(1)}&amp;space;\\&amp;space;1-y_{(1)}&amp;space;\\&amp;space;y_{(2)}&amp;space;\\&amp;space;1-y_{(2)}&amp;space;\\&amp;space;......&amp;space;\\&amp;space;y_{(m)}&amp;space;\\&amp;space;1-y_{(m)}&amp;space;\end{pmatrix}&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://latex.codecogs.com/png.latex?\frac{\alpha&amp;space;l_\theta}{\alpha&amp;space;_\theta}&amp;space;=\begin{pmatrix}&amp;space;(1-h_\theta(X_{(1)}))X_1&amp;space;&amp;&amp;space;-h_\theta(X_{(1)})X_1&amp;space;&amp;&amp;space;(1-h_\theta(X_{(2)}))X_2&amp;space;&amp;&amp;space;-h_\theta(X_{(2)})X_2&amp;space;&amp;&amp;space;......&amp;space;&amp;&amp;space;(1-h_\theta(X_{(m)}))X_1&amp;space;&amp;&amp;space;-h_\theta(X_{(1)})X_m&amp;space;\end{pmatrix}\begin{pmatrix}&amp;space;\\&amp;space;y_{(1)}&amp;space;\\&amp;space;1-y_{(1)}&amp;space;\\&amp;space;y_{(2)}&amp;space;\\&amp;space;1-y_{(2)}&amp;space;\\&amp;space;......&amp;space;\\&amp;space;y_{(m)}&amp;space;\\&amp;space;1-y_{(m)}&amp;space;\end{pmatrix}&quot; title=&quot;\frac{\alpha l_\theta}{\alpha _\theta} =\begin{pmatrix} (1-h_\theta(X_{(1)}))X_1 &amp; -h_\theta(X_{(1)})X_1 &amp; (1-h_\theta(X_{(2)}))X_2 &amp; -h_\theta(X_{(2)})X_2 &amp; ...... &amp; (1-h_\theta(X_{(m)}))X_1 &amp; -h_\theta(X_{(1)})X_m \end{pmatrix}\begin{pmatrix} \\ y_{(1)} \\ 1-y_{(1)} \\ y_{(2)} \\ 1-y_{(2)} \\ ...... \\ y_{(m)} \\ 1-y_{(m)} \end{pmatrix}&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;整理：&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;a href=&quot;http://www.codecogs.com/eqnedit.php?latex=y_{1}(1-h_\theta(X_{(1)}))X_{1}-(1-y_{1})h_\theta(X_{(1)})X_{1}&amp;space;\\&amp;space;=(y-{1}-h_\theta(X_{(1)}))X_{1}&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://latex.codecogs.com/png.latex?y_{1}(1-h_\theta(X_{(1)}))X_{1}-(1-y_{1})h_\theta(X_{(1)})X_{1}&amp;space;\\&amp;space;=(y-{1}-h_\theta(X_{(1)}))X_{1}&quot; title=&quot;y_{1}(1-h_\theta(X_{(1)}))X_{1}-(1-y_{1})h_\theta(X_{(1)})X_{1} \\ =(y-{1}-h_\theta(X_{(1)}))X_{1}&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;进而&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;a href=&quot;http://www.codecogs.com/eqnedit.php?latex=\frac{\alpha&amp;space;l_\theta}{\alpha&amp;space;_\theta}&amp;space;=&amp;space;\begin{pmatrix}&amp;space;X_{1}(y_{1}-h_\theta{(X_{1})})&amp;space;&amp;&amp;space;X_{2}(y_{2}-h_\theta{(X_{2})})&amp;space;&amp;&amp;space;......&amp;space;&amp;X_{m}(y_{m}-h_\theta{(X_{m})})&amp;space;\end{pmatrix}\\&amp;space;=\begin{pmatrix}&amp;space;X_{1}&amp;space;&amp;&amp;space;X_{2}&amp;space;&amp;&amp;space;......&amp;space;&amp;&amp;space;X_{m}&amp;space;\end{pmatrix}&amp;space;\begin{pmatrix}(y_{1}-h_\theta{(X_{1})}&amp;space;\\&amp;space;(y_{2}-h_\theta{(X_{2})}&amp;space;\\&amp;space;......&amp;space;\\&amp;space;(y_{m}-h_\theta{(X_{m})}&amp;space;\end{pmatrix}&amp;space;\\=X(Y-h_{\theta}(X))&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://latex.codecogs.com/png.latex?\frac{\alpha&amp;space;l_\theta}{\alpha&amp;space;_\theta}&amp;space;=&amp;space;\begin{pmatrix}&amp;space;X_{1}(y_{1}-h_\theta{(X_{1})})&amp;space;&amp;&amp;space;X_{2}(y_{2}-h_\theta{(X_{2})})&amp;space;&amp;&amp;space;......&amp;space;&amp;X_{m}(y_{m}-h_\theta{(X_{m})})&amp;space;\end{pmatrix}\\&amp;space;=\begin{pmatrix}&amp;space;X_{1}&amp;space;&amp;&amp;space;X_{2}&amp;space;&amp;&amp;space;......&amp;space;&amp;&amp;space;X_{m}&amp;space;\end{pmatrix}&amp;space;\begin{pmatrix}(y_{1}-h_\theta{(X_{1})}&amp;space;\\&amp;space;(y_{2}-h_\theta{(X_{2})}&amp;space;\\&amp;space;......&amp;space;\\&amp;space;(y_{m}-h_\theta{(X_{m})}&amp;space;\end{pmatrix}&amp;space;\\=X(Y-h_{\theta}(X))&quot; title=&quot;\frac{\alpha l_\theta}{\alpha _\theta} = \begin{pmatrix} X_{1}(y_{1}-h_\theta{(X_{1})}) &amp; X_{2}(y_{2}-h_\theta{(X_{2})}) &amp; ...... &amp;X_{m}(y_{m}-h_\theta{(X_{m})}) \end{pmatrix}\\ =\begin{pmatrix} X_{1} &amp; X_{2} &amp; ...... &amp; X_{m} \end{pmatrix} \begin{pmatrix}(y_{1}-h_\theta{(X_{1})} \\ (y_{2}-h_\theta{(X_{2})} \\ ...... \\ (y_{m}-h_\theta{(X_{m})} \end{pmatrix} \\=X(Y-h_{\theta}(X))&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;其中&lt;a href=&quot;http://www.codecogs.com/eqnedit.php?latex=h_{\theta}(X)&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://latex.codecogs.com/png.latex?h_{\theta}(X)&quot; title=&quot;h_{\theta}(X)&quot;&gt;&lt;/a&gt;代表对X中每一行元素&lt;a href=&quot;http://www.codecogs.com/eqnedit.php?latex=X_{i}&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://latex.codecogs.com/png.latex?X_{i}&quot; title=&quot;X_{i}&quot;&gt;&lt;/a&gt;运用&lt;a href=&quot;http://www.codecogs.com/eqnedit.php?latex=h_{\theta}(X_{i})&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://latex.codecogs.com/png.latex?h_{\theta}(X_{i})&quot; title=&quot;h_{\theta}(X_{i})&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;MLE并不像OLS估计那样，直接可以得到解的表现形式，因此，我们采用其它的办法来求解参数，常用的是梯度上升法，即给定步长（step size），迭代次数或者精度，通过迭代来求解一个局部最优解。&lt;/p&gt;
+&lt;p&gt;由上面的推导，我们可以得出梯度上升法的一般迭代公式，γ是步长：&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;a href=&quot;http://www.codecogs.com/eqnedit.php?latex=\theta=\theta&amp;plus;\gamma&amp;space;X(Y-h_{\theta}(X))&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://latex.codecogs.com/png.latex?\theta=\theta&amp;plus;\gamma&amp;space;X(Y-h_{\theta}(X))&quot; title=&quot;\theta=\theta+\gamma X(Y-h_{\theta}(X))&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;上面的推导是由最大似然求解出发，我们也可以考虑从cost function出发，逻辑回归中成本函数采用的是对数损失函数，表达形式如下：&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;a href=&quot;http://www.codecogs.com/eqnedit.php?latex=Cost(h_\theta(x),&amp;space;y)&amp;space;=&amp;space;\left\{\begin{matrix}&amp;space;-log(h_\theta(x))&amp;&amp;space;y&amp;space;=&amp;space;1&amp;space;\\&amp;space;-log(1&amp;space;-&amp;space;h_\theta(x))&amp;&amp;space;y&amp;space;=&amp;space;0&amp;space;\end{matrix}\right.&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://latex.codecogs.com/png.latex?Cost(h_\theta(x),&amp;space;y)&amp;space;=&amp;space;\left\{\begin{matrix}&amp;space;-log(h_\theta(x))&amp;&amp;space;y&amp;space;=&amp;space;1&amp;space;\\&amp;space;-log(1&amp;space;-&amp;space;h_\theta(x))&amp;&amp;space;y&amp;space;=&amp;space;0&amp;space;\end{matrix}\right.&quot; title=&quot;Cost(h_\theta(x), y) = \left\{\begin{matrix} -log(h_\theta(x))&amp; y = 1 \\ -log(1 - h_\theta(x))&amp; y = 0 \end{matrix}\right.&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;我们可以得到成本函数为：&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;a href=&quot;http://www.codecogs.com/eqnedit.php?latex=C(\theta)=\frac{1}{m}\sum_{i=1}^{m}Cost(h_\theta(x^{(i)}),y^{(i)})&amp;space;\\=-\frac{1}{m}&amp;space;\left[&amp;space;\sum_{i=1}^m&amp;space;y^{(i)}&amp;space;log(h_\theta(x^{(i)}))&amp;space;&amp;plus;&amp;space;(1&amp;space;-&amp;space;y^{(i)})&amp;space;log(1&amp;space;-&amp;space;h_\theta(x^{(i)}))&amp;space;\right]&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://latex.codecogs.com/png.latex?C(\theta)=\frac{1}{m}\sum_{i=1}^{m}Cost(h_\theta(x^{(i)}),y^{(i)})&amp;space;\\=-\frac{1}{m}&amp;space;\left[&amp;space;\sum_{i=1}^m&amp;space;y^{(i)}&amp;space;log(h_\theta(x^{(i)}))&amp;space;&amp;plus;&amp;space;(1&amp;space;-&amp;space;y^{(i)})&amp;space;log(1&amp;space;-&amp;space;h_\theta(x^{(i)}))&amp;space;\right]&quot; title=&quot;C(\theta)=\frac{1}{m}\sum_{i=1}^{m}Cost(h_\theta(x^{(i)}),y^{(i)}) \\=-\frac{1}{m} \left[ \sum_{i=1}^m y^{(i)} log(h_\theta(x^{(i)})) + (1 - y^{(i)}) log(1 - h_\theta(x^{(i)})) \right]&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;与似然函数&lt;a href=&quot;http://www.codecogs.com/eqnedit.php?latex=l(\theta)&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://latex.codecogs.com/png.latex?l(\theta)&quot; title=&quot;l(\theta)&quot;&gt;&lt;/a&gt;相比，只有常数项和符号的不同，我们的目的是让损失函数最小，因此，我们可以采用梯度下降法来求解参数，实质上，利用梯度下降法来求解损失函数和梯度上升法求解似然函数是一样的，模型的最终迭代公式都是&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;a href=&quot;http://www.codecogs.com/eqnedit.php?latex=\theta=\theta&amp;plus;\gamma&amp;space;X(Y-h_{\theta}(X))&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://latex.codecogs.com/png.latex?\theta=\theta&amp;plus;\gamma&amp;space;X(Y-h_{\theta}(X))&quot; title=&quot;\theta=\theta+\gamma X(Y-h_{\theta}(X))&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;除了梯度上升法，还有其他的求解方法，如：共轭梯度法，牛顿法，详情参阅参考资料【11】&lt;/p&gt;
+&lt;h2 id=&quot;模型评价&quot;&gt;&lt;a href=&quot;#模型评价&quot; class=&quot;headerlink&quot; title=&quot;模型评价&quot;&gt;&lt;/a&gt;&lt;strong&gt;模型评价&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;评价一个模型好坏的出发点是模型的预测结果与真实结果之间的差异，对于分类结果，我们可以采用准确度来评价模型的优劣，简单来讲，模型的准确度(accuracy)=模型预测正确结果数在所有结果中的占比。模型的预测结果，可以细分为四类：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;正确的分到正确（TP）&lt;/li&gt;
+&lt;li&gt;正确的分到不正确（FN)&lt;/li&gt;
+&lt;li&gt;不正确的分到不正确(TN)&lt;/li&gt;
+&lt;li&gt;不正确的分到正确(FP)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;准确度的形式为：&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;a href=&quot;http://www.codecogs.com/eqnedit.php?latex=accuracy&amp;space;=&amp;space;\frac{TP&amp;plus;TN}{TP&amp;plus;FP&amp;plus;TN&amp;plus;FN}&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://latex.codecogs.com/png.latex?accuracy&amp;space;=&amp;space;\frac{TP&amp;plus;TN}{TP&amp;plus;FP&amp;plus;TN&amp;plus;FN}&quot; title=&quot;accuracy = \frac{TP+TN}{TP+FP+TN+FN}&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;我们还可以用AUC进行评价，AUC的得分从0.5（无预测价值的分类器）到1.0（完美的分类器），逻辑回归中AUC的计算可以通过计算正样本得分大于负样本得分的样本对占所有样本对的比例来得到。假设有M个正样本，N个负样本，则正负样本配对数为MN，计算预测结果中，正样本得分大于负样本得分的样本对数量，然后得到AUC值。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;font size=&quot;3&quot; face=&quot;Georgia&quot;&gt; &lt;b&gt;比如，我们有四组数据，正负样本情况为:y1=+1, y2=+1, y3=-1, y4=-1&lt;/b&gt; &lt;/font&gt;
+
+&lt;font size=&quot;3&quot; face=&quot;Georgia&quot;&gt; &lt;b&gt;模型1的预测为 y1=0.9, y2=0.5, y3=0.2, y4=0.6 &lt;/b&gt;&lt;/font&gt;
+
+&lt;font size=&quot;3&quot; face=&quot;Georgia&quot;&gt; &lt;b&gt;模型2的预测为 y1=0.1, y2=0.9, y3=0.8, y4=0.2&lt;/b&gt;&lt;/font&gt;
+
+&lt;font size=&quot;3&quot; face=&quot;Georgia&quot;&gt; &lt;b&gt;模型1： 正样本score大于负样本的pair包括(y1, y3), (y1, y4), (y2, y3)，auc为3/4=0.75&lt;/b&gt;&lt;/font&gt;
+
+&lt;font size=&quot;3&quot; face=&quot;Georgia&quot;&gt; &lt;b&gt;模型2： 正样本score大于负样本的pair包括(y2, y3),(y2, y4)，auc为2/4=0.5&lt;/b&gt;&lt;/font&gt;
+
+&lt;font size=&quot;3&quot; face=&quot;Georgia&quot;&gt; &lt;b&gt;在AUC准则下，模型1要优于模型2 &lt;/b&gt;&lt;/font&gt;
+
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;模型优化&quot;&gt;&lt;a href=&quot;#模型优化&quot; class=&quot;headerlink&quot; title=&quot;模型优化&quot;&gt;&lt;/a&gt;&lt;strong&gt;模型优化&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;实际应用中，模型的拟合结果会出现三种结果：欠拟合，拟合良好，过拟合。三种的表现形式可以用下图来表示（引用自斯坦福机器学习公开课）：&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;http://7xo51k.com1.z0.glb.clouddn.com/1405590306_6011.png&quot;&gt;&lt;/div&gt;
+
+&lt;p&gt;如果模型是欠拟合，我们就要考虑添加特征变量&lt;/p&gt;
+&lt;p&gt;如果是过拟合，我们通常考虑减少特征数量或者保留所有特征，但使θ尽量小，即正则化。&lt;/p&gt;
+&lt;p&gt;我们通过在似然函数或cost function 中添加正则化项来实现正则化，正则化的详细介绍请参阅参考资料 【8】、【7】&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;a href=&quot;http://www.codecogs.com/eqnedit.php?latex=C(\theta)=-\frac{1}{m}&amp;space;\left[&amp;space;\sum_{i=1}^m&amp;space;y^{(i)}&amp;space;log(h_\theta(x^{(i)}))&amp;space;&amp;plus;&amp;space;(1&amp;space;-&amp;space;y^{(i)})&amp;space;log(1&amp;space;-&amp;space;h_\theta(x^{(i)})&amp;plus;&amp;space;\lambda&amp;space;\sum_{j=1}^n&amp;space;\theta_j^2))&amp;space;\right]&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://latex.codecogs.com/gif.latex?C(\theta)=-\frac{1}{m}&amp;space;\left[&amp;space;\sum_{i=1}^m&amp;space;y^{(i)}&amp;space;log(h_\theta(x^{(i)}))&amp;space;&amp;plus;&amp;space;(1&amp;space;-&amp;space;y^{(i)})&amp;space;log(1&amp;space;-&amp;space;h_\theta(x^{(i)})&amp;plus;&amp;space;\lambda&amp;space;\sum_{j=1}^n&amp;space;\theta_j^2))&amp;space;\right]&quot; title=&quot;C(\theta)=-\frac{1}{m} \left[ \sum_{i=1}^m y^{(i)} log(h_\theta(x^{(i)})) + (1 - y^{(i)}) log(1 - h_\theta(x^{(i)})+ \lambda \sum_{j=1}^n \theta_j^2)) \right]&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;其中λ是正则化参数，决定了参数正则化的影响大小，如果λ过大，可能会使模型出现欠拟合问题。&lt;/p&gt;
+&lt;p&gt;正则化后的迭代公式为&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;a href=&quot;http://www.codecogs.com/eqnedit.php?latex=\theta=\theta&amp;plus;\gamma&amp;space;(X(Y-h_{\theta}(X))&amp;plus;&amp;space;\lambda&amp;space;\theta)&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://latex.codecogs.com/gif.latex?\theta=\theta&amp;plus;\gamma&amp;space;(X(Y-h_{\theta}(X))&amp;plus;&amp;space;\lambda&amp;space;\theta)&quot; title=&quot;\theta=\theta+\gamma (X(Y-h_{\theta}(X))+ \lambda \theta)&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;软件实现&quot;&gt;&lt;a href=&quot;#软件实现&quot; class=&quot;headerlink&quot; title=&quot;软件实现&quot;&gt;&lt;/a&gt;&lt;strong&gt;软件实现&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;纸上得来终觉浅，绝知此事要躬行，原理清楚之后，关键是实践操作，采用R和Python来实现逻辑回归。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;R &lt;/p&gt;
+&lt;p&gt;  逻辑回归属于广义线性模型，在R中实现比较简单，调用glm函数即可。&lt;/p&gt;
+&lt;p&gt;  glm函数的语法为：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;glm(formula,family=binomial,data=data.frame）
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;  其中formula是待输入的公式，同线性回归一样，只是公式的左边可以有两种输入方法，一种是输入成功和失败的次数，一种是输入Y值。其实这里的Y值指的就是胜率(odds ratio)的对数值&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Python &lt;/p&gt;
+&lt;p&gt;  《机器学习实战》一书中，给出了逻辑回归的部分代码，这部分代码实际上就是本文的参数求解部分：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;def sigmoid(inX):  #sigmod function  
+      return 1.0/(1+exp(-inX))  
+def gradAscent(dataArray,labelArray,alpha,maxCycles):
+      dataMat=mat(dataArray)    #size:m*n
+      labelMat=mat(labelArray)      #size:m*1
+      m,n=shape(dataMat)
+      weigh=ones((n,1)) 
+      for i in range(maxCycles):
+         h=sigmoid(dataMat*weigh)
+         error=labelMat-h    #size:m*1
+         weigh=weigh+alpha*dataMat.transpose()*error
+      return weigh
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;   Python 有很好的机器学习库：sklearn，我们直接调用学习即可，以下是一个例子，代码是2.X版本：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;from numpy import * 
+from sklearn.datasets import load_iris     # import datasets
+# load the dataset: iris
+iris = load_iris() 
+samples = iris.data
+#print samples 
+target = iris.target 
+# import the LogisticRegression
+from sklearn.linear_model import LogisticRegression 
+
+classifier = LogisticRegression()  # 使用类，参数全是默认的
+classifier.fit(samples, target)  # 训练数据来学习，不需要返回值
+
+x = classifier.predict([5, 3, 5, 2.5])  # 测试数据，分类返回标记
+
+print x 
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;结束语&quot;&gt;&lt;a href=&quot;#结束语&quot; class=&quot;headerlink&quot; title=&quot;结束语&quot;&gt;&lt;/a&gt;&lt;strong&gt;结束语&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;逻辑回归是机器学习中实用高效的一种算法，本篇文章只讲述了一些基本的原理及实现，更深的内容还需要学习更多的内容。&lt;/p&gt;
+&lt;h2 id=&quot;参考资料&quot;&gt;&lt;a href=&quot;#参考资料&quot; class=&quot;headerlink&quot; title=&quot;参考资料&quot;&gt;&lt;/a&gt;&lt;strong&gt;参考资料&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;【1】 &lt;a href=&quot;http://synckey.github.io/posts/2015/12/24/where-does-sigmoid-come-from.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Where does sigmoid come from&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;【2】 &lt;a href=&quot;http://doc.okbase.net/jianxinzhou/archive/111322.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;机器学习之正则化（Regularization）&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;【3】&lt;a href=&quot;http://blog.csdn.net/pakko/article/details/37878837&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;逻辑回归&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;【4】&lt;a href=&quot;http://blog.csdn.net/abcjennifer/article/details/7716281&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt; Stanford机器学习—第三讲. 逻辑回归和过拟合问题的解决 logistic Regression &amp;amp; Regularization&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;【5】&lt;a href=&quot;http://blog.csdn.net/dongtingzhizi/article/details/15962797&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;【机器学习笔记1】Logistic回归总结&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;【6】&lt;a href=&quot;https://en.wikipedia.org/wiki/Gradient_descent&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Gradient descent&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;【7】&lt;a href=&quot;http://nanshu.wang/post/2015-02-17/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;机器学习笔记4 正则化&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;【8】&lt;a href=&quot;http://blog.csdn.net/zouxy09/article/details/24971995/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;机器学习中的范数规则化之（一）L0、L1与L2范数&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;【9】&lt;a href=&quot;https://github.com/geeseek/MLToolkits/wiki/为什么CTR预估使用AUC来评估模型？&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;为什么CTR预估使用AUC来评估模型？&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;【10】&lt;a href=&quot;http://www.itnose.net/detail/6197189.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;调用python的sklearn实现Logistic Reression算法&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;【11】&lt;a href=&quot;http://www.codelast.com/tag/最优化/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;最优化&lt;/a&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;  请大家对这个网站提出修改意见，然后对此网站进行优化。&lt;/p&gt;
-&lt;p&gt;  比如网站的副标题，网站的logo，网站的一些功能，网站的布局&lt;/p&gt;
-&lt;p&gt;  意见请发表在文章下方的评论区内。&lt;/p&gt;
-
+      逻辑回归的原理及软件实现
     
     </summary>
     
-      <category term="网站日志" scheme="http://ncutsta.github.io/categories/%E7%BD%91%E7%AB%99%E6%97%A5%E5%BF%97/"/>
+      <category term="学习" scheme="http://ncutsta.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="网站优化" scheme="http://ncutsta.github.io/tags/%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96/"/>
+      <category term="模型学习" scheme="http://ncutsta.github.io/tags/%E6%A8%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mysql安装及学习</title>
+    <link href="http://ncutsta.github.io/2016/06/01/2016-03-17-Mysql-install/"/>
+    <id>http://ncutsta.github.io/2016/06/01/2016-03-17-Mysql-install/</id>
+    <published>2016-06-01T06:29:24.985Z</published>
+    <updated>2016-03-18T05:08:26.350Z</updated>
+    
+    <content type="html">&lt;p&gt;参加比赛，数据量比较大，直接用R/Python处理数据不是很好，还是安一个数据库软件比较好，个人使用，安装一个Mysql就可以了，毕竟是个人使用，实在没必要安那些巨大的数据库软件，而且Mysql的功能也还不错。&lt;/p&gt;
+&lt;p&gt;安装使用Mysql遇到了一系列的坑！幸亏有万能的搜索，顺利带我不断填上一个一个坑，仅以此贴记录我所遇到的坑，愿后人观之，有所帮助。&lt;/p&gt;
+&lt;p&gt;1.&lt;strong&gt;安装版本坑！&lt;/strong&gt;初次安装Mysql，直接给我装C盘了，都不让改的，太霸道了，直接卸了，后来到官网下载了可以选择安装路径的版本，以下是安装简要步骤。&lt;/p&gt;
+&lt;p&gt;首先到官网下载&lt;a href=&quot;http://www.mysql.com/downloads/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Mysql软件&lt;/a&gt;，官网提供了商业版和社区版，我们选择社区版，也就是最下面的那个：&lt;strong&gt;MySQL Community Edition (GPL)&lt;/strong&gt;。点击打开之后，有一系列的下载选择,我们选择&lt;strong&gt;MySQL on Windows (Installer &amp;amp; Tools)&lt;/strong&gt;，这个版本可以直接安装，不需要解压缩。点击打开后，我们选择&lt;strong&gt;MySQL Installer&lt;/strong&gt;，我们看到有两个版本，一个是Web版，一个是普通版，随便点击一个下载即可。&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;http://7xo51k.com1.z0.glb.clouddn.com/Mysql360%E6%88%AA%E5%9B%BE20160317141415155.jpg-wx&quot;&gt;&lt;/div&gt;
+
+&lt;p&gt;下载之后，双击打开软件安装即可，如果不更改安装目录，默认的安装目录是在C盘。详细的安装过程可以参考这篇&lt;a href=&quot;http://jingyan.baidu.com/article/e6c8503c06f9cee54e1a187c.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;文章&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;安装完毕后，在开始菜单栏中找到Mysql，就表示安装成功了，点击mysql serve 5.7下任何一个都可以打开Mysql界面。初始界面要求你输入密码，输入自己的密码即可。如果输入密码后，软件闪退，查看一下Mysql服务是否打开。&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;http://7xo51k.com1.z0.glb.clouddn.com/Mysqlmysql2.jpg-wx&quot;&gt;&lt;/div&gt;
+
+&lt;p&gt;我们通过cmd来启动/关闭Mysql服务，打开cmd（win+R快捷键，输入cmd回车即可），在cmd中输入 &lt;code&gt;net start mysql&lt;/code&gt;，来启动Mysql。其他功能实现请查看&lt;a href=&quot;http://blog.sina.com.cn/s/blog_92d6b8be0100wee2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;参考资料1&lt;/a&gt;。我在输入&lt;code&gt;net start mysql&lt;/code&gt;后，cmd提示服务名无效。后来通过查看服务名，得知mysql的服务名为MYSQL57，因此，在启动时，输入命令为&lt;code&gt;net start mysql57&lt;/code&gt; 就可以正常启动了，关闭服务器的方法也是类似。如何查找服务名请查看&lt;a href=&quot;http://www.jb51.net/os/windows/305941.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;参考资料2&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;2.导入数据坑！安装完软件后，我们需要把csv格式的数据导入到数据库中，以便之后的操作，在导入数据过程中又遇到了坑！以下是正确的导入代码：Mysql命令结尾要填;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;show databases; #显示已有的数据库
+create database tianchi; #创建一个数据库tianchi
+use tianchi;  #使用数据库tianchi
+create table action (
+user_id varchar(36),
+song_id varchar(36),
+gmt_create varchar(15),
+action_type varchar(3),
+Ds varchar(10)
+); #创建用户行为表
+load data infile &amp;apos;D:\\project\\tianchi\\data\\mars_tianchi_user_actions.csv&amp;apos; 
+into table `action` 
+fields terminated by &amp;apos;,&amp;apos; optionally enclosed by &amp;apos;&amp;quot;&amp;apos; escaped by &amp;apos;&amp;quot;&amp;apos; 
+lines terminated by &amp;apos;\n&amp;apos;; #导入csv数据,文件路径不能包含中文
+desc action; #显示表信息
+# alter table action change Ds Ds varchar(10); 修改表中字段属性，仅作为例子
+select * from action limit 5; 查看前5行
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;在导入数据时，软件提示：&lt;code&gt;1290- The MySQL server is running with the --secure-file-priv option so it cannot execute this statement&lt;/code&gt;,这时我们需要打开Data文件夹（安装软件时设定的Data位置）中的my.ini文件（如果是默认安装，则在C:\ProgramData\MySQL\MySQL Server 5.6\my.ini，注意ProgramData为隐藏文件夹），复制一份作为备份，然后将里面的类似的一行 secure-file-priv=”C:/ProgramData/MySQL/MySQL Server 5.6/Uploads” 删除。关闭服务，再启动mysql服务，就可以了。&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;http://7xo51k.com1.z0.glb.clouddn.com/Mysqlmysql3.jpg-wx&quot;&gt;&lt;/div&gt;
+
+&lt;p&gt;3.使用Mysql管理数据很方便，但是要查看数据就不是很方便了，我们可以安装一个navicat for mysql,可以很方便的查看管理数据。使用教程 &lt;a href=&quot;http://www.jb51.net/softjc/290292.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;navicat连接mysql详细图文教程&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这只是初步的坑，后续的坑我会继续填上去的。&lt;/p&gt;
+&lt;h2 id=&quot;参考资料&quot;&gt;&lt;a href=&quot;#参考资料&quot; class=&quot;headerlink&quot; title=&quot;参考资料&quot;&gt;&lt;/a&gt;参考资料&lt;/h2&gt;&lt;p&gt;【1】 &lt;a href=&quot;http://blog.sina.com.cn/s/blog_92d6b8be0100wee2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;MySQL Command Line Client&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;【2】 &lt;a href=&quot;http://www.jb51.net/os/windows/305941.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Win7系统中的服务查看、关闭、启动操作图文教程&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;【3】 &lt;a href=&quot;http://blog.hehehehehe.cn/a/1854.htm&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;mysql 显示所有的数据库&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;【4】 &lt;a href=&quot;http://www.jb51.net/article/32074.htm&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;MySQL如何导入csv格式数据文件解决方案&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      Mysql的安装过程
+    
+    </summary>
+    
+      <category term="学习" scheme="http://ncutsta.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="软件安装" scheme="http://ncutsta.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Plotly 交互式可视化简介</title>
+    <link href="http://ncutsta.github.io/2016/06/01/2015-12-27-R-plotly/"/>
+    <id>http://ncutsta.github.io/2016/06/01/2015-12-27-R-plotly/</id>
+    <published>2016-06-01T06:29:24.982Z</published>
+    <updated>2016-02-29T09:42:32.582Z</updated>
+    
+    <content type="html">&lt;p&gt;利用R实现交互式可视化结果，除了rCharts包，还有plotly包。&lt;/p&gt;
+&lt;p&gt;plotly是一款在线分析和数据可视化分析工具，同时它还提供了各种应用程序接口(API),包括R，Python还有Matlab，使得这些程序可以调用plotly。这篇文章主要介绍使用R的Plotly接口。&lt;/p&gt;
+&lt;p&gt;首先下载并安装plotly，然后可以运行官方给的示例，查看效果。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;install.packages(&amp;quot;plotly&amp;quot;)
+library(plotly)
+p &amp;lt;- plot_ly(midwest, x = percollege, color = state, type = &amp;quot;box&amp;quot;)
+p
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;画图结果是5个箱线图，鼠标放在箱线图中，会显示对应的分位数。&lt;/p&gt;
+&lt;p&gt;同rCharts不同，plotly支持ggplot语法，用ggplotly函数就可以使用对应的ggplot函数，plotly支持管道操作符。当然plotly还有其他的绘图函数，在&lt;a href=&quot;https://plot.ly/r/reference/#Layout_and_layout_style_objects&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;官方网站&lt;/a&gt;都有详细的文档介绍，可以通过查阅相关文档来进行绘图处理。官网给的文档资料非常详细，需要耐心细致的学习。&lt;/p&gt;
+&lt;p&gt;同时我们可以将plotly图形通过knitr嵌入到报告中，官方示例如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;library(plotly)
+p &amp;lt;- plot_ly(economics, x = date, y = unemploy / pop)
+p
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这样我们在html报告中就可以通过交互式的方式来实现对数据的分析观察。&lt;/p&gt;
+&lt;p&gt;Plotly也给了Python和Matlab的接口，介绍文档也是十分的详细，在此不再赘述，可以参考Plotly的官网介绍。&lt;/p&gt;
+&lt;h2 id=&quot;参考资料&quot;&gt;&lt;a href=&quot;#参考资料&quot; class=&quot;headerlink&quot; title=&quot;参考资料&quot;&gt;&lt;/a&gt;参考资料&lt;/h2&gt;&lt;p&gt;【1】&lt;a href=&quot;https://plot.ly/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Plotly官网&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;【1】&lt;a href=&quot;https://plot.ly/r/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Plotly for R 2.0 library&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      利用Plotly实现数据交互式可视化
+    
+    </summary>
+    
+      <category term="学习" scheme="http://ncutsta.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="可视化" scheme="http://ncutsta.github.io/tags/%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://ncutsta.github.io/2016/06/01/2015-11-10-R-dplyr-2/"/>
+    <id>http://ncutsta.github.io/2016/06/01/2015-11-10-R-dplyr-2/</id>
+    <published>2016-06-01T06:29:24.958Z</published>
+    <updated>2016-04-27T15:02:43.622Z</updated>
+    
+    <content type="html">&lt;hr&gt;
+&lt;p&gt;layout: post&lt;br&gt;title:  R dplyr包学习（下）&lt;br&gt;category: 学习&lt;br&gt;tags:  数据处理&lt;br&gt;keywords: dplyr &lt;/p&gt;
+&lt;h2 id=&quot;description-利用dplyr包处理数据&quot;&gt;&lt;a href=&quot;#description-利用dplyr包处理数据&quot; class=&quot;headerlink&quot; title=&quot;description: 利用dplyr包处理数据&quot;&gt;&lt;/a&gt;description: 利用dplyr包处理数据&lt;/h2&gt;&lt;p&gt;介绍完dplyr包中的基础函数后，我们可以看看dplyr包中的一些高级函数，这些函数的作用有：数据连接，数据分组，数据合并，数据框随机抽取数据行，管道操作符。对于数据框的每一列数据进行统计计算&lt;br&gt;可以用plyr包中的colwise函数。&lt;/p&gt;
+&lt;h3 id=&quot;数据的连接&quot;&gt;&lt;a href=&quot;#数据的连接&quot; class=&quot;headerlink&quot; title=&quot;数据的连接&quot;&gt;&lt;/a&gt;数据的连接&lt;/h3&gt;&lt;p&gt;学过数据库对这个应该不陌生。这里主要介绍4种连接方式及其作用,首先建立测试数据。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;id &amp;lt;- c(1:5)
+gender &amp;lt;- c(rep(c(0,1),2),1)
+score &amp;lt;- rnorm(5,90,1)
+grade &amp;lt;- sample(c(2014,2015),size=5,replace=T)
+df1 &amp;lt;- data.frame(id,gender)
+df2 &amp;lt;- data.frame(score,id,grade)[-5,]
+df1
+  id gender
+1  1      0
+2  2      1
+3  3      0
+4  4      1
+5  5      1
+df2
+ score id grade
+1 90.52767  1  2015
+2 89.74863  2  2015
+3 89.29254  3  2015
+4 90.57953  4  2015
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Inner_join：  Inner_join(x,y,by=””)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;功能：返回x中与y相匹配的所有行，及x与y的所有列&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;inner_join(df1,df2,by=&amp;quot;id&amp;quot;)
+  id   gender score grade
+1  1      0 90.52767  2015
+2  2      1 89.74863  2015
+3  3      0 89.29254  2015
+4  4      1 90.57953  2015
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Left_join：Left_join(x,y,by=””)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;功能：返回x的所有行及x与y的所有列，x中有而y中没有的以NA表示&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;left_join(df1,df2,by = &amp;quot;id&amp;quot;)
+  id gender    score grade
+1  1      0 90.52767  2015
+2  2      1 89.74863  2015
+3  3      0 89.29254  2015
+4  4      1 90.57953  2015
+5  5      1       NA    NA
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Semi_join：Semi_join(x,y,by=””)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;返回x中与y匹配的所有行，仅保留x中的所有列&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;semi_join(df1,df2,by = &amp;quot;id&amp;quot;)
+  id gender
+1  1      0
+2  2      1
+3  3      0
+4  4      1
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Anti_join:Anti_join(x,y,by=””)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;功能：返回x中与y不匹配的行，仅保留x中的所有列&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;anti_join(df1,df2,by = &amp;quot;id&amp;quot;)
+  id gender
+1  5      1
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;数据的分组&quot;&gt;&lt;a href=&quot;#数据的分组&quot; class=&quot;headerlink&quot; title=&quot;数据的分组&quot;&gt;&lt;/a&gt;数据的分组&lt;/h3&gt;&lt;p&gt;对tbl对象或data.frame分组采用group_by函数进行分组，group_by(.data, …)。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;by_vs_am &amp;lt;- group_by(mtcars, vs, am)
+by_vs_am
+Source: local data frame [32 x 11]
+Groups: vs, am
+
+    mpg cyl  disp  hp drat    wt  qsec vs am gear carb
+1  21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4
+2  21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4
+3  22.8   4 108.0  93 3.85 2.320 18.61  1  1    4    1
+4  21.4   6 258.0 110 3.08 3.215 19.44  1  0    3    1
+5  18.7   8 360.0 175 3.15 3.440 17.02  0  0    3    2
+6  18.1   6 225.0 105 2.76 3.460 20.22  1  0    3    1
+7  14.3   8 360.0 245 3.21 3.570 15.84  0  0    3    4
+8  24.4   4 146.7  62 3.69 3.190 20.00  1  0    4    2
+9  22.8   4 140.8  95 3.92 3.150 22.90  1  0    4    2
+10 19.2   6 167.6 123 3.92 3.440 18.30  1  0    4    4
+..  ... ...   ... ...  ...   ...   ... .. ..  ...  ...
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;分组后的数据会提示有group_by，之后就可以对数据进行分组汇总。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;by_vs &amp;lt;- summarise(by_vs_am, n = n()) #进行分组计数
+by_vs
+Source: local data frame [4 x 3]
+Groups: vs
+
+  vs am  n
+1  0  0 12
+2  0  1  6
+3  1  0  7
+4  1  1  7
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;对已经分组的数据，可以采用ungroup来消除分组&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;summarise(by_vs, n = sum(n))
+Source: local data frame [2 x 2]
+
+  vs  n
+1  0 18
+2  1 14
+summarise(ungroup(by_vs), n = sum(n))
+Source: local data frame [1 x 1]
+
+   n
+1 32
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;也可以在原数据中添加分组变量&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;group_by(mtcars, vsam = vs + am)
+Source: local data frame [32 x 12]
+Groups: vsam
+
+    mpg cyl  disp  hp drat    wt  qsec vs am gear carb vsam
+1  21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4    1
+2  21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4    1
+3  22.8   4 108.0  93 3.85 2.320 18.61  1  1    4    1    2
+4  21.4   6 258.0 110 3.08 3.215 19.44  1  0    3    1    1
+……
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;管道操作符：-gt&quot;&gt;&lt;a href=&quot;#管道操作符：-gt&quot; class=&quot;headerlink&quot; title=&quot;管道操作符：%&amp;gt;%&quot;&gt;&lt;/a&gt;管道操作符：%&amp;gt;%&lt;/h3&gt;&lt;p&gt;操作符的作用是将左边的数据传递到右边的函数中，可以将上一个函数的输出作为一下函数的输入。管道操作符可以使你顺着思路进行数据处理，而不必不断地进行数据框的建立&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;m1 &amp;lt;- group_by(mtcars,cyl,vs,am)
+m2 &amp;lt;- select(m1,disp,mpg)
+m3 &amp;lt;- summarise(m2,mdisp = mean(disp),mmpg = mean(mpg))
+m4 &amp;lt;- filter(m3,mdisp &amp;gt; 120 &amp;amp; mmpg &amp;gt;20)
+m4
+Source: local data frame [3 x 5]
+Groups: cyl, vs
+
+  cyl vs am    mdisp     mmpg
+1   4  0  1 120.3000 26.00000
+2   4  1  0 135.8667 22.90000
+3   6  0  1 155.0000 20.56667
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;同样的操作可以使用%&amp;gt;%操作符&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mtcars %&amp;gt;% 
++     group_by(cyl,vs,am) %&amp;gt;%
++     select(disp,mpg) %&amp;gt;%
++     summarise(mdisp = mean(disp),mmpg = mean(mpg)) %&amp;gt;%
++     filter(mdisp &amp;gt; 120 &amp;amp; mmpg &amp;gt; 20)
+Source: local data frame [3 x 5]
+Groups: cyl, vs
+
+  cyl vs am    mdisp     mmpg
+1   4  0  1 120.3000 26.00000
+2   4  1  0 135.8667 22.90000
+3   6  0  1 155.0000 20.56667
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;do（不太明白）&quot;&gt;&lt;a href=&quot;#do（不太明白）&quot; class=&quot;headerlink&quot; title=&quot;do（不太明白）&quot;&gt;&lt;/a&gt;do（不太明白）&lt;/h3&gt;&lt;p&gt;对分组数据进行函数操作&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;by_cyl &amp;lt;- group_by(mtcars, cyl)
+do(by_cyl, head(., 2))
+Source: local data frame [6 x 11]
+Groups: cyl
+
+   mpg cyl  disp  hp drat    wt  qsec vs am gear carb
+1 22.8   4 108.0  93 3.85 2.320 18.61  1  1    4    1
+2 24.4   4 146.7  62 3.69 3.190 20.00  1  0    4    2
+3 21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4
+4 21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4
+5 18.7   8 360.0 175 3.15 3.440 17.02  0  0    3    2
+6 14.3   8 360.0 245 3.21 3.570 15.84  0  0    3    4
+models &amp;lt;- by_cyl %&amp;gt;% do(mod = lm(mpg ~ disp, data = .))
+models
+Source: local data frame [3 x 2]
+Groups: &amp;lt;by row&amp;gt;
+
+   cyl     mod
+1   4 &amp;lt;S3:lm&amp;gt;
+2   6 &amp;lt;S3:lm&amp;gt;
+3   8 &amp;lt;S3:lm&amp;gt;
+models$mod
+[[1]]
+
+Call:
+lm(formula = mpg ~ disp, data = .)
+
+Coefficients:
+(Intercept)         disp  
+ 40.8720      -0.1351  
+
+
+[[2]]
+
+Call:
+lm(formula = mpg ~ disp, data = .)
+
+Coefficients:
+(Intercept)         disp  
+ 19.081987     0.003605  
+
+
+[[3]]
+
+Call:
+lm(formula = mpg ~ disp, data = .)
+
+Coefficients:
+(Intercept)         disp  
+  22.03280     -0.01963  
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;colwise函数-plyr包&quot;&gt;&lt;a href=&quot;#colwise函数-plyr包&quot; class=&quot;headerlink&quot; title=&quot;colwise函数(plyr包)&quot;&gt;&lt;/a&gt;colwise函数(plyr包)&lt;/h3&gt;&lt;p&gt;自动对数据框每一列调用函数&lt;/p&gt;
+&lt;p&gt;colwise(function)(data.frame)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;colwise(n_distinct)(by_cyl)
+   mpg disp hp drat wt qsec vs am gear carb
+1  25   27 22   22 29   30  2  2    3    6
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;Between函数&quot;&gt;&lt;a href=&quot;#Between函数&quot; class=&quot;headerlink&quot; title=&quot;Between函数&quot;&gt;&lt;/a&gt;Between函数&lt;/h3&gt;&lt;p&gt;between(x, left, right)#This is a shortcut for x &amp;gt;= left &amp;amp; x &amp;lt;= right&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;between(mtcars$mpg,21,25)
+[1]  TRUE  TRUE  TRUE  TRUE FALSE FALSE FALSE  TRUE  TRUE FALSE FALSE FALSE FALSE
+[14] FALSE FALSE FALSE FALSE FALSE FALSE FALSE  TRUE FALSE FALSE FALSE FALSE FALSE
+[27] FALSE FALSE FALSE FALSE FALSE  TRUE
+mtcars[between(mtcars$mpg,21,25),]
+                mpg cyl  disp  hp drat    wt  qsec vs am gear carb
+Mazda RX4      21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4
+Mazda RX4 Wag  21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4
+Datsun 710     22.8   4 108.0  93 3.85 2.320 18.61  1  1    4    1
+Hornet 4 Drive 21.4   6 258.0 110 3.08 3.215 19.44  1  0    3    1
+Merc 240D      24.4   4 146.7  62 3.69 3.190 20.00  1  0    4    2
+Merc 230       22.8   4 140.8  95 3.92 3.150 22.90  1  0    4    2
+Toyota Corona  21.5   4 120.1  97 3.70 2.465 20.01  1  0    3    1
+Volvo 142E     21.4   4 121.0 109 4.11 2.780 18.60  1  1    4    2
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;同样也可以用filter实现&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;filter(mtcars,mpg &amp;gt;= 21 &amp;amp; mpg &amp;lt;= 25)
+   mpg cyl  disp  hp drat    wt  qsec vs am gear carb
+1 21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4
+2 21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4
+3 22.8   4 108.0  93 3.85 2.320 18.61  1  1    4    1
+4 21.4   6 258.0 110 3.08 3.215 19.44  1  0    3    1
+5 24.4   4 146.7  62 3.69 3.190 20.00  1  0    4    2
+6 22.8   4 140.8  95 3.92 3.150 22.90  1  0    4    2
+7 21.5   4 120.1  97 3.70 2.465 20.01  1  0    3    1
+8 21.4   4 121.0 109 4.11 2.780 18.60  1  1    4    2
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;合并&quot;&gt;&lt;a href=&quot;#合并&quot; class=&quot;headerlink&quot; title=&quot;合并&quot;&gt;&lt;/a&gt;合并&lt;/h3&gt;&lt;p&gt;行合并：Bind_rows&lt;/p&gt;
+&lt;p&gt;列合并：bind_cols：前提是行数都必须相等，因为这个是按照位置进行合并&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;one &amp;lt;- mtcars[1:4, ]
+two &amp;lt;- mtcars[11:14, ]
+bind_rows(one, two)
+bind_cols(one, two)
+combine(x,y)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;对x,y变成列表形式，进行合并&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;combine(one,two)
+[[1]]
+[1] 21.0 21.0 22.8 21.4
+[[2]]
+[1] 6 6 4 6
+[[3]]
+[1] 160 160 108 258
+……
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;Location函数&quot;&gt;&lt;a href=&quot;#Location函数&quot; class=&quot;headerlink&quot; title=&quot;Location函数&quot;&gt;&lt;/a&gt;Location函数&lt;/h3&gt;&lt;p&gt;显示内存中的数据框信息，有助于理解dlpyr包如何对数据框进行操作&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;location(mtcars)
+&amp;lt;07FC9450&amp;gt;
+Variables:
+ * mpg:       &amp;lt;07EACCF0&amp;gt;
+ * cyl:       &amp;lt;07AF85B0&amp;gt;
+ * disp:      &amp;lt;07E9F480&amp;gt;
+ * hp:        &amp;lt;07EF22E0&amp;gt;
+ * drat:      &amp;lt;07D3E8C0&amp;gt;
+ * wt:        &amp;lt;07F07B68&amp;gt;
+ * qsec:      &amp;lt;078A87B0&amp;gt;
+ * vs:        &amp;lt;07D1F450&amp;gt;
+ * am:        &amp;lt;07D2DCA8&amp;gt;
+ * gear:      &amp;lt;07D31720&amp;gt;
+ * carb:      &amp;lt;07D35710&amp;gt;
+Attributes:
+ * names:     &amp;lt;07FC93F8&amp;gt;
+ * row.names: &amp;lt;077E50B8&amp;gt;
+ * class:     &amp;lt;0F3A8D80&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;Changes函数&quot;&gt;&lt;a href=&quot;#Changes函数&quot; class=&quot;headerlink&quot; title=&quot;Changes函数&quot;&gt;&lt;/a&gt;Changes函数&lt;/h3&gt;&lt;p&gt;比较两个数据框之间的区别，changes(x, y)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mtcars2 &amp;lt;- mutate(mtcars, cyl2 = cyl * 2)
+changes(mtcars, mtcars)
+&amp;lt;identical&amp;gt;
+changes(mtcars, mtcars2)
+Changed variables:
+          old     new     
+cyl2      &amp;lt;added&amp;gt; 0F6A60C8
+
+Changed attributes:
+          old      new     
+names     07FC93F8 0C769E60
+row.names 077E50B8 18129828
+class     0F3A8D80 0FE47218
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;tally函数：计数&quot;&gt;&lt;a href=&quot;#tally函数：计数&quot; class=&quot;headerlink&quot; title=&quot;tally函数：计数&quot;&gt;&lt;/a&gt;tally函数：计数&lt;/h3&gt;&lt;p&gt;tally(x, wt, sort = FALSE),x是tabl对象或数据框，wt是权重变量，sort是否排序，排序是降序排序&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mtcars2 &amp;lt;- group_by(mtcars,cyl)
+tally(mtcars,wt = cyl,sort= T)
+    n
+1 198
+tally(mtcars2,wt = cyl,sort= T)
+Source: local data frame [3 x 2]
+
+   cyl   n
+1   8 112
+2   4  44
+3   6  42
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;如果没有加权变量，则是计数&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;tally(mtcars , sort= T)
+   n
+1 32
+tally(mtcars2 , sort= T)
+Source: local data frame [3 x 2]
+  cyl  n
+1   8 14
+2   4 11
+3   6  7
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;count(x, …, wt = NULL, sort = FALSE)&lt;br&gt;…,vars    Variables to group by&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;不分组，不加权    &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;count(mtcars2,sort = T)
+Source: local data frame [1 x 1]
+
+   n
+1 32
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;分组，不加权&lt;/p&gt;
+&lt;p&gt;  count(mtcars,cyl,sort=T)&lt;br&gt;  Source: local data frame [3 x 2]&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cyl  n
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;  1   8 14&lt;br&gt;  2   4 11&lt;br&gt;  3   6  7&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;既分组又加权&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;count(mtcars,cyl, wt = cyl ,sort = T)
+Source: local data frame [3 x 2]
+  cyl   n
+1   8 112
+2   4  44
+3   6  42
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Count比tally更灵活：count可以在函数中进行指定分组变量，无须先分组。类似的有一个group_size，但也没有这个灵活。&lt;/p&gt;
+&lt;h3 id=&quot;Cum系列函数&quot;&gt;&lt;a href=&quot;#Cum系列函数&quot; class=&quot;headerlink&quot; title=&quot;Cum系列函数&quot;&gt;&lt;/a&gt;Cum系列函数&lt;/h3&gt;&lt;p&gt;Cumall()是否都满足要求，这个是累积函数，查询每个点是否累积满足要求，类似于求概率分布函数&lt;br&gt;Cumany() 是否有一个满足要求&lt;br&gt;Cummean() 累积均值&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mtcars$mpg
+ [1] 21.0 21.0 22.8 21.4 18.7 18.1 14.3 24.4 22.8 19.2 17.8 16.4 17.3 15.2 10.4 10.4
+[17] 14.7 32.4 30.4 33.9 21.5 15.5 15.2 13.3 19.2 27.3 26.0 30.4 15.8 19.7 15.0 21.4
+cumall(mtcars$mpg &amp;lt; 30)
+ [1]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+[14]  TRUE  TRUE  TRUE  TRUE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+[27] FALSE FALSE FALSE FALSE FALSE FALSE
+cumany(mtcars$mpg &amp;lt; 30)
+[1] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[17] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+cumany(mtcars$mpg &amp;lt; 20)
+[1] FALSE FALSE FALSE FALSE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+[14]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+[27]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+cummean(mtcars$mpg)
+ [1] 21.00000 21.00000 21.60000 21.55000 20.98000 20.50000 19.61429 20.21250 20.50000
+ [10] 20.37000 20.13636 19.82500 19.63077 19.31429 18.72000 18.20000 17.99412 18.79444
+ [19] 19.40526 20.13000 20.19524 19.98182 19.77391 19.50417 19.49200 19.79231 20.02222
+ [28] 20.39286 20.23448 20.21667 20.04839 20.09063
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;distinct-函数&quot;&gt;&lt;a href=&quot;#distinct-函数&quot; class=&quot;headerlink&quot; title=&quot;distinct(函数&quot;&gt;&lt;/a&gt;distinct(函数&lt;/h3&gt;&lt;p&gt;查找变量值不同的行，distinct(.data, …)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;df &amp;lt;- data.frame(
+  x = sample(10, 100, rep = TRUE),
+  y = sample(10, 100, rep = TRUE)
+)
+nrow(df)
+nrow(distinct(df))
+distinct(df, x)
+distinct(df, y)
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;set系列&quot;&gt;&lt;a href=&quot;#set系列&quot; class=&quot;headerlink&quot; title=&quot;set系列&quot;&gt;&lt;/a&gt;set系列&lt;/h3&gt;&lt;p&gt;intersect(x, y, …)&lt;br&gt;查看x与y共有的数据行&lt;/p&gt;
+&lt;p&gt;union(x, y, …)&lt;br&gt;x与y行合并，共有的行只出现一次&lt;/p&gt;
+&lt;p&gt;setdiff(x, y, …)&lt;br&gt;x中独有的数据行&lt;/p&gt;
+&lt;p&gt;setequal(x, y, …)&lt;br&gt;查看x和y差哪些数据行&lt;/p&gt;
+&lt;h3 id=&quot;从数据框中随机抽取数据行&quot;&gt;&lt;a href=&quot;#从数据框中随机抽取数据行&quot; class=&quot;headerlink&quot; title=&quot;从数据框中随机抽取数据行&quot;&gt;&lt;/a&gt;从数据框中随机抽取数据行&lt;/h3&gt;&lt;p&gt;sample_n(tbl, size, replace = FALSE, weight = NULL, .env = parent.frame())&lt;br&gt;size 个数  &lt;/p&gt;
+&lt;p&gt;sample_frac(tbl, size = 1, replace = FALSE, weight = NULL,&lt;br&gt;  .env = parent.frame())&lt;br&gt;Sample_frac抽取数据框行数的size倍。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; by_cyl &amp;lt;- mtcars %&amp;gt;% group_by(cyl)
+\#Sample fixed number per group
+sample_n(mtcars, 10)
+sample_n(mtcars, 50, replace = TRUE)
+sample_n(mtcars, 10, weight = mpg)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;可以对每个组进行分层抽样，但是抽样数大于层内样本个数时，需要将replace设置为T&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sample_n(by_cyl, 3)
+sample_n(by_cyl, 10, replace = TRUE)
+sample_n(by_cyl, 3, weight = mpg / mean(mpg))
+sample_frac(mtcars, 0.1)
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;参考资料&quot;&gt;&lt;a href=&quot;#参考资料&quot; class=&quot;headerlink&quot; title=&quot;参考资料&quot;&gt;&lt;/a&gt;参考资料&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Dplyr包文档&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://ddswhu.com/2015/02/05/dplyr-data-clean-manipulation/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;使用 dplyr 包进行数据操作与清洗&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://bbs.pinggu.org/thread-3514627-1-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;R语言扩展包dplyr笔记 （转载）&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;p&gt;layout: post&lt;br&gt;title:  R dplyr包学习（下）&lt;br&gt;category: 学习&lt;br&gt;tags:  数据处理&lt;br&gt;keywords: dplyr &lt;/p&gt;
+&lt;h2 id=&quot;description-利用dplyr包处理数据&quot;&gt;&lt;a hr
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>R dplyr包学习（上）</title>
+    <link href="http://ncutsta.github.io/2016/06/01/2015-11-10-R-dplyr-1/"/>
+    <id>http://ncutsta.github.io/2016/06/01/2015-11-10-R-dplyr-1/</id>
+    <published>2016-06-01T06:29:24.955Z</published>
+    <updated>2016-02-29T09:42:32.556Z</updated>
+    
+    <content type="html">&lt;p&gt;虽然R中的基础函数就可以满足对数据的各种操作，但当数据量大或筛选条件较多时，采用基础函数就显得效率低下。对此，大神Hadley Wickham 表示不满意，于是就开发出plyr包，并对其进一步优化，诞生了dplyr包。这个包采用C++编写，处理速度相当快，可以与python中的pandas库相媲美，关键是语法特别简单，以往冗长的代码用简单的一个函数就可以解决，简直就是数据处理的福音，好的不能更赞了！&lt;/p&gt;
+&lt;p&gt;在dplyr包中一般将data.frame转换为tbl_df,方便操作,这个转换可以通过tbl_df函数实现。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ds &amp;lt;- tbl_df(mtcars)
+ds
+Source: local data frame [32 x 11]
+    mpg cyl  disp  hp drat    wt  qsec vs am gear carb
+1  21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4
+2  21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4
+3  22.8   4 108.0  93 3.85 2.320 18.61  1  1    4    1
+4  21.4   6 258.0 110 3.08 3.215 19.44  1  0    3    1
+5  18.7   8 360.0 175 3.15 3.440 17.02  0  0    3    2
+6  18.1   6 225.0 105 2.76 3.460 20.22  1  0    3    1
+7  14.3   8 360.0 245 3.21 3.570 15.84  0  0    3    4
+8  24.4   4 146.7  62 3.69 3.190 20.00  1  0    4    2
+9  22.8   4 140.8  95 3.92 3.150 22.90  1  0    4    2
+10 19.2   6 167.6 123 3.92 3.440 18.30  1  0    4    4
+..  ... ...   ... ...  ...   ...   ... .. ..  ...  ...
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;可以看到转换后的数据并不完整显示，这是因为tbl对象的展示同电脑屏幕相适应。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;class(ds)
+[1] &amp;quot;tbl_df&amp;quot;     &amp;quot;tbl&amp;quot;        &amp;quot;data.frame&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;查看ds数据类型，发现有三种类型。&lt;/p&gt;
+&lt;p&gt;介绍完数据类型后，我们可以看一下dplyr包中数据基本操作函数，共有5个函数。&lt;/p&gt;
+&lt;h3 id=&quot;1-选取符合条件的数据行：filter&quot;&gt;&lt;a href=&quot;#1-选取符合条件的数据行：filter&quot; class=&quot;headerlink&quot; title=&quot;1. 选取符合条件的数据行：filter&quot;&gt;&lt;/a&gt;1. 选取符合条件的数据行：filter&lt;/h3&gt;&lt;p&gt;filter(.data, …)，.data是data.frame或tbl对象，…是筛选条件&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ds1 &amp;lt;- filter(ds,cyl == 8)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;查看全部ds1可以用as.data.frame(ds1)或View(ds1)。&lt;/p&gt;
+&lt;p&gt;我们也可以直接对数据框mtcars操作：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;filter(mtcars, cyl == 8)
+    mpg cyl  disp  hp drat    wt  qsec vs am gear carb
+1  18.7   8 360.0 175 3.15 3.440 17.02  0  0    3    2
+2  14.3   8 360.0 245 3.21 3.570 15.84  0  0    3    4
+3  16.4   8 275.8 180 3.07 4.070 17.40  0  0    3    3
+4  17.3   8 275.8 180 3.07 3.730 17.60  0  0    3    3
+......
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;2-选取符合条件的数据列：select&quot;&gt;&lt;a href=&quot;#2-选取符合条件的数据列：select&quot; class=&quot;headerlink&quot; title=&quot;2. 选取符合条件的数据列：select&quot;&gt;&lt;/a&gt;2. 选取符合条件的数据列：select&lt;/h3&gt;&lt;p&gt;select(.data, …)&lt;/p&gt;
+&lt;p&gt;参数解释同上，但是select函数中有7个内部条件函数可供使用，这些函数仅仅限于在select函数中使用。&lt;/p&gt;
+&lt;p&gt;条件函数：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;•    starts_with(x, ignore.case = TRUE): names starts with x
+•    ends_with(x, ignore.case = TRUE): names ends in x
+•    contains(x, ignore.case = TRUE): selects all variables whose name contains x
+•    matches(x, ignore.case = TRUE): selects all variables whose name matches the regular expression x
+•    num_range(&amp;quot;x&amp;quot;, 1:5, width = 2): selects all variables (numerically) from x01 to x05.
+•    one_of(&amp;quot;x&amp;quot;, &amp;quot;y&amp;quot;, &amp;quot;z&amp;quot;): selects variables provided in a character vector.
+•    everything(): selects all variables.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt; 保留变量&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;iris &amp;lt;- tbl_df(iris)  
+select(iris, starts_with(&amp;quot;Petal&amp;quot;))
+select(iris, ends_with(&amp;quot;Width&amp;quot;))
+select(iris, contains(&amp;quot;etal&amp;quot;))
+select(iris, matches(&amp;quot;.t.&amp;quot;))
+select(iris, Petal.Length, Petal.Width)
+vars &amp;lt;- c(&amp;quot;Petal.Length&amp;quot;, &amp;quot;Petal.Width&amp;quot;)
+select(iris, one_of(vars))
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;删除变量，加一个-即可。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;select(iris, -starts_with(&amp;quot;Petal&amp;quot;))
+select(iris, -ends_with(&amp;quot;Width&amp;quot;))
+select(iris, -contains(&amp;quot;etal&amp;quot;))
+select(iris, -matches(&amp;quot;.t.&amp;quot;))
+select(iris, -Petal.Length, -Petal.Width)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;重命名变量&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;select(iris, petal_length = Petal.Length)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;重命名变量也可以通过rename函数实现，两者区别在于：采用rename函数时保留所有变量，而select函数仅仅保存重命名变量。&lt;/p&gt;
+&lt;h3 id=&quot;3-对数据框进行排序：arrange&quot;&gt;&lt;a href=&quot;#3-对数据框进行排序：arrange&quot; class=&quot;headerlink&quot; title=&quot;3. 对数据框进行排序：arrange&quot;&gt;&lt;/a&gt;3. 对数据框进行排序：arrange&lt;/h3&gt;&lt;p&gt;arrange(.data,…)，第一个是进行排序的数据，可以是数据框也可以是tbl对象，之后是数据排序的条件，可以是多个条件，默认是升序排序，采用desc进行降序排序。输出结果为数据框。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;arrange(mtcars, cyl, disp)
+    mpg cyl  disp  hp drat    wt  qsec vs am gear carb
+1  33.9   4  71.1  65 4.22 1.835 19.90  1  1    4    1
+2  30.4   4  75.7  52 4.93 1.615 18.52  1  1    4    2
+3  32.4   4  78.7  66 4.08 2.200 19.47  1  1    4    1
+4  27.3   4  79.0  66 4.08 1.935 18.90  1  1    4    1
+......
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;多重条件排序,cyl升序，disp降序。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;arrange(mtcars, cyl,desc(disp))
+    mpg cyl  disp  hp drat    wt  qsec vs am gear carb
+1  24.4   4 146.7  62 3.69 3.190 20.00  1  0    4    2
+2  22.8   4 140.8  95 3.92 3.150 22.90  1  0    4    2
+3  21.4   4 121.0 109 4.11 2.780 18.60  1  1    4    2
+4  26.0   4 120.3  91 4.43 2.140 16.70  0  1    5    2
+......
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;4-添加新变量：mutate&quot;&gt;&lt;a href=&quot;#4-添加新变量：mutate&quot; class=&quot;headerlink&quot; title=&quot;4. 添加新变量：mutate&quot;&gt;&lt;/a&gt;4. 添加新变量：mutate&lt;/h3&gt;&lt;p&gt;mutate(.data,…)，第一个变量是数据框或tbl对象，之后是添加的变量，可以是多个变量。输出结果为数据框。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mutate(mtcars, displ_l = disp / 61.0237)
+    mpg cyl  disp  hp drat    wt  qsec vs am gear carb  displ_l
+1  21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4 2.621932
+2  21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4 2.621932
+3  22.8   4 108.0  93 3.85 2.320 18.61  1  1    4    1 1.769804
+4  21.4   6 258.0 110 3.08 3.215 19.44  1  0    3    1 4.227866
+......
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;与mutate类似的一个函数是transmutate，但mutate函数保留所有变量，而transmutate仅仅保留添加的变量。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;transmute(mtcars, displ_l = disp / 61.0237)
+    displ_l
+1  2.621932
+2  2.621932
+3  1.769804
+4  4.227866
+......
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;5-数据汇总：summarise&quot;&gt;&lt;a href=&quot;#5-数据汇总：summarise&quot; class=&quot;headerlink&quot; title=&quot;5. 数据汇总：summarise&quot;&gt;&lt;/a&gt;5. 数据汇总：summarise&lt;/h3&gt;&lt;p&gt;summarise(.data, …)，第一个变量是数据框或tbl对象，第二个变量是汇总变量，可以是多个汇总变量，汇总函数可以是R中的基础汇总函数，如mean，sd，sum，也可以是dplyr包中的汇总函数，如求观测值数的n，不同观测值个数的n_distinct，第一个观测值first,最后一个观测值last。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;summarise(mtcars, mean = mean(disp))
+      mean
+1 230.7219
+summarise(mtcars, n = n(),dn = n_distinct(cyl),first = first(cyl),last = last(cyl))
+   n dn first last
+1 32  3     6    4
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这5个基础函数涵盖了数据处理的筛选，排序，添加新变量以及变量汇总，相对于基础函数，它们处理数据的效率更高。&lt;/p&gt;
+&lt;h2 id=&quot;参考资料&quot;&gt;&lt;a href=&quot;#参考资料&quot; class=&quot;headerlink&quot; title=&quot;参考资料&quot;&gt;&lt;/a&gt;参考资料&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://blog.csdn.net/young_gy/article/details/48184859&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;R语言包-dplyr_1&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://cos.name/2013/09/a-conversation-with-hadley-wickham/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;大神介绍：COS访谈第九期：HadleyWickham&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;dplyr包自带介绍文档&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://www.xueqing.cc/course/index/view/id/31&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;雪晴数据网：R语言高效数据清理工具包dplyr免费公开课&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    
+    <summary type="html">
+    
+      利用dplyr包处理数据
+    
+    </summary>
+    
+      <category term="学习" scheme="http://ncutsta.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="数据处理" scheme="http://ncutsta.github.io/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>R 利用reshape2实现数据透视表功能</title>
+    <link href="http://ncutsta.github.io/2016/06/01/2015-10-28-R-reshape2-pivot/"/>
+    <id>http://ncutsta.github.io/2016/06/01/2015-10-28-R-reshape2-pivot/</id>
+    <published>2016-06-01T06:29:24.951Z</published>
+    <updated>2016-02-29T09:42:32.554Z</updated>
+    
+    <content type="html">&lt;p&gt;这几天处理数据，经常需要把原始数据进行变形以方便运算，比如长长的数据变成宽宽的数据，宽宽的数据变成长长的数据，总而言之，就是要对数据做一个变形整合。如果一个人要变形，那他应该去韩国，如果一个数据要变形，那它应该来reshape2包。虽然R自身带有reshape函数，但自从有了reshape包，reshape函数倒不引人关注了，再后来，reshape2包替代了reshape包，所以我们现在用的都是reshape2包了。&lt;/p&gt;
+&lt;p&gt;reshape2包还是那位鼎鼎大名的Hadley Wickham 写的，包的质量就不用说了，业界良心啊。这个包对数据的变形有自己的一套思想（流程），甭管你是什么格式的数据（array,list,dataframe）,我先把你揉碎了（melt），之后再把你捏成（cast）各种形状，简直就像用橡皮泥捏东西——捏啥是啥！&lt;/p&gt;
+&lt;p&gt;废话不多说，reshape2包用到的基本就是melt和 &lt;em&gt; cast两个函数，melt负责揉数据，&lt;/em&gt;cast负责捏数据。&lt;/p&gt;
+&lt;h2 id=&quot;揉数据（melt函数）&quot;&gt;&lt;a href=&quot;#揉数据（melt函数）&quot; class=&quot;headerlink&quot; title=&quot;揉数据（melt函数）&quot;&gt;&lt;/a&gt;揉数据（melt函数）&lt;/h2&gt;&lt;h3 id=&quot;数组&quot;&gt;&lt;a href=&quot;#数组&quot; class=&quot;headerlink&quot; title=&quot;数组&quot;&gt;&lt;/a&gt;数组&lt;/h3&gt;&lt;p&gt;对于n维数组（array），melt函数转换后变为n+1列，前n列代表数据的位置信息，第n列代表原始数据中的第n维，最后一列是对应的数值。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;a &amp;lt;- array(c(1:23, NA), c(2,3,4))
+a
+, , 1
+     [,1] [,2] [,3]
+[1,]    1    3    5
+[2,]    2    4    6
+, , 2
+     [,1] [,2] [,3]
+[1,]    7    9   11
+[2,]    8   10   12
+, , 3
+     [,1] [,2] [,3]
+[1,]   13   15   17
+[2,]   14   16   18
+, , 4
+     [,1] [,2] [,3]
+[1,]   19   21   23
+[2,]   20   22   NA
+
+head(melt(a,varnames = c(1,2,3) ,value.name = &amp;quot;value&amp;quot;),5)
+1 2 3 value
+1  1 1 1     1
+2  2 1 1     2
+3  1 2 1     3
+4  2 2 1     4
+5  1 3 1     5
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;注意到原始数据中的NA值也被完整体现出来了，如果想要除去NA值，可以设置na.rm = T.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;melt(a,varnames = c(1,2,3) ,value.name = &amp;quot;value&amp;quot;,na.rm = T)
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;列表&quot;&gt;&lt;a href=&quot;#列表&quot; class=&quot;headerlink&quot; title=&quot;列表&quot;&gt;&lt;/a&gt;列表&lt;/h3&gt;&lt;p&gt;melt函数将列表转为两列，第一列是列表元素，第二列是列表元素名称。如果是嵌套列表，第一列仍然是列表元素，其他列仍然是列表元素名称，列表元素越高级越靠后。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;melt(list(list(1:3), 1, list(as.list(3:4), as.list(1:2))))
+  value L2 L3 L1
+1     1  1 NA  1
+2     2  1 NA  1
+3     3  1 NA  1
+4     1 NA NA  2
+5     3  1  1  3
+6     4  1  2  3
+7     1  2  1  3
+8     2  2  2  3
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;数据框&quot;&gt;&lt;a href=&quot;#数据框&quot; class=&quot;headerlink&quot; title=&quot;数据框&quot;&gt;&lt;/a&gt;数据框&lt;/h3&gt;&lt;p&gt;对于数据框，melt函数的调用格式如下&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;melt(data, id.vars, measure.vars,  variable.name = &amp;quot;variable&amp;quot;, ..., na.rm = FALSE, value.name = &amp;quot;value&amp;quot;,  factorsAsStrings = TRUE)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;data是要变换的数据框,id.vars是每个观测值的标识id变量，mearsure.vars是观测值的变量，变量名和数值各占一列。id.vars也可以写作id，mearsure.vars也可以写作mearsure。这两个参数可以只指定其中一个，剩余的列被当成另外一个参数的值；如果两个都省略，数值型的列被看成观测值，其他的被当成id。variable.name指定mearsure变量名列的名称，value.name指定数值列的名称。&lt;/p&gt;
+&lt;p&gt;先借用一张《R语言实战》中的melt示意图吧!&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;http://7xo51k.com1.z0.glb.clouddn.com/melt.png-wx&quot;&gt;&lt;/div&gt;
+
+&lt;p&gt;我们要揉的原始数据是这样的：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;head(airquality，5)
+  ozone solar.r wind temp month day
+1    41     190  7.4   67     5   1
+2    36     118  8.0   72     5   2
+3    12     149 12.6   74     5   3
+4    18     313 11.5   62     5   4
+5    NA      NA 14.3   56     5   5
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;对它melt后的数据是这样的：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;head(melt(airquality, id=c(&amp;quot;month&amp;quot;, &amp;quot;day&amp;quot;),variable.name = &amp;quot;type&amp;quot;,value.name = &amp;quot;val&amp;quot;))
+  month day  type val
+1     5   1 ozone  41
+2     5   2 ozone  36
+3     5   3 ozone  12
+4     5   4 ozone  18
+5     5   5 ozone  NA
+6     5   6 ozone  28
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;查看一下它的结构，发现type变量里面包含四个水平，也就是原始数据中的ozone，solar.r，wind，temp变量。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;str(melt(airquality, id=c(&amp;quot;month&amp;quot;, &amp;quot;day&amp;quot;),variable.name = &amp;quot;type&amp;quot;,value.name = &amp;quot;val&amp;quot;))
+&amp;apos;data.frame&amp;apos;:    612 obs. of  4 variables:
+$ month: int  5 5 5 5 5 5 5 5 5 5 ...
+$ day  : int  1 2 3 4 5 6 7 8 9 10 ...
+$ type : Factor w/ 4 levels &amp;quot;ozone&amp;quot;,&amp;quot;solar.r&amp;quot;,..: 1 1 1 1 1 1 1 1 1 1 ...
+$ val  : num  41 36 12 18 NA 28 23 19 8 NA ...
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;我们也可以选定两个测量变量&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;head(melt(airquality, id=c(&amp;quot;month&amp;quot;, &amp;quot;day&amp;quot;),measure = c(&amp;quot;ozone&amp;quot;,&amp;quot;wind&amp;quot;),variable.name = &amp;quot;type&amp;quot;,value.name = &amp;quot;val&amp;quot;))#选定测量变量为ozone、wind
+  month day  type val
+1     5   1 ozone  41
+2     5   2 ozone  36
+3     5   3 ozone  12
+4     5   4 ozone  18
+5     5   5 ozone  NA
+6     5   6 ozone  28
+
+str(melt(airquality, id=c(&amp;quot;month&amp;quot;, &amp;quot;day&amp;quot;),measure = c(&amp;quot;ozone&amp;quot;,&amp;quot;wind&amp;quot;),variable.name = &amp;quot;type&amp;quot;,value.name = &amp;quot;val&amp;quot;)))  #选定测量变量为ozone、wind
+&amp;apos;data.frame&amp;apos;:    6 obs. of  4 variables:
+$ month: int  5 5 5 5 5 5
+$ day  : int  1 2 3 4 5 6
+$ type : Factor w/ 2 levels &amp;quot;ozone&amp;quot;,&amp;quot;wind&amp;quot;: 1 1 1 1 1 1
+$ val  : num  41 36 12 18 NA 28
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;捏数据（-cast函数）&quot;&gt;&lt;a href=&quot;#捏数据（-cast函数）&quot; class=&quot;headerlink&quot; title=&quot;捏数据（*cast函数）&quot;&gt;&lt;/a&gt;捏数据（*cast函数）&lt;/h2&gt;&lt;p&gt;数据揉好后，就可以用来捏了。*cast函数分为两种，输出结果为array的为acast函数，输出结果为data.frame的为dcast函数，因为主要用到的是数据框，所以我就主要介绍一下dcast。&lt;/p&gt;
+&lt;p&gt;dcast的调用格式为：dcast(data, formula, fun.aggregate = NULL)，data指melt后的数据，formula指的是重新组合的公式，fun.aggregate指要进行计算的函数。dcast调用结果是公式左边有几个变量就有几列，公式右边的变量为因子型，每个水平当做一列。&lt;/p&gt;
+&lt;p&gt;先试试把揉碎的数据捏成原来的形状吧!&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;names(airquality) &amp;lt;- tolower(names(airquality))
+aqm &amp;lt;- melt(airquality, id=c(&amp;quot;month&amp;quot;, &amp;quot;day&amp;quot;), na.rm=TRUE)
+raw &amp;lt;- dcast(aqm , month + day ~variable)
+View(raw)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;raw数据和原始数据airquality一样，数据复原了!&lt;/p&gt;
+&lt;p&gt;其实我们要捏什么形状关键在于公式，公式的组合变化无穷，大家可以发挥自己的想象力！&lt;/p&gt;
+&lt;p&gt;如果我们要对数据进行函数运算，可以指定fun函数。比如计算每个月里变量的均值，可以采用mean函数。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;monmean &amp;lt;- dcast(aqm , month  ~variable ,mean)
+monmean
+    month    ozone  solar.r      wind     temp
+1     5 23.61538 181.2963 11.622581 65.54839
+2     6 29.44444 190.1667 10.266667 79.10000
+3     7 59.11538 216.4839  8.941935 83.90323
+4     8 59.96154 171.8571  8.793548 83.96774
+5     9 31.44828 167.4333 10.180000 76.90000
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;fun函数我们可以自己编写，比如我们编写一个查看缺失值数量的函数，并将其应用到dcast中。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;nna &amp;lt;- function(x){return(sum(is.na(x)))}#查看缺失值数量
+monmean &amp;lt;- dcast(aqm , month  ~variable ,nna)
+monmean
+    month ozone solar.r wind temp
+1     5     0       0    0    0
+2     6     0       0    0    0
+3     7     0       0    0    0
+4     8     0       0    0    0
+5     9     0       0    0    0
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;结果显示没有缺失数据，因为缺失数据在最初的melt阶段就给移除掉了。如果不移除缺失数据，再捏一遍的效果如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; aqm1 &amp;lt;- melt(airquality, id=c(&amp;quot;month&amp;quot;, &amp;quot;day&amp;quot;))
+ monmean &amp;lt;- dcast(aqm1 , month  ~variable ,nna)
+ monmean
+     month ozone solar.r wind temp
+1     5     5       4    0    0
+2     6    21       0    0    0
+3     7     5       0    0    0
+4     8     5       3    0    0
+5     9     1       0    0    0
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;最后，还有一个recast函数，可以一步到位直接输出你最终需要的效果，比如统计每个月份里各变量的缺失值数量。代码如下&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;recast(airquality , month ~ variable , id.var = c(&amp;apos;month&amp;apos;,&amp;apos;day&amp;apos;) , fun = nna)
+    month ozone solar.r wind temp
+1     5     5       4    0    0
+2     6    21       0    0    0
+3     7     5       0    0    0
+4     8     5       3    0    0
+5     9     1       0    0    0
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;reshape2包中的这些函数提供的功能和Excel中的数据透视表功能类似，但是更为灵活，更强大，可以输出你想要的数据形状，并且计算你想要的统计量，而不限于它提供的那些。我想，这就是编程的乐趣之一吧，可以给予你更大的自由度。&lt;/p&gt;
+&lt;h2 id=&quot;参考资料&quot;&gt;&lt;a href=&quot;#参考资料&quot; class=&quot;headerlink&quot; title=&quot;参考资料&quot;&gt;&lt;/a&gt;参考资料&lt;/h2&gt;&lt;p&gt;【1】R语言实战&lt;/p&gt;
+&lt;p&gt;【2】&lt;a href=&quot;http://developer.51cto.com/art/201305/396615.htm&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;R语言进阶之4：数据整形（reshape）&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;【3】&lt;a href=&quot;http://www.loyhome.com/%E6%8E%A2%E7%B4%A2r%E5%8C%85reshape2%EF%BC%9A%E6%8F%89%E6%95%B0%E6%8D%AE%E7%9A%84%E6%9C%80%E4%BD%B3%E4%BC%B4%E4%BE%A3/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;探索R包reshape2：揉数据的最佳伴侣&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;【4】reshape2包自带文档&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      利用R玩转数据透视表
+    
+    </summary>
+    
+      <category term="学习" scheme="http://ncutsta.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="数据处理" scheme="http://ncutsta.github.io/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Anaconda简介及安装教程</title>
+    <link href="http://ncutsta.github.io/2016/06/01/2015-10-01-Anaconda-install/"/>
+    <id>http://ncutsta.github.io/2016/06/01/2015-10-01-Anaconda-install/</id>
+    <published>2016-06-01T06:29:24.889Z</published>
+    <updated>2016-02-29T09:42:32.552Z</updated>
+    
+    <content type="html">&lt;p&gt;Python虽然是一门优秀的程序语言，但其拥有出色的数据处理能力，尤其是在数据量巨大的时候，因而也吸引了不少数据分析人员的关注和使用。&lt;/p&gt;
+&lt;p&gt;Python的数据处理能力主要依赖于NumPy,SciPy,Matplotlib,Pandas这4个库，其中NumPy提供了矩阵运算的功能，SciPy则在NumPy的基础上添加了许多科学计算的函数库，而这两个库就使Python具有和Matlab一样的数据处理能力了。Matplotlib库提供了绘图，可以实现数据的可视化，pandas是基于NumPy的一种工具，该库提供了高效地操作大型数据集所需的工具。而这四个库都需要我们进行单独安装，Python自身并不具备这些库。&lt;/p&gt;
+&lt;p&gt;一般的Python数据分析教程并不直接在Python shell中运行代码，而是选择了IPython，IPython 是一个 python 的交互式 shell，比传统的Python shell 好用得多，支持变量自动补全，自动缩进，支持 bash shell 命令，内置了许多很有用的功能和函数。总而言之，IPython就是各种方便，各种好用！让你自从用了IPython就会嫌弃用Python，就像用了RStudio就不再想用R GUI。&lt;/p&gt;
+&lt;p&gt;而IPyhon的安装较为麻烦和复杂，一般人很难安装成功，幸好有大神将科学计算所需要的模块以及IPython打包供用户使用，Anaconda就是其中较好的一个。简言之，安装了Anaconda，你就安装了Python+NumPy+SciPy+Matplotlib+IPython+IPython Notebook。所以，我们仅仅安装Anaconda就可以了！&lt;a href=&quot;http://continuum.io/downloads&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Anaconda下载地址&lt;/a&gt;。页面如下：&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;http://7xo51k.com1.z0.glb.clouddn.com/anacondaAnaconda%E4%B8%8B%E8%BD%BD%E7%95%8C%E9%9D%A2.jpg-wx&quot;&gt;&lt;/div&gt;
+
+&lt;p&gt;根据自己的系统选择相应版本进行下载（下载速度可能会有点慢），下载之后点击运行就可以安装了，和一般软件安装毫无二致，无需编译。安装成功后的效果如下：&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;http://7xo51k.com1.z0.glb.clouddn.com/anaconda%E5%AE%89%E8%A3%85%E5%90%8E%E7%9A%84%E7%95%8C%E9%9D%A2.png-wx&quot;&gt;&lt;/div&gt;
+
+&lt;p&gt;在这里有Anaconda管理器（Anaconda Command Prompt），IPython Notebook,IPython QT,IPython,Spyder。点击IPython,就进入了IPython的界面。&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;http://7xo51k.com1.z0.glb.clouddn.com/anacondaIPython%E7%95%8C%E9%9D%A2.png-wx&quot;&gt;&lt;/div&gt;
+
+&lt;p&gt;到此为止，IPython就算安装成功了，是不是很方便，很简单！之后，我们可以在命令行（也就是cmd）中输入pip list 或conda list或者在Anaconda管理器中输入conda list来查看已经安装的库，效果如下：&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;http://7xo51k.com1.z0.glb.clouddn.com/anacondacmd%20Anaconda.png-wx&quot;&gt;&lt;/div&gt;
+
+&lt;p&gt;从这些库中我们可以发现文章开始的4个库，说明已经安装成功了!&lt;/p&gt;
+&lt;p&gt;虽然IPython是极好的，但是，IPython Notebook则更进了一步，允许我们在浏览器上进行编程并进行演示，效果非常好！我们已经安装了IPython Notebook了，直接点击进入，这时浏览器会自动打开网页，这是home主页，如下图，然后点击右上角的new，创建新的python文本就可以了（可能遇到小故障，请按其提示操作）！&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;http://7xo51k.com1.z0.glb.clouddn.com/anacondaIPNBHome.jpg-wx&quot;&gt;&lt;/div&gt;
+
+&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;http://7xo51k.com1.z0.glb.clouddn.com/anacondaIPNB.jpg-wx&quot;&gt;&lt;/div&gt;
+
+
+&lt;p&gt;现在，小伙伴们就可以愉快地进行学习了，而不必为了安装而心烦意乱！&lt;/p&gt;
+&lt;h2 id=&quot;参考资料&quot;&gt;&lt;a href=&quot;#参考资料&quot; class=&quot;headerlink&quot; title=&quot;参考资料&quot;&gt;&lt;/a&gt;&lt;strong&gt;参考资料&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;[1]&lt;a href=&quot;http://seisman.info/anaconda-scientific-python-distribution.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Python科学计算发行版—Anaconda &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[2]&lt;a href=&quot;http://www.th7.cn/system/win/201502/93336.shtml&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;windows下安装python和依赖包的利器——Anaconda&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[3]&lt;a href=&quot;http://my.oschina.net/lionets/blog/274760&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;IPython Notebook 简介&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[4]&lt;a href=&quot;http://hyry.dip.jp/tech/slice/slice.html/35&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;IPython Notebook简介1&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Python虽然是一门优秀的程序语言，但其拥有出色的数据处理能力，尤其是在数据量巨大的时候，因而也吸引了不少数据分析人员的关注和使用。&lt;/p&gt;
+&lt;p&gt;Python的数据处理能力主要依赖于NumPy,SciPy,Matplotlib,Pandas这4个库，其中NumPy提供了
+    
+    </summary>
+    
+      <category term="学习" scheme="http://ncutsta.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="软件安装" scheme="http://ncutsta.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>R 数据读入及导出</title>
+    <link href="http://ncutsta.github.io/2016/06/01/2015-09-26-R-data-import-output/"/>
+    <id>http://ncutsta.github.io/2016/06/01/2015-09-26-R-data-import-output/</id>
+    <published>2016-06-01T06:29:24.824Z</published>
+    <updated>2016-05-19T01:13:46.964Z</updated>
+    
+    <content type="html">&lt;p&gt;由于这几天经常要把数据在不同软件之间进行读入导出，遂作一总结。&lt;/p&gt;
+&lt;p&gt;一般常用的数据文件有TXT/ Excel/CSV格式，而SPSS,SAS数据也可以通过其自身软件转换为CSV格式，之后读入CSV格式文件就可以啦。&lt;/p&gt;
+&lt;p&gt;对于Excel数据，虽然R中有直接读入Execl数据的包，比如：RODBC包，但由于操作麻烦，且容易出错，因此不建议直接读入Excel文件，而是将其转换为CSV文件。CSV文件（Comma-Separated Values），也就是逗号分隔符文件，这种文件以纯文本形式储存文本和数据，是一种简单的，通用的数据文件，而且很容易用其他软件读取。&lt;/p&gt;
+&lt;p&gt;Txt文件可以通过read.table（）函数读入，其常用参数如下：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;read.table(file, header = FALSE, sep = &amp;quot;&amp;quot;,nrows = -1, skip = 0, fill = !blank.lines.skip，encoding = &amp;quot;unknown&amp;quot;)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;file是要读入的文件，是一个带分隔符的ASCII文本文件。可以是txt文件，也可以是其他类型文件，取决于sep参数设定。文件读入路径可以采用绝对路径，也可以采用相对路径，注意R中路径采用正斜杠/而不是通常的反斜杠\，虽然这两种方法都可以正确读入，但是实在都太麻烦了，谁对敲路径不烦呢？我们可以采用file.choose()，这样R/RStudio会弹出一个对话框，这样就可以使用鼠标来选取文件，实在是方便多了，这个方式在R中是通用的，只要是读入数据，都可以这么试试，比如之前的读入Shapefile格式文件。&lt;/p&gt;
+&lt;p&gt;header用来设置首行是否为变量名，是逻辑值（F or T），默认为F。如果文件首行是数据的变量名，应该设置为T，否则，读入数据后第一行为变量名，第二行开始才是变量值。&lt;/p&gt;
+&lt;p&gt;sep表示分隔符类型，默认为””,表示为一个或多个空格，制表符，换行符或回车符。制表符为”\t”，也就是键盘上的tab,换行符为“\n”,回车符为”\n”，读入csv格式文件时，分隔符为“，”。&lt;/p&gt;
+&lt;p&gt;nrows表示要读入前几行，-1表示所有。&lt;/p&gt;
+&lt;p&gt;skip表示跳过前几行，默认为0，也就是不跳过。&lt;/p&gt;
+&lt;p&gt;fill设置文件中如果有缺失值，是否自动补充为NA，默认不补充。如果文件中有缺失值，会导致读入错误，提示信息为在第几行只有几个元素（变量），这时我们可以设置fill=T。&lt;/p&gt;
+&lt;p&gt;fileEncoding设置读入的文件编码格式，ANSI编码可以直接读入，不用设置这个参数，如果是UTF-8编码，则要指定为encoding=”UTF-8”,或者将文件转换为ANSI编码，否则，读入的数据显示乱码。&lt;/p&gt;
+&lt;p&gt;下面读入一个UTF-8格式的txt文件，首行是变量名。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;y &amp;lt;- read.table(file.choose(),header=T,fileEncoding =&amp;quot;UTF-8&amp;quot;)
+head(y)
+   Acc       code    gender    grade  
+1  A1021    6157082     女       2013      
+2  A1148    2011843     男       2014  
+3  A1575    4018209     男       2010  
+4  A2611    5881762     男       2011  
+5  A2625    3112091     男       2012  
+6  A2906    5127798     男       2012  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;对于CSV文件，可以使用read.table()，read.csv()函数。推荐使用read.csv()，因为它已经直接设定了文件的分隔符，而如果用read.table()函数还需要设定sep=”,”，才可以读取文件。读取后的数据在R中为data.frame格式。&lt;/p&gt;
+&lt;p&gt;read.csv()是read.table()的一个变形，它设定sep=”,”，可以直接读入csv格式数据。其他类似的还有read.csv2()，read.delim(),read.delim2()，都可以直接读入相应格式的数据。&lt;/p&gt;
+&lt;p&gt;read.csv()函数参数设置如下：&lt;br&gt;   &lt;code&gt;read.csv(file, header = TRUE, sep = &amp;quot;,&amp;quot;, quote = &amp;quot;\&amp;quot;&amp;quot;,dec = &amp;quot;.&amp;quot;, fill = TRUE, ...)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;其中，dec表示小数点的字符。&lt;/p&gt;
+&lt;p&gt;既然可以读入数据，那么一定可以将数据导出，R语言可以把数据导出为txt，csv及其他格式。&lt;/p&gt;
+&lt;p&gt;导出为txt格式的函数为write.table()，对应着读入函数read.table()，参数设置也有很大的相同。&lt;/p&gt;
+&lt;p&gt;write.table()函数参数设置；&lt;br&gt;   &lt;code&gt;write.table(x,file=””,…)&lt;/code&gt;&lt;br&gt;其中x为要导出的数据名称，file为导出后数据文件名称，如果不写导出路径，默认导出到工作空间，使用getwd()查询工作空间。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;x &amp;lt;- head(y)
+write.table(x,file=&amp;quot;data.txt&amp;quot;)#将x导出到data.txt文件中
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt; 同样的，我们也可以导出为csv格式文件，采用write.csv()函数，对应read.csv()函数。&lt;br&gt; write.csv()函数参数设置： &lt;code&gt;write.csv(x,file=””,row.names…)&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;write.csv(x,file=&amp;quot;data.csv&amp;quot;,row.names=F)#将x导出到data.csv文件中,同时设置不输出行名称，默认是输出的
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;更多详细请?write,?write.table,？write.csv&lt;/p&gt;
+&lt;p&gt;上面这些都是把R中数据导出到外部文件，但如果我们想直接把数据从R中复制到Excel中时，就可以使用命令：&lt;br&gt;&lt;code&gt;write.table(data,&amp;quot;clipboard&amp;quot;,sep=&amp;quot;\t&amp;quot;,col.names=NA）&lt;/code&gt;&lt;br&gt;然后在Excel中使用粘贴命令，就可以直接把R中x数据复制到Excel中，是不是很方便！&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;write.table(x,&amp;quot;clipboard&amp;quot;,sep = &amp;quot;\t&amp;quot;,col.names = NA)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;更多内容请学习参考资料。&lt;/p&gt;
+&lt;h2 id=&quot;参考资料&quot;&gt;&lt;a href=&quot;#参考资料&quot; class=&quot;headerlink&quot; title=&quot;参考资料&quot;&gt;&lt;/a&gt;参考资料&lt;/h2&gt;&lt;p&gt;[1] &lt;a href=&quot;http://www.cnblogs.com/holbrook/archive/2013/05/16/3081331.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;R学习笔记(4): 使用外部数据&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[2] &lt;a href=&quot;https://cran.r-project.org/doc/manuals/R-data.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;R Data Import/Export&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[3] &lt;a href=&quot;http://www.biosino.org/R/R-doc/R-data_cn/Variations-on-read_002etable.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;read.table 的变化样式&lt;/a&gt;    &lt;/p&gt;
+&lt;p&gt;[4] The R Book&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      R语言读取数据及导出
+    
+    </summary>
+    
+      <category term="学习" scheme="http://ncutsta.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="自动便利" scheme="http://ncutsta.github.io/tags/%E8%87%AA%E5%8A%A8%E4%BE%BF%E5%88%A9/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>R data.table包学习</title>
+    <link href="http://ncutsta.github.io/2016/06/01/2016-05-25-data-table-learning/"/>
+    <id>http://ncutsta.github.io/2016/06/01/2016-05-25-data-table-learning/</id>
+    <published>2016-06-01T06:29:24.799Z</published>
+    <updated>2016-05-31T11:51:51.580Z</updated>
+    
+    <content type="html">&lt;p&gt;虽然R是一款数据分析的利器，但在面对较大的数据量时，R还是有很多不足。仅仅读取一个大文件就足以使R卡住不动，利用传统的方法进行数据处理简直不敢想象。&lt;/p&gt;
+&lt;p&gt;为了解决数据量较大的问题，R中涌出了一系列包，本篇文章介绍data.table包，官方的介绍是快速的数据读取，快速地聚合排序，快速地分组运算，以及灵活自然的语法。data.table可以称为加强版的data.frame，因而适用于data.frame的函数也适用于data.table。&lt;/p&gt;
+&lt;h2 id=&quot;数据读入&quot;&gt;&lt;a href=&quot;#数据读入&quot; class=&quot;headerlink&quot; title=&quot;数据读入&quot;&gt;&lt;/a&gt;数据读入&lt;/h2&gt;&lt;p&gt;data.table包采用fread函数，函数的语法格式为：&lt;code&gt;fread(input，……）&lt;/code&gt;,其中input是读入的文件对象，此函数可以自动判断分隔符类型，自动判断首行是否是列标题，同时默认读入时字符型变量不会变为因子型。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;user_actions &amp;lt;- fread(&amp;apos;D:/Project/data/user.csv&amp;apos;)
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;数据处理&quot;&gt;&lt;a href=&quot;#数据处理&quot; class=&quot;headerlink&quot; title=&quot;数据处理&quot;&gt;&lt;/a&gt;数据处理&lt;/h2&gt;&lt;p&gt;对于数据的处理，data.table包提供了一个非常简洁的通用格式：DT[i,j,by]，意思是:对于数据集DT，选取子集行i,通过by分组计算j。i设定数据的选取条件，j设定结果的计算方式，by设定数据的分组情况。通过这个，我们可以在一行代码中很方便地完成处理过程。&lt;/p&gt;
+&lt;p&gt;本篇文章以下部分采用&lt;code&gt;mtcars&lt;/code&gt;数据作为示例说明。&lt;/p&gt;
+&lt;p&gt;先把数据集转为data.table格式：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mtcars_dt &amp;lt;- data.table(mtcars)
+class(mtcars_dt)
+[1] &amp;quot;data.table&amp;quot; &amp;quot;data.frame&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;筛选&quot;&gt;&lt;a href=&quot;#筛选&quot; class=&quot;headerlink&quot; title=&quot;筛选&quot;&gt;&lt;/a&gt;筛选&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;行筛选：直接采用逻辑语句&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;head(mtcars_dt[cyl==8])
+    mpg cyl  disp  hp drat   wt  qsec vs am gear carb
+1: 18.7   8 360.0 175 3.15 3.44 17.02  0  0    3    2
+2: 14.3   8 360.0 245 3.21 3.57 15.84  0  0    3    4
+……
+
+head(mtcars_dt[cyl==8 &amp;amp; carb ==3])
+    mpg cyl  disp  hp drat   wt qsec vs am gear carb
+1: 16.4   8 275.8 180 3.07 4.07 17.4  0  0    3    3
+2: 17.3   8 275.8 180 3.07 3.73 17.6  0  0    3    3
+……
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;列筛选：直接输入列名，注意&lt;code&gt;.()&lt;/code&gt;格式&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;head(mtcars_dt[,.(mpg,cyl,hp)])
+mpg cyl  hp
+1: 21.0   6 110
+2: 21.0   6 110
+……
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;选取子集&quot;&gt;&lt;a href=&quot;#选取子集&quot; class=&quot;headerlink&quot; title=&quot;选取子集&quot;&gt;&lt;/a&gt;选取子集&lt;/h3&gt;&lt;p&gt;选取子集仍然采用subeset函数，语法格式为：subset(x, subset, select)，x是data.table对象，subset是行满足条件，select是列满足条件&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;subset(mtcars_dt,cyl==8,select =c(&amp;apos;mpg&amp;apos;,&amp;apos;cyl&amp;apos;,&amp;apos;disp&amp;apos;))
+   mpg cyl  disp
+1: 10.4   8 460.0
+2: 10.4   8 472.0
+……
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;排序&quot;&gt;&lt;a href=&quot;#排序&quot; class=&quot;headerlink&quot; title=&quot;排序&quot;&gt;&lt;/a&gt;排序&lt;/h3&gt;&lt;p&gt;排序采用&lt;code&gt;setorder&lt;/code&gt;函数，输入待排序的列名，默认升序，降序列名前加&lt;code&gt;-&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; head(setorder(mtcars_dt,mpg,-hp))
+    mpg cyl disp  hp drat    wt  qsec vs am gear carb
+1: 10.4   8  460 215 3.00 5.424 17.82  0  0    3    4
+2: 10.4   8  472 205 2.93 5.250 17.98  0  0    3    4
+3: 13.3   8  350 245 3.73 3.840 15.41  0  0    3    4
+4: 14.3   8  360 245 3.21 3.570 15.84  0  0    3    4
+5: 14.7   8  440 230 3.23 5.345 17.42  0  0    3    4
+6: 15.0   8  301 335 3.54 3.570 14.60  0  1    5    8
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;增删变量&quot;&gt;&lt;a href=&quot;#增删变量&quot; class=&quot;headerlink&quot; title=&quot;增删变量&quot;&gt;&lt;/a&gt;增删变量&lt;/h3&gt;&lt;p&gt;添加变量有三种语法格式：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;DT[i, LHS:=RHS, by=...]#适用单变量添加
+DT[i, c(&amp;quot;LHS1&amp;quot;,&amp;quot;LHS2&amp;quot;) := list(RHS1, RHS2), by=...]#双变量添加
+DT[i, `:=`(LHS1=RHS1,LHS2=RHS2,           ...), by=...]#多变量添加，注意`:=`
+
+head(mtcars_dt[,`:=`(mpg1=1/mpg,new=cyl+gear)])
+    mpg cyl disp  hp drat    wt  qsec vs am gear carb       mpg1 new
+1: 10.4   8  460 215 3.00 5.424 17.82  0  0    3    4 0.09615385  11
+2: 10.4   8  472 205 2.93 5.250 17.98  0  0    3    4 0.09615385  11
+……
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;删除变量，变量:=NULL，即可&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;head(mtcars_dt[,mpg1:=NULL])
+    mpg cyl disp  hp drat    wt  qsec vs am gear carb new
+1: 10.4   8  460 215 3.00 5.424 17.82  0  0    3    4  11
+2: 10.4   8  472 205 2.93 5.250 17.98  0  0    3    4  11
+……
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;分组汇总&quot;&gt;&lt;a href=&quot;#分组汇总&quot; class=&quot;headerlink&quot; title=&quot;分组汇总&quot;&gt;&lt;/a&gt;分组汇总&lt;/h3&gt;&lt;p&gt;分组汇总只需在&lt;code&gt;by&lt;/code&gt;指定分组变量，在&lt;code&gt;j&lt;/code&gt;指定计算函数即可&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;head(mtcars_dt[,.(mean_mpg = mean(mpg),num=length(mpg),sum_disp = sum(disp)),by=.(cyl,vs)])#统计分组下的mpg均值，disp的总和,分组数据个数num
+   cyl vs mean_mpg num sum_disp
+1:   8  0 15.10000  14   4943.4
+2:   6  1 19.12500   4    818.2
+3:   6  0 20.56667   3    465.0
+4:   4  1 26.73000  10   1036.2
+5:   4  0 26.00000   1    120.3
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;data.table有一个特殊的变量&lt;code&gt;.N&lt;/code&gt;可以直接计算分组的观测值个数。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;head(mtcars_dt[,.N,by=.(cyl,vs)])
+    cyl vs  N
+1:   8  0 14
+2:   6  1  4
+3:   6  0  3
+4:   4  1 10
+5:   4  0  1
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;数据合并&quot;&gt;&lt;a href=&quot;#数据合并&quot; class=&quot;headerlink&quot; title=&quot;数据合并&quot;&gt;&lt;/a&gt;数据合并&lt;/h3&gt;&lt;p&gt;数据合并仍然采用&lt;code&gt;merge&lt;/code&gt;函数，只是合并对象必须是data.table类型，这样才能发挥出data.table的威力!&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;merge(x, y, by = NULL, by.x = NULL, by.y = NULL,all = FALSE, all.x = all, all.y = all, sort = TRUE, suffixes = c(&amp;quot;.x&amp;quot;, &amp;quot;.y&amp;quot;),allow.cartesian=getOption(&amp;quot;datatable.allow.cartesian&amp;quot;), ...)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;函数使用同&lt;code&gt;merge&lt;/code&gt;一样，不再赘述。&lt;/p&gt;
+&lt;h3 id=&quot;管道操作&quot;&gt;&lt;a href=&quot;#管道操作&quot; class=&quot;headerlink&quot; title=&quot;管道操作&quot;&gt;&lt;/a&gt;管道操作&lt;/h3&gt;&lt;p&gt;data.table可以像dplyr包一样使用&lt;code&gt;%&amp;gt;%&lt;/code&gt;操作符&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;library(dplyr)
+mtcars_dt[(disp &amp;gt; 120 &amp;amp; mpg &amp;gt; 20),.(mdisp = mean(disp),mmpg = mean(mpg)),by=.(cyl,vs,am)]%&amp;gt;%subset(am==1&amp;amp;mmpg&amp;gt;22)
+   cyl vs am mdisp mmpg
+1:   4  0  1 120.3   26
+
+mtcars_dt[(disp &amp;gt; 120 &amp;amp; mpg &amp;gt; 20),.(mdisp = mean(disp),mmpg = mean(mpg)),by=.(cyl,vs,am)]%&amp;gt;%subset(select=c(&amp;apos;cyl&amp;apos;,&amp;apos;mmpg&amp;apos;))
+cyl mmpg
+1:   6 21.0
+2:   6 21.4
+3:   4 21.4
+4:   4 22.9
+5:   4 26.0
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;其他操作&quot;&gt;&lt;a href=&quot;#其他操作&quot; class=&quot;headerlink&quot; title=&quot;其他操作&quot;&gt;&lt;/a&gt;其他操作&lt;/h3&gt;&lt;p&gt;快速查找某一区间： %between%&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mtcars_dt[disp %between% c(150,200)]
+    mpg cyl  disp  hp drat    wt  qsec vs am gear carb new
+1: 17.8   6 167.6 123 3.92 3.440 18.90  1  0    4    4  10
+2: 19.2   6 167.6 123 3.92 3.440 18.30  1  0    4    4  10
+3: 21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4  10
+4: 21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4  10
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;判断两个数据框是否相同:all.equal,返回值为‘true’或两个数据框不同的地方&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;dt1 &amp;lt;- data.table(A = letters[1:10], X = 1:10, key = &amp;quot;A&amp;quot;)
+dt2 &amp;lt;- data.table(A = letters[5:14], Y = 1:10, key = &amp;quot;A&amp;quot;)
+identical(all.equal(dt1, dt1), TRUE)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;判断向量是否重复：duplicated。返回逻辑向量，有主键时，对主键列做是否重复判断，无主键时，对所有列做判断。利用这个函数，我们就可以轻松地对数据去重。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;DT &amp;lt;- data.table(A = rep(1:3, each=4), B = rep(1:4, each=3), C = rep(1:2, 6), key = &amp;quot;A,B&amp;quot;)
+duplicated(DT, by=&amp;quot;B&amp;quot;)#返回是否重复的逻辑向量
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;设置主键:setkey(DT, x)，DT是数据框，x是作为主键的列名称。&lt;br&gt;显示已有数据信息，tables()&lt;br&gt;返回数据框不同的行数：uniqueN(DT)&lt;/p&gt;
+&lt;p&gt;除了上面的函数方法，data.table还提供了reshape2包中的&lt;code&gt;melt&lt;/code&gt;,&lt;code&gt;dcast&lt;/code&gt;函数。&lt;/p&gt;
+&lt;h2 id=&quot;后记&quot;&gt;&lt;a href=&quot;#后记&quot; class=&quot;headerlink&quot; title=&quot;后记&quot;&gt;&lt;/a&gt;后记&lt;/h2&gt;&lt;p&gt;对于一般的数据，R中自带的函数完全够用，如果想简便点可以采用&lt;code&gt;dplyr&lt;/code&gt;包和&lt;code&gt;data.table&lt;/code&gt;包，当数据较大时，就必须使用&lt;code&gt;data.table&lt;/code&gt;包了，而且&lt;code&gt;data.table&lt;/code&gt;包使用起来也较为简单方便，一行代码就可以搞定很多事！实在是太方便了！向发明这些包的大神致敬！&lt;/p&gt;
+&lt;h2 id=&quot;参考资料&quot;&gt;&lt;a href=&quot;#参考资料&quot; class=&quot;headerlink&quot; title=&quot;参考资料&quot;&gt;&lt;/a&gt;参考资料&lt;/h2&gt;&lt;p&gt;【1】 &lt;a href=&quot;http://www.xueqing.tv/cms/article/213&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;R高效数据处理包dplyr和data.table，你选哪个？&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;【2】 &lt;a href=&quot;http://rstudio-pubs-static.s3.amazonaws.com/84200_1007768f9e0a44929db84461db4859f7.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Learning Packages_data.table&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;【3】&lt;a href=&quot;http://blog.csdn.net/qq_27755195/article/details/50919442&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;R语言-data.table包&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;【4】&lt;a href=&quot;http://westerly-lzh.github.io/cn/2014/05/Using-Data-Table/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;R语言中的数据操作&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      R语言data.table包学习
+    
+    </summary>
+    
+      <category term="学习" scheme="http://ncutsta.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="数据处理" scheme="http://ncutsta.github.io/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/"/>
     
   </entry>
   

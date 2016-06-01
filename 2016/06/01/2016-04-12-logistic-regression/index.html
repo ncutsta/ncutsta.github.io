@@ -1,0 +1,545 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="baidu_union_verify" content="d1952c66cf48912e21c18c7c581f382a">
+  <meta name="360-site-verification" content="67fbcc5a67f4c65c057315b28fa0b2c8" />
+<meta name="google-site-verification" content="2GzxQ0VtXwTSUdmGm6DzcmhTzM_I9QmzCb_pzpMzD88" />
+  
+    <title>逻辑回归 | 统苑</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
+    
+    <meta name="author" content="statistics">
+    
+    <meta name="description" itemprop="description" content="逻辑回归的原理及软件实现">
+    
+    <meta name="keywords" content="逻辑回归  logistic regression R Python">
+    
+    
+    <link rel="alternate" href="atom.xml" title="统苑" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="stylesheet" href="/css/style.css">
+     
+</head>
+
+  <body>
+    <header>
+      <div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="统苑" title="统苑"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="统苑">统苑</a></h1>
+				<a class="blog-motto"></a>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">主页</a></li>
+					
+						<li><a href="/tags">标签</a></li>
+					
+						<li><a href="/categories">分类</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+					<li>
+					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="text" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+						<input type="hidden" name="q" value="site:ncutsta.github.io">
+					</form>
+					
+					</li>
+				</ul>
+                            </nav>			
+</div>
+
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2016/06/01/2016-04-12-logistic-regression/" title="逻辑回归" itemprop="url">逻辑回归</a>
+  </h1>
+  <p class="article-author">By
+    
+      <a href="http://ncutsta.github.io" title="statistics">statistics</a>
+    </p>
+  <p class="article-time">
+    <time datetime="2016-06-01T06:29:25.004Z" itemprop="datePublished">2016-06-01</time>
+    更新日期:<time datetime="2016-04-15T02:40:10.995Z" itemprop="dateModified">2016-04-15</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#目的"><span class="toc-number">1.</span> <span class="toc-text">目的</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#原理"><span class="toc-number">2.</span> <span class="toc-text">原理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参数求解"><span class="toc-number">3.</span> <span class="toc-text">参数求解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#模型评价"><span class="toc-number">4.</span> <span class="toc-text">模型评价</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#模型优化"><span class="toc-number">5.</span> <span class="toc-text">模型优化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#软件实现"><span class="toc-number">6.</span> <span class="toc-text">软件实现</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#结束语"><span class="toc-number">7.</span> <span class="toc-text">结束语</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考资料"><span class="toc-number">8.</span> <span class="toc-text">参考资料</span></a></li></ol>
+		</div>
+		
+		<p>逻辑回归，也称Logistic Regression，属于回归分析的一种，用于预测分类变量，其中主要是二分类变量。</p>
+<p>本篇文章依次从目的、原理、参数求解、模型评价、模型优化和软件实现共6个方面依次论述。</p>
+<p>如无特殊说明，log均指以自然数为底。</p>
+<h2 id="目的"><a href="#目的" class="headerlink" title="目的"></a><strong>目的</strong></h2><p>现实生活中存在大量的分类变量预测问题，比如：一部影片是否能获奖，一个客户是否会违约，一个用户是否会流失……，机器学习中有很多解决分类问题的算法，逻辑回归既是其中的一种，逻辑回归可以解决分类问题，主要应用是二分类问题的解决。</p>
+<h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a><strong>原理</strong></h2><p>我们需要预测一件事情发生的概率，如果用一般线性回归去做预测，即因变量为P(Y=1)，自变量为影响因变量的特征，会出现一个问题，P(Y=1)的取值范围是[0,1]，而线性回归的预测范围却是R，因此，我们有必要通过考虑某种变换，将响应变量作为P(Y=1)的一个函数变换结果，同时将取值范围扩展到R，为此，我们考虑采用logit函数：</p>
+<div align="center"><a href="http://www.codecogs.com/eqnedit.php?latex=logit(p)=log(\frac{p}{1-p})" target="_blank"><img src="http://latex.codecogs.com/png.latex?logit(p)=log(\frac{p}{1-p})" title="logit(p)=log(\frac{p}{1-p})"></a><br></div>
+
+<p>之后，我们结合一般线性回归的思路，我们可以得到：</p>
+<div align="center"><a href="http://www.codecogs.com/eqnedit.php?latex=log(\frac{p}{1-p})=\theta&space;^{T}X" target="_blank"><img src="http://latex.codecogs.com/gif.latex?log(\frac{p}{1-p})=\theta&space;^{T}X" title="log(\frac{p}{1-p})=\theta ^{T}X"></a></div>
+
+<p>简单推导，得：</p>
+<div align="center"><a href="http://www.codecogs.com/eqnedit.php?latex=P(Y=1)=\frac{1}{1&plus;e^{-\theta&space;^{T}X}}" target="_blank"><img src="http://latex.codecogs.com/gif.latex?P(Y=1)=\frac{1}{1&plus;e^{-\theta&space;^{T}X}}" title="P(Y=1)=\frac{1}{1+e^{-\theta ^{T}X}}"></a></div>
+
+<p>这个函数实际上也就是<a href="https://en.wikipedia.org/wiki/Sigmoid_function" target="_blank" rel="external">Sigmoid function</a>，函数表达式为：</p>
+<div align="center"><a href="http://www.codecogs.com/eqnedit.php?latex=g(x)&space;=&space;\frac{1}{1&plus;e^{-x}}" target="_blank"><img src="http://latex.codecogs.com/png.latex?g(x)&space;=&space;\frac{1}{1&plus;e^{-x}}" title="g(x) = \frac{1}{1+e^{-x}}"></a></div>
+
+<p>函数图形为（图片引用自<a href="https://en.wikipedia.org/wiki/Logistic_regression" target="_blank" rel="external">维基百科</a>）：</p>
+<div align="center"><img src="http://7xo51k.com1.z0.glb.clouddn.com/320px-Logistic-curve.svg.png"></div>
+
+<p>一般情况下，当预测概率P(Y=1)&gt;0.5，我们预估Y=1，反之，预估Y=0,具体阈值可以根据预测结果做相应调整。</p>
+<p>现在我们得到了逻辑回归的数学表达式：</p>
+<div align="center"><a href="http://www.codecogs.com/eqnedit.php?latex=h_\theta(x)&space;=&space;\frac{1}{1&plus;e^{-\theta^Tx}}" target="_blank"><img src="http://latex.codecogs.com/png.latex?h_\theta(x)&space;=&space;\frac{1}{1&plus;e^{-\theta^Tx}}" title="h_\theta(x) = \frac{1}{1+e^{-\theta^Tx}}"></a></div>
+
+<p>其中θ表示带估计参数,<a href="http://www.codecogs.com/eqnedit.php?latex=h_\theta(x)" target="_blank"><img src="http://latex.codecogs.com/png.latex?h_\theta(x)" title="h_\theta(x)"></a>表示Y=1的概率，即：</p>
+<div align="center"><a href="http://www.codecogs.com/eqnedit.php?latex=h_\theta(x)&space;=&space;P(y=1|&space;x;\theta)" target="_blank"><img src="http://latex.codecogs.com/png.latex?h_\theta(x)&space;=&space;P(y=1|&space;x;\theta)" title="h_\theta(x) = P(y=1| x;\theta)"></a></div>
+
+<p>因此，当预测变量是2分类变量时，我们可以得到Y=0的概率表达形式：</p>
+<div align="center"><a href="http://www.codecogs.com/eqnedit.php?latex=P(y=0|x;\theta)&space;=&space;1&space;-&space;P(y=1|x;\theta)&space;=&space;1-&space;h_\theta(x)" target="_blank"><img src="http://latex.codecogs.com/gif.latex?P(y=0|x;\theta)&space;=&space;1&space;-&space;P(y=1|x;\theta)&space;=&space;1-&space;h_\theta(x)" title="P(y=0|x;\theta) = 1 - P(y=1|x;\theta) = 1- h_\theta(x)"></a></div>
+
+<p>进一步，我们可以将Y的概率分布表达为一个式子：</p>
+<div align="center"><a href="http://www.codecogs.com/eqnedit.php?latex=P(y|x;\theta)&space;=&space;(h_\theta(x))^y(1-h_\theta(x))^{1-y}" target="_blank"><img src="http://latex.codecogs.com/gif.latex?P(y|x;\theta)&space;=&space;(h_\theta(x))^y(1-h_\theta(x))^{1-y}" title="P(y|x;\theta) = (h_\theta(x))^y(1-h_\theta(x))^{1-y}"></a></div>
+
+<p>有了概率表达式，我们就可以写出样本的联合分布，采用极大似然的思想，通过求解MLE，我们便可以得到一个逻辑回归的解。</p>
+<p>以上是从一般的思路推导出来的，从广义线性回归模型推导sigmod函数请参阅参考资料【1】</p>
+<h2 id="参数求解"><a href="#参数求解" class="headerlink" title="参数求解"></a><strong>参数求解</strong></h2><p>结合概率表达式和极大似然的思想，我们很自然的就写出似然函数表达式：</p>
+<div align="center"><a href="http://www.codecogs.com/eqnedit.php?latex=L(\theta)&space;=&space;\prod_{i=1}^{m}P(y^{(i)}|x^{(i)};\theta)&space;=\prod_{i=1}^{m}(h_\theta(x^{(i)}))^{y(i)}(1-(h_\theta(x^{(i)}))^{1-y(i)}" target="_blank"><img src="http://latex.codecogs.com/png.latex?L(\theta)&space;=&space;\prod_{i=1}^{m}P(y^{(i)}|x^{(i)};\theta)&space;=\prod_{i=1}^{m}(h_\theta(x^{(i)}))^{y(i)}(1-(h_\theta(x^{(i)}))^{1-y(i)}" title="L(\theta) = \prod_{i=1}^{m}P(y^{(i)}|x^{(i)};\theta) =\prod_{i=1}^{m}(h_\theta(x^{(i)}))^{y(i)}(1-(h_\theta(x^{(i)}))^{1-y(i)}"></a></div>
+
+<p>取对数，得：</p>
+<div align="center"><a href="http://www.codecogs.com/eqnedit.php?latex=l(\theta)&space;=&space;\sum_{i=1}^m&space;(y^{(i)}&space;log(h_\theta(x^{(i)}))&space;&plus;&space;(1&space;-&space;y^{(i)})&space;log(1&space;-&space;h_\theta(x^{(i)})))" target="_blank"><img src="http://latex.codecogs.com/png.latex?l(\theta)&space;=&space;\sum_{i=1}^m&space;(y^{(i)}&space;log(h_\theta(x^{(i)}))&space;&plus;&space;(1&space;-&space;y^{(i)})&space;log(1&space;-&space;h_\theta(x^{(i)})))" title="l(\theta) = \sum_{i=1}^m (y^{(i)} log(h_\theta(x^{(i)})) + (1 - y^{(i)}) log(1 - h_\theta(x^{(i)})))"></a></div>
+
+<p>接下来，我们求解参数θ的MLE</p>
+<div align="center"><a href="http://www.codecogs.com/eqnedit.php?latex=\frac{\alpha&space;h_\theta(X)}{\alpha\theta}=-(\frac{1}{1&space;&plus;&space;e^{-\theta^T&space;X}})^{2}e^{-\theta^T&space;X}\frac{\alpha(-\theta^T&space;X)}{\alpha\theta}&space;\\=-(\frac{1}{1&space;&plus;&space;e^{-\theta^T&space;X}})^{2}e^{-\theta^T&space;X}&space;(-X)&space;\\=h_\theta(X)(1-h_\theta(X))X" target="_blank"><img src="http://latex.codecogs.com/png.latex?\frac{\alpha&space;h_\theta(X)}{\alpha\theta}=-(\frac{1}{1&space;&plus;&space;e^{-\theta^T&space;X}})^{2}e^{-\theta^T&space;X}\frac{\alpha(-\theta^T&space;X)}{\alpha\theta}&space;\\=-(\frac{1}{1&space;&plus;&space;e^{-\theta^T&space;X}})^{2}e^{-\theta^T&space;X}&space;(-X)&space;\\=h_\theta(X)(1-h_\theta(X))X" title="\frac{\alpha h_\theta(X)}{\alpha\theta}=-(\frac{1}{1 + e^{-\theta^T X}})^{2}e^{-\theta^T X}\frac{\alpha(-\theta^T X)}{\alpha\theta} \\=-(\frac{1}{1 + e^{-\theta^T X}})^{2}e^{-\theta^T X} (-X) \\=h_\theta(X)(1-h_\theta(X))X"></a></div>
+
+<p>其中，<a href="http://www.codecogs.com/eqnedit.php?latex=h_\theta(X)" target="_blank"><img src="http://latex.codecogs.com/png.latex?h_\theta(X)" title="h_\theta(X)"></a>中X为解释变量，为列向量，θ为参数向量，为列向量。</p>
+<p>为了便于程序计算，我们将对数似然函数<a href="http://www.codecogs.com/eqnedit.php?latex=l_\theta" target="_blank"><img src="http://latex.codecogs.com/png.latex?l_\theta" title="l_\theta"></a>写成矩阵表达形式:</p>
+<div align="center"><a href="http://www.codecogs.com/eqnedit.php?latex=l_\theta&space;=\begin{pmatrix}&space;log(h_\theta(X_{(1)}))&space;&&space;log(1-h_\theta(X_{(1)}))&space;&&space;log(h_\theta(X_{(2)}))&space;&log(1-h_\theta(X_{(2)}))&space;&&space;......&space;&&space;log(h_\theta(X_{(m)}))&space;&&space;log(1-h_\theta(X_{(m)}))&space;\end{pmatrix}\begin{pmatrix}&space;\\&space;y_{(1)}&space;\\&space;1-y_{(1)}&space;\\&space;y_{(2)}&space;\\&space;1-y_{(2)}&space;\\&space;......&space;\\&space;y_{(m)}&space;\\&space;1-y_{(m)}&space;\end{pmatrix}" target="_blank"><img src="http://latex.codecogs.com/png.latex?l_\theta&space;=\begin{pmatrix}&space;log(h_\theta(X_{(1)}))&space;&&space;log(1-h_\theta(X_{(1)}))&space;&&space;log(h_\theta(X_{(2)}))&space;&log(1-h_\theta(X_{(2)}))&space;&&space;......&space;&&space;log(h_\theta(X_{(m)}))&space;&&space;log(1-h_\theta(X_{(m)}))&space;\end{pmatrix}\begin{pmatrix}&space;\\&space;y_{(1)}&space;\\&space;1-y_{(1)}&space;\\&space;y_{(2)}&space;\\&space;1-y_{(2)}&space;\\&space;......&space;\\&space;y_{(m)}&space;\\&space;1-y_{(m)}&space;\end{pmatrix}" title="l_\theta =\begin{pmatrix} log(h_\theta(X_{(1)})) & log(1-h_\theta(X_{(1)})) & log(h_\theta(X_{(2)})) &log(1-h_\theta(X_{(2)})) & ...... & log(h_\theta(X_{(m)})) & log(1-h_\theta(X_{(m)})) \end{pmatrix}\begin{pmatrix} \\ y_{(1)} \\ 1-y_{(1)} \\ y_{(2)} \\ 1-y_{(2)} \\ ...... \\ y_{(m)} \\ 1-y_{(m)} \end{pmatrix}"></a></div>
+
+<p>对其求导，我们可以得到：</p>
+<div align="center"><a href="http://www.codecogs.com/eqnedit.php?latex=\frac{\alpha&space;l_\theta}{\alpha&space;_\theta}&space;=\begin{pmatrix}&space;(1-h_\theta(X_{(1)}))X_1&space;&&space;-h_\theta(X_{(1)})X_1&space;&&space;(1-h_\theta(X_{(2)}))X_2&space;&&space;-h_\theta(X_{(2)})X_2&space;&&space;......&space;&&space;(1-h_\theta(X_{(m)}))X_1&space;&&space;-h_\theta(X_{(1)})X_m&space;\end{pmatrix}\begin{pmatrix}&space;\\&space;y_{(1)}&space;\\&space;1-y_{(1)}&space;\\&space;y_{(2)}&space;\\&space;1-y_{(2)}&space;\\&space;......&space;\\&space;y_{(m)}&space;\\&space;1-y_{(m)}&space;\end{pmatrix}" target="_blank"><img src="http://latex.codecogs.com/png.latex?\frac{\alpha&space;l_\theta}{\alpha&space;_\theta}&space;=\begin{pmatrix}&space;(1-h_\theta(X_{(1)}))X_1&space;&&space;-h_\theta(X_{(1)})X_1&space;&&space;(1-h_\theta(X_{(2)}))X_2&space;&&space;-h_\theta(X_{(2)})X_2&space;&&space;......&space;&&space;(1-h_\theta(X_{(m)}))X_1&space;&&space;-h_\theta(X_{(1)})X_m&space;\end{pmatrix}\begin{pmatrix}&space;\\&space;y_{(1)}&space;\\&space;1-y_{(1)}&space;\\&space;y_{(2)}&space;\\&space;1-y_{(2)}&space;\\&space;......&space;\\&space;y_{(m)}&space;\\&space;1-y_{(m)}&space;\end{pmatrix}" title="\frac{\alpha l_\theta}{\alpha _\theta} =\begin{pmatrix} (1-h_\theta(X_{(1)}))X_1 & -h_\theta(X_{(1)})X_1 & (1-h_\theta(X_{(2)}))X_2 & -h_\theta(X_{(2)})X_2 & ...... & (1-h_\theta(X_{(m)}))X_1 & -h_\theta(X_{(1)})X_m \end{pmatrix}\begin{pmatrix} \\ y_{(1)} \\ 1-y_{(1)} \\ y_{(2)} \\ 1-y_{(2)} \\ ...... \\ y_{(m)} \\ 1-y_{(m)} \end{pmatrix}"></a></div>
+
+<p>整理：</p>
+<div align="center"><a href="http://www.codecogs.com/eqnedit.php?latex=y_{1}(1-h_\theta(X_{(1)}))X_{1}-(1-y_{1})h_\theta(X_{(1)})X_{1}&space;\\&space;=(y-{1}-h_\theta(X_{(1)}))X_{1}" target="_blank"><img src="http://latex.codecogs.com/png.latex?y_{1}(1-h_\theta(X_{(1)}))X_{1}-(1-y_{1})h_\theta(X_{(1)})X_{1}&space;\\&space;=(y-{1}-h_\theta(X_{(1)}))X_{1}" title="y_{1}(1-h_\theta(X_{(1)}))X_{1}-(1-y_{1})h_\theta(X_{(1)})X_{1} \\ =(y-{1}-h_\theta(X_{(1)}))X_{1}"></a></div>
+
+<p>进而</p>
+<div align="center"><a href="http://www.codecogs.com/eqnedit.php?latex=\frac{\alpha&space;l_\theta}{\alpha&space;_\theta}&space;=&space;\begin{pmatrix}&space;X_{1}(y_{1}-h_\theta{(X_{1})})&space;&&space;X_{2}(y_{2}-h_\theta{(X_{2})})&space;&&space;......&space;&X_{m}(y_{m}-h_\theta{(X_{m})})&space;\end{pmatrix}\\&space;=\begin{pmatrix}&space;X_{1}&space;&&space;X_{2}&space;&&space;......&space;&&space;X_{m}&space;\end{pmatrix}&space;\begin{pmatrix}(y_{1}-h_\theta{(X_{1})}&space;\\&space;(y_{2}-h_\theta{(X_{2})}&space;\\&space;......&space;\\&space;(y_{m}-h_\theta{(X_{m})}&space;\end{pmatrix}&space;\\=X(Y-h_{\theta}(X))" target="_blank"><img src="http://latex.codecogs.com/png.latex?\frac{\alpha&space;l_\theta}{\alpha&space;_\theta}&space;=&space;\begin{pmatrix}&space;X_{1}(y_{1}-h_\theta{(X_{1})})&space;&&space;X_{2}(y_{2}-h_\theta{(X_{2})})&space;&&space;......&space;&X_{m}(y_{m}-h_\theta{(X_{m})})&space;\end{pmatrix}\\&space;=\begin{pmatrix}&space;X_{1}&space;&&space;X_{2}&space;&&space;......&space;&&space;X_{m}&space;\end{pmatrix}&space;\begin{pmatrix}(y_{1}-h_\theta{(X_{1})}&space;\\&space;(y_{2}-h_\theta{(X_{2})}&space;\\&space;......&space;\\&space;(y_{m}-h_\theta{(X_{m})}&space;\end{pmatrix}&space;\\=X(Y-h_{\theta}(X))" title="\frac{\alpha l_\theta}{\alpha _\theta} = \begin{pmatrix} X_{1}(y_{1}-h_\theta{(X_{1})}) & X_{2}(y_{2}-h_\theta{(X_{2})}) & ...... &X_{m}(y_{m}-h_\theta{(X_{m})}) \end{pmatrix}\\ =\begin{pmatrix} X_{1} & X_{2} & ...... & X_{m} \end{pmatrix} \begin{pmatrix}(y_{1}-h_\theta{(X_{1})} \\ (y_{2}-h_\theta{(X_{2})} \\ ...... \\ (y_{m}-h_\theta{(X_{m})} \end{pmatrix} \\=X(Y-h_{\theta}(X))"></a></div>
+
+<p>其中<a href="http://www.codecogs.com/eqnedit.php?latex=h_{\theta}(X)" target="_blank"><img src="http://latex.codecogs.com/png.latex?h_{\theta}(X)" title="h_{\theta}(X)"></a>代表对X中每一行元素<a href="http://www.codecogs.com/eqnedit.php?latex=X_{i}" target="_blank"><img src="http://latex.codecogs.com/png.latex?X_{i}" title="X_{i}"></a>运用<a href="http://www.codecogs.com/eqnedit.php?latex=h_{\theta}(X_{i})" target="_blank"><img src="http://latex.codecogs.com/png.latex?h_{\theta}(X_{i})" title="h_{\theta}(X_{i})"></a></p>
+<p>MLE并不像OLS估计那样，直接可以得到解的表现形式，因此，我们采用其它的办法来求解参数，常用的是梯度上升法，即给定步长（step size），迭代次数或者精度，通过迭代来求解一个局部最优解。</p>
+<p>由上面的推导，我们可以得出梯度上升法的一般迭代公式，γ是步长：</p>
+<div align="center"><a href="http://www.codecogs.com/eqnedit.php?latex=\theta=\theta&plus;\gamma&space;X(Y-h_{\theta}(X))" target="_blank"><img src="http://latex.codecogs.com/png.latex?\theta=\theta&plus;\gamma&space;X(Y-h_{\theta}(X))" title="\theta=\theta+\gamma X(Y-h_{\theta}(X))"></a></div>
+
+<p>上面的推导是由最大似然求解出发，我们也可以考虑从cost function出发，逻辑回归中成本函数采用的是对数损失函数，表达形式如下：</p>
+<div align="center"><a href="http://www.codecogs.com/eqnedit.php?latex=Cost(h_\theta(x),&space;y)&space;=&space;\left\{\begin{matrix}&space;-log(h_\theta(x))&&space;y&space;=&space;1&space;\\&space;-log(1&space;-&space;h_\theta(x))&&space;y&space;=&space;0&space;\end{matrix}\right." target="_blank"><img src="http://latex.codecogs.com/png.latex?Cost(h_\theta(x),&space;y)&space;=&space;\left\{\begin{matrix}&space;-log(h_\theta(x))&&space;y&space;=&space;1&space;\\&space;-log(1&space;-&space;h_\theta(x))&&space;y&space;=&space;0&space;\end{matrix}\right." title="Cost(h_\theta(x), y) = \left\{\begin{matrix} -log(h_\theta(x))& y = 1 \\ -log(1 - h_\theta(x))& y = 0 \end{matrix}\right."></a></div>
+
+<p>我们可以得到成本函数为：</p>
+<div align="center"><a href="http://www.codecogs.com/eqnedit.php?latex=C(\theta)=\frac{1}{m}\sum_{i=1}^{m}Cost(h_\theta(x^{(i)}),y^{(i)})&space;\\=-\frac{1}{m}&space;\left[&space;\sum_{i=1}^m&space;y^{(i)}&space;log(h_\theta(x^{(i)}))&space;&plus;&space;(1&space;-&space;y^{(i)})&space;log(1&space;-&space;h_\theta(x^{(i)}))&space;\right]" target="_blank"><img src="http://latex.codecogs.com/png.latex?C(\theta)=\frac{1}{m}\sum_{i=1}^{m}Cost(h_\theta(x^{(i)}),y^{(i)})&space;\\=-\frac{1}{m}&space;\left[&space;\sum_{i=1}^m&space;y^{(i)}&space;log(h_\theta(x^{(i)}))&space;&plus;&space;(1&space;-&space;y^{(i)})&space;log(1&space;-&space;h_\theta(x^{(i)}))&space;\right]" title="C(\theta)=\frac{1}{m}\sum_{i=1}^{m}Cost(h_\theta(x^{(i)}),y^{(i)}) \\=-\frac{1}{m} \left[ \sum_{i=1}^m y^{(i)} log(h_\theta(x^{(i)})) + (1 - y^{(i)}) log(1 - h_\theta(x^{(i)})) \right]"></a></div>
+
+<p>与似然函数<a href="http://www.codecogs.com/eqnedit.php?latex=l(\theta)" target="_blank"><img src="http://latex.codecogs.com/png.latex?l(\theta)" title="l(\theta)"></a>相比，只有常数项和符号的不同，我们的目的是让损失函数最小，因此，我们可以采用梯度下降法来求解参数，实质上，利用梯度下降法来求解损失函数和梯度上升法求解似然函数是一样的，模型的最终迭代公式都是</p>
+<div align="center"><a href="http://www.codecogs.com/eqnedit.php?latex=\theta=\theta&plus;\gamma&space;X(Y-h_{\theta}(X))" target="_blank"><img src="http://latex.codecogs.com/png.latex?\theta=\theta&plus;\gamma&space;X(Y-h_{\theta}(X))" title="\theta=\theta+\gamma X(Y-h_{\theta}(X))"></a></div>
+
+<p>除了梯度上升法，还有其他的求解方法，如：共轭梯度法，牛顿法，详情参阅参考资料【11】</p>
+<h2 id="模型评价"><a href="#模型评价" class="headerlink" title="模型评价"></a><strong>模型评价</strong></h2><p>评价一个模型好坏的出发点是模型的预测结果与真实结果之间的差异，对于分类结果，我们可以采用准确度来评价模型的优劣，简单来讲，模型的准确度(accuracy)=模型预测正确结果数在所有结果中的占比。模型的预测结果，可以细分为四类：</p>
+<ul>
+<li>正确的分到正确（TP）</li>
+<li>正确的分到不正确（FN)</li>
+<li>不正确的分到不正确(TN)</li>
+<li>不正确的分到正确(FP)</li>
+</ul>
+<p>准确度的形式为：</p>
+<div align="center"><a href="http://www.codecogs.com/eqnedit.php?latex=accuracy&space;=&space;\frac{TP&plus;TN}{TP&plus;FP&plus;TN&plus;FN}" target="_blank"><img src="http://latex.codecogs.com/png.latex?accuracy&space;=&space;\frac{TP&plus;TN}{TP&plus;FP&plus;TN&plus;FN}" title="accuracy = \frac{TP+TN}{TP+FP+TN+FN}"></a></div>
+
+<p>我们还可以用AUC进行评价，AUC的得分从0.5（无预测价值的分类器）到1.0（完美的分类器），逻辑回归中AUC的计算可以通过计算正样本得分大于负样本得分的样本对占所有样本对的比例来得到。假设有M个正样本，N个负样本，则正负样本配对数为MN，计算预测结果中，正样本得分大于负样本得分的样本对数量，然后得到AUC值。</p>
+<blockquote>
+<font size="3" face="Georgia"> <b>比如，我们有四组数据，正负样本情况为:y1=+1, y2=+1, y3=-1, y4=-1</b> </font>
+
+<font size="3" face="Georgia"> <b>模型1的预测为 y1=0.9, y2=0.5, y3=0.2, y4=0.6 </b></font>
+
+<font size="3" face="Georgia"> <b>模型2的预测为 y1=0.1, y2=0.9, y3=0.8, y4=0.2</b></font>
+
+<font size="3" face="Georgia"> <b>模型1： 正样本score大于负样本的pair包括(y1, y3), (y1, y4), (y2, y3)，auc为3/4=0.75</b></font>
+
+<font size="3" face="Georgia"> <b>模型2： 正样本score大于负样本的pair包括(y2, y3),(y2, y4)，auc为2/4=0.5</b></font>
+
+<font size="3" face="Georgia"> <b>在AUC准则下，模型1要优于模型2 </b></font>
+
+</blockquote>
+<h2 id="模型优化"><a href="#模型优化" class="headerlink" title="模型优化"></a><strong>模型优化</strong></h2><p>实际应用中，模型的拟合结果会出现三种结果：欠拟合，拟合良好，过拟合。三种的表现形式可以用下图来表示（引用自斯坦福机器学习公开课）：</p>
+<div align="center"><img src="http://7xo51k.com1.z0.glb.clouddn.com/1405590306_6011.png"></div>
+
+<p>如果模型是欠拟合，我们就要考虑添加特征变量</p>
+<p>如果是过拟合，我们通常考虑减少特征数量或者保留所有特征，但使θ尽量小，即正则化。</p>
+<p>我们通过在似然函数或cost function 中添加正则化项来实现正则化，正则化的详细介绍请参阅参考资料 【8】、【7】</p>
+<div align="center"><a href="http://www.codecogs.com/eqnedit.php?latex=C(\theta)=-\frac{1}{m}&space;\left[&space;\sum_{i=1}^m&space;y^{(i)}&space;log(h_\theta(x^{(i)}))&space;&plus;&space;(1&space;-&space;y^{(i)})&space;log(1&space;-&space;h_\theta(x^{(i)})&plus;&space;\lambda&space;\sum_{j=1}^n&space;\theta_j^2))&space;\right]" target="_blank"><img src="http://latex.codecogs.com/gif.latex?C(\theta)=-\frac{1}{m}&space;\left[&space;\sum_{i=1}^m&space;y^{(i)}&space;log(h_\theta(x^{(i)}))&space;&plus;&space;(1&space;-&space;y^{(i)})&space;log(1&space;-&space;h_\theta(x^{(i)})&plus;&space;\lambda&space;\sum_{j=1}^n&space;\theta_j^2))&space;\right]" title="C(\theta)=-\frac{1}{m} \left[ \sum_{i=1}^m y^{(i)} log(h_\theta(x^{(i)})) + (1 - y^{(i)}) log(1 - h_\theta(x^{(i)})+ \lambda \sum_{j=1}^n \theta_j^2)) \right]"></a></div>
+
+<p>其中λ是正则化参数，决定了参数正则化的影响大小，如果λ过大，可能会使模型出现欠拟合问题。</p>
+<p>正则化后的迭代公式为</p>
+<div align="center"><a href="http://www.codecogs.com/eqnedit.php?latex=\theta=\theta&plus;\gamma&space;(X(Y-h_{\theta}(X))&plus;&space;\lambda&space;\theta)" target="_blank"><img src="http://latex.codecogs.com/gif.latex?\theta=\theta&plus;\gamma&space;(X(Y-h_{\theta}(X))&plus;&space;\lambda&space;\theta)" title="\theta=\theta+\gamma (X(Y-h_{\theta}(X))+ \lambda \theta)"></a></div>
+
+<h2 id="软件实现"><a href="#软件实现" class="headerlink" title="软件实现"></a><strong>软件实现</strong></h2><p>纸上得来终觉浅，绝知此事要躬行，原理清楚之后，关键是实践操作，采用R和Python来实现逻辑回归。</p>
+<ul>
+<li><p>R </p>
+<p>  逻辑回归属于广义线性模型，在R中实现比较简单，调用glm函数即可。</p>
+<p>  glm函数的语法为：</p>
+<pre><code>glm(formula,family=binomial,data=data.frame）
+</code></pre><p>  其中formula是待输入的公式，同线性回归一样，只是公式的左边可以有两种输入方法，一种是输入成功和失败的次数，一种是输入Y值。其实这里的Y值指的就是胜率(odds ratio)的对数值</p>
+</li>
+<li><p>Python </p>
+<p>  《机器学习实战》一书中，给出了逻辑回归的部分代码，这部分代码实际上就是本文的参数求解部分：</p>
+<pre><code>def sigmoid(inX):  #sigmod function  
+      return 1.0/(1+exp(-inX))  
+def gradAscent(dataArray,labelArray,alpha,maxCycles):
+      dataMat=mat(dataArray)    #size:m*n
+      labelMat=mat(labelArray)      #size:m*1
+      m,n=shape(dataMat)
+      weigh=ones((n,1)) 
+      for i in range(maxCycles):
+         h=sigmoid(dataMat*weigh)
+         error=labelMat-h    #size:m*1
+         weigh=weigh+alpha*dataMat.transpose()*error
+      return weigh
+</code></pre><p>   Python 有很好的机器学习库：sklearn，我们直接调用学习即可，以下是一个例子，代码是2.X版本：</p>
+<pre><code>from numpy import * 
+from sklearn.datasets import load_iris     # import datasets
+# load the dataset: iris
+iris = load_iris() 
+samples = iris.data
+#print samples 
+target = iris.target 
+# import the LogisticRegression
+from sklearn.linear_model import LogisticRegression 
+
+classifier = LogisticRegression()  # 使用类，参数全是默认的
+classifier.fit(samples, target)  # 训练数据来学习，不需要返回值
+
+x = classifier.predict([5, 3, 5, 2.5])  # 测试数据，分类返回标记
+
+print x 
+</code></pre></li>
+</ul>
+<h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a><strong>结束语</strong></h2><p>逻辑回归是机器学习中实用高效的一种算法，本篇文章只讲述了一些基本的原理及实现，更深的内容还需要学习更多的内容。</p>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a><strong>参考资料</strong></h2><p>【1】 <a href="http://synckey.github.io/posts/2015/12/24/where-does-sigmoid-come-from.html" target="_blank" rel="external">Where does sigmoid come from</a></p>
+<p>【2】 <a href="http://doc.okbase.net/jianxinzhou/archive/111322.html" target="_blank" rel="external">机器学习之正则化（Regularization）</a></p>
+<p>【3】<a href="http://blog.csdn.net/pakko/article/details/37878837" target="_blank" rel="external">逻辑回归</a></p>
+<p>【4】<a href="http://blog.csdn.net/abcjennifer/article/details/7716281" target="_blank" rel="external"> Stanford机器学习—第三讲. 逻辑回归和过拟合问题的解决 logistic Regression &amp; Regularization</a></p>
+<p>【5】<a href="http://blog.csdn.net/dongtingzhizi/article/details/15962797" target="_blank" rel="external">【机器学习笔记1】Logistic回归总结</a></p>
+<p>【6】<a href="https://en.wikipedia.org/wiki/Gradient_descent" target="_blank" rel="external">Gradient descent</a></p>
+<p>【7】<a href="http://nanshu.wang/post/2015-02-17/" target="_blank" rel="external">机器学习笔记4 正则化</a></p>
+<p>【8】<a href="http://blog.csdn.net/zouxy09/article/details/24971995/" target="_blank" rel="external">机器学习中的范数规则化之（一）L0、L1与L2范数</a></p>
+<p>【9】<a href="https://github.com/geeseek/MLToolkits/wiki/为什么CTR预估使用AUC来评估模型？" target="_blank" rel="external">为什么CTR预估使用AUC来评估模型？</a></p>
+<p>【10】<a href="http://www.itnose.net/detail/6197189.html" target="_blank" rel="external">调用python的sklearn实现Logistic Reression算法</a></p>
+<p>【11】<a href="http://www.codelast.com/tag/最优化/" target="_blank" rel="external">最优化</a></p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/模型学习/">模型学习</a>
+  </div>
+
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/学习/">学习</a>
+</div>
+
+
+
+<div class="article-share" id="share">
+
+  <div data-url="http://ncutsta.github.io/2016/06/01/2016-04-12-logistic-regression/" data-title="逻辑回归 | 统苑" data-tsina="null" class="share clearfix">
+  </div>
+
+</div>
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2016/06/01/2016-04-29-time-series/" title="时间序列数据格式处理">
+  <strong>PREVIOUS:</strong><br/>
+  <span>
+  时间序列数据格式处理</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2016/06/01/2016-03-17-Mysql-install/"  title="Mysql安装及学习">
+ <strong>NEXT:</strong><br/> 
+ <span>Mysql安装及学习
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section class="comment">
+	
+	<div class="ds-thread" data-title="逻辑回归" data-thread-key="2016-04-12-logistic-regression" data-author-key="statistics" data-url="http://ncutsta.github.io/post/2016-04-12-logistic-regression"></div>
+	
+</section>
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#目的"><span class="toc-number">1.</span> <span class="toc-text">目的</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#原理"><span class="toc-number">2.</span> <span class="toc-text">原理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参数求解"><span class="toc-number">3.</span> <span class="toc-text">参数求解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#模型评价"><span class="toc-number">4.</span> <span class="toc-text">模型评价</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#模型优化"><span class="toc-number">5.</span> <span class="toc-text">模型优化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#软件实现"><span class="toc-number">6.</span> <span class="toc-text">软件实现</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#结束语"><span class="toc-number">7.</span> <span class="toc-text">结束语</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考资料"><span class="toc-number">8.</span> <span class="toc-text">参考资料</span></a></li></ol>
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+<div id="authorInfo">
+	
+	<div class="social-list" class="clearfix">
+		
+		
+		
+		
+		
+	</div>
+</div>
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+			<li><a href="/categories/学习/" title="学习">学习<sup>10</sup></a></li>
+		
+			<li><a href="/categories/测试/" title="测试">测试<sup>2</sup></a></li>
+		
+			<li><a href="/categories/网站日志/" title="网站日志">网站日志<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">标签云</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/便利化程序/" style="font-size: 10px;">便利化程序</a> <a href="/tags/可视化/" style="font-size: 10px;">可视化</a> <a href="/tags/数据处理/" style="font-size: 20px;">数据处理</a> <a href="/tags/模型学习/" style="font-size: 10px;">模型学习</a> <a href="/tags/测试/" style="font-size: 15px;">测试</a> <a href="/tags/网站优化/" style="font-size: 10px;">网站优化</a> <a href="/tags/自动便利/" style="font-size: 10px;">自动便利</a> <a href="/tags/软件安装/" style="font-size: 15px;">软件安装</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+      <li><a href="http://cos.name/" target="_blank" title="统计之都">统计之都</a></li>
+      <li><a href="http://www.xueqing.tv/" target="_blank" title="雪晴数据网">雪晴数据网</a></li>
+      <li><a href="http://r.rzaixian.com/" target="_blank" title="R语言在线">R语言在线</a></li> 
+	</ul>
+</div>
+
+
+  <div class="rsspart">
+	<a href="atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+    
+            <p class="copyright"> © 2016 
+		
+		<a href="http://ncutsta.github.io" target="_blank" title="statistics">statistics</a>
+		
+            && Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> && Theme by <a href="http://gengbiao.me" target="_blank" title="coney">coney</a>
+            </div>
+</footer>
+    <script src="/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina');
+  var html = [
+  '<a href="#" class="overlay" id="qrcode"></a>',
+  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#share"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+  '<a href="#textlogo" class="article-back-to-top" title="Top"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="QRcode"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="Weibo"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"ncutsta"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'null', 'null');  
+ga('send', 'pageview');
+</script>
+
+
+  </body>
+</html>
+
