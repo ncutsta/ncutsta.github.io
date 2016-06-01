@@ -12,8 +12,8 @@
     
     <meta name="author" content="statistics">
     
-    <meta name="description" content="layout: posttitle:  R dplyr包学习（下）category: 学习tags:  数据处理keywords: dplyr 
-description: 利用dplyr包处理数据介绍完dplyr包中的基础函数后，我们可以看看dplyr包中的一些高级函数，这些函数的作用有：数据连接，">
+    <meta name="description" content="layout: posttitle: R dplyr包学习（下）category: 学习tags: 数据处理keywords: dplyr 
+description: 利用dplyr包处理数据介绍完dplyr包中的基础函数后，我们可以看看dplyr包中的一些高级函数，这些函数的作用有：数据连接，数据">
     
     
     
@@ -82,7 +82,7 @@ description: 利用dplyr包处理数据介绍完dplyr包中的基础函数后，
     </p>
   <p class="article-time">
     <time datetime="2016-06-01T06:29:24.958Z" itemprop="datePublished">2016-06-01</time>
-    更新日期:<time datetime="2016-04-27T15:02:43.622Z" itemprop="dateModified">2016-04-27</time>
+    更新日期:<time datetime="2016-06-01T06:53:24.562Z" itemprop="dateModified">2016-06-01</time>
     
   </p>
 </header>
@@ -91,11 +91,11 @@ description: 利用dplyr包处理数据介绍完dplyr包中的基础函数后，
 		
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
-		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#description-利用dplyr包处理数据"><span class="toc-number">1.</span> <span class="toc-text">description: 利用dplyr包处理数据</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#数据的连接"><span class="toc-number">1.1.</span> <span class="toc-text">数据的连接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据的分组"><span class="toc-number">1.2.</span> <span class="toc-text">数据的分组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#管道操作符：-gt"><span class="toc-number">1.3.</span> <span class="toc-text">管道操作符：%>%</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#do（不太明白）"><span class="toc-number">1.4.</span> <span class="toc-text">do（不太明白）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#colwise函数-plyr包"><span class="toc-number">1.5.</span> <span class="toc-text">colwise函数(plyr包)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Between函数"><span class="toc-number">1.6.</span> <span class="toc-text">Between函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#合并"><span class="toc-number">1.7.</span> <span class="toc-text">合并</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Location函数"><span class="toc-number">1.8.</span> <span class="toc-text">Location函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Changes函数"><span class="toc-number">1.9.</span> <span class="toc-text">Changes函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tally函数：计数"><span class="toc-number">1.10.</span> <span class="toc-text">tally函数：计数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Cum系列函数"><span class="toc-number">1.11.</span> <span class="toc-text">Cum系列函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#distinct-函数"><span class="toc-number">1.12.</span> <span class="toc-text">distinct(函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#set系列"><span class="toc-number">1.13.</span> <span class="toc-text">set系列</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#从数据框中随机抽取数据行"><span class="toc-number">1.14.</span> <span class="toc-text">从数据框中随机抽取数据行</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考资料"><span class="toc-number">2.</span> <span class="toc-text">参考资料</span></a></li></ol>
+		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#description-利用dplyr包处理数据"><span class="toc-number">1.</span> <span class="toc-text">description: 利用dplyr包处理数据</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#数据的连接"><span class="toc-number">1.1.</span> <span class="toc-text">数据的连接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据的分组"><span class="toc-number">1.2.</span> <span class="toc-text">数据的分组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#管道操作符：-gt"><span class="toc-number">1.3.</span> <span class="toc-text">管道操作符：%>%</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#do"><span class="toc-number">1.4.</span> <span class="toc-text">do</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#colwise函数-plyr包"><span class="toc-number">1.5.</span> <span class="toc-text">colwise函数(plyr包)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Between函数"><span class="toc-number">1.6.</span> <span class="toc-text">Between函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#合并"><span class="toc-number">1.7.</span> <span class="toc-text">合并</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Location函数"><span class="toc-number">1.8.</span> <span class="toc-text">Location函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Changes函数"><span class="toc-number">1.9.</span> <span class="toc-text">Changes函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tally函数：计数"><span class="toc-number">1.10.</span> <span class="toc-text">tally函数：计数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Cum系列函数"><span class="toc-number">1.11.</span> <span class="toc-text">Cum系列函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#distinct-函数"><span class="toc-number">1.12.</span> <span class="toc-text">distinct(函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#set系列"><span class="toc-number">1.13.</span> <span class="toc-text">set系列</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#从数据框中随机抽取数据行"><span class="toc-number">1.14.</span> <span class="toc-text">从数据框中随机抽取数据行</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考资料"><span class="toc-number">2.</span> <span class="toc-text">参考资料</span></a></li></ol>
 		</div>
 		
 		<hr>
-<p>layout: post<br>title:  R dplyr包学习（下）<br>category: 学习<br>tags:  数据处理<br>keywords: dplyr </p>
+<p>layout: post<br>title: R dplyr包学习（下）<br>category: 学习<br>tags: 数据处理<br>keywords: dplyr </p>
 <h2 id="description-利用dplyr包处理数据"><a href="#description-利用dplyr包处理数据" class="headerlink" title="description: 利用dplyr包处理数据"></a>description: 利用dplyr包处理数据</h2><p>介绍完dplyr包中的基础函数后，我们可以看看dplyr包中的一些高级函数，这些函数的作用有：数据连接，数据分组，数据合并，数据框随机抽取数据行，管道操作符。对于数据框的每一列数据进行统计计算<br>可以用plyr包中的colwise函数。</p>
 <h3 id="数据的连接"><a href="#数据的连接" class="headerlink" title="数据的连接"></a>数据的连接</h3><p>学过数据库对这个应该不陌生。这里主要介绍4种连接方式及其作用,首先建立测试数据。</p>
 <pre><code>id &lt;- c(1:5)
@@ -233,7 +233,7 @@ Groups: cyl, vs
 1   4  0  1 120.3000 26.00000
 2   4  1  0 135.8667 22.90000
 3   6  0  1 155.0000 20.56667
-</code></pre><h3 id="do（不太明白）"><a href="#do（不太明白）" class="headerlink" title="do（不太明白）"></a>do（不太明白）</h3><p>对分组数据进行函数操作</p>
+</code></pre><h3 id="do"><a href="#do" class="headerlink" title="do"></a>do</h3><p>对分组数据进行函数操作</p>
 <pre><code>by_cyl &lt;- group_by(mtcars, cyl)
 do(by_cyl, head(., 2))
 Source: local data frame [6 x 11]
@@ -377,47 +377,45 @@ Source: local data frame [3 x 2]
 2   4  44
 3   6  42
 </code></pre><ul>
-<li>如果没有加权变量，则是计数</li>
-</ul>
-<p><code></code></p>
+<li><p>如果没有加权变量，则是计数</p>
 <pre><code>tally(mtcars , sort= T)
    n
-1 32
+ 1 32
 tally(mtcars2 , sort= T)
 Source: local data frame [3 x 2]
   cyl  n
 1   8 14
 2   4 11
 3   6  7
-</code></pre><p></p>
+</code></pre></li>
+</ul>
 <p>count(x, …, wt = NULL, sort = FALSE)<br>…,vars    Variables to group by</p>
 <ul>
-<li>不分组，不加权    </li>
-</ul>
-<p><code></code></p>
+<li><p>不分组，不加权    </p>
 <pre><code>count(mtcars2,sort = T)
 Source: local data frame [1 x 1]
 
    n
 1 32
-</code></pre><p></p>
-<ul>
+</code></pre></li>
 <li><p>分组，不加权</p>
-<p>  count(mtcars,cyl,sort=T)<br>  Source: local data frame [3 x 2]</p>
-<pre><code>cyl  n
-</code></pre><p>  1   8 14<br>  2   4 11<br>  3   6  7</p>
-</li>
+<pre><code>count(mtcars,cyl,sort=T)
+Source: local data frame [3 x 2]
+
+  cyl  n
+1   8 14
+2   4 11
+3   6  7
+</code></pre></li>
 <li><p>既分组又加权</p>
-</li>
-</ul>
-<p><code></code></p>
 <pre><code>count(mtcars,cyl, wt = cyl ,sort = T)
 Source: local data frame [3 x 2]
   cyl   n
 1   8 112
 2   4  44
 3   6  42
-</code></pre><p></p>
+</code></pre></li>
+</ul>
 <p>Count比tally更灵活：count可以在函数中进行指定分组变量，无须先分组。类似的有一个group_size，但也没有这个灵活。</p>
 <h3 id="Cum系列函数"><a href="#Cum系列函数" class="headerlink" title="Cum系列函数"></a>Cum系列函数</h3><p>Cumall()是否都满足要求，这个是累积函数，查询每个点是否累积满足要求，类似于求概率分布函数<br>Cumany() 是否有一个满足要求<br>Cummean() 累积均值</p>
 <pre><code>mtcars$mpg
@@ -522,7 +520,7 @@ sample_frac(mtcars, 0.1)
 
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
-  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#description-利用dplyr包处理数据"><span class="toc-number">1.</span> <span class="toc-text">description: 利用dplyr包处理数据</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#数据的连接"><span class="toc-number">1.1.</span> <span class="toc-text">数据的连接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据的分组"><span class="toc-number">1.2.</span> <span class="toc-text">数据的分组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#管道操作符：-gt"><span class="toc-number">1.3.</span> <span class="toc-text">管道操作符：%>%</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#do（不太明白）"><span class="toc-number">1.4.</span> <span class="toc-text">do（不太明白）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#colwise函数-plyr包"><span class="toc-number">1.5.</span> <span class="toc-text">colwise函数(plyr包)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Between函数"><span class="toc-number">1.6.</span> <span class="toc-text">Between函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#合并"><span class="toc-number">1.7.</span> <span class="toc-text">合并</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Location函数"><span class="toc-number">1.8.</span> <span class="toc-text">Location函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Changes函数"><span class="toc-number">1.9.</span> <span class="toc-text">Changes函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tally函数：计数"><span class="toc-number">1.10.</span> <span class="toc-text">tally函数：计数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Cum系列函数"><span class="toc-number">1.11.</span> <span class="toc-text">Cum系列函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#distinct-函数"><span class="toc-number">1.12.</span> <span class="toc-text">distinct(函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#set系列"><span class="toc-number">1.13.</span> <span class="toc-text">set系列</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#从数据框中随机抽取数据行"><span class="toc-number">1.14.</span> <span class="toc-text">从数据框中随机抽取数据行</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考资料"><span class="toc-number">2.</span> <span class="toc-text">参考资料</span></a></li></ol>
+  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#description-利用dplyr包处理数据"><span class="toc-number">1.</span> <span class="toc-text">description: 利用dplyr包处理数据</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#数据的连接"><span class="toc-number">1.1.</span> <span class="toc-text">数据的连接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据的分组"><span class="toc-number">1.2.</span> <span class="toc-text">数据的分组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#管道操作符：-gt"><span class="toc-number">1.3.</span> <span class="toc-text">管道操作符：%>%</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#do"><span class="toc-number">1.4.</span> <span class="toc-text">do</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#colwise函数-plyr包"><span class="toc-number">1.5.</span> <span class="toc-text">colwise函数(plyr包)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Between函数"><span class="toc-number">1.6.</span> <span class="toc-text">Between函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#合并"><span class="toc-number">1.7.</span> <span class="toc-text">合并</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Location函数"><span class="toc-number">1.8.</span> <span class="toc-text">Location函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Changes函数"><span class="toc-number">1.9.</span> <span class="toc-text">Changes函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tally函数：计数"><span class="toc-number">1.10.</span> <span class="toc-text">tally函数：计数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Cum系列函数"><span class="toc-number">1.11.</span> <span class="toc-text">Cum系列函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#distinct-函数"><span class="toc-number">1.12.</span> <span class="toc-text">distinct(函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#set系列"><span class="toc-number">1.13.</span> <span class="toc-text">set系列</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#从数据框中随机抽取数据行"><span class="toc-number">1.14.</span> <span class="toc-text">从数据框中随机抽取数据行</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考资料"><span class="toc-number">2.</span> <span class="toc-text">参考资料</span></a></li></ol>
   </div>
 
 <div id="asidepart">

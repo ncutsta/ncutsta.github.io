@@ -492,10 +492,10 @@ p
     <link href="http://ncutsta.github.io/2016/06/01/2015-11-10-R-dplyr-2/"/>
     <id>http://ncutsta.github.io/2016/06/01/2015-11-10-R-dplyr-2/</id>
     <published>2016-06-01T06:29:24.958Z</published>
-    <updated>2016-04-27T15:02:43.622Z</updated>
+    <updated>2016-06-01T06:53:24.562Z</updated>
     
     <content type="html">&lt;hr&gt;
-&lt;p&gt;layout: post&lt;br&gt;title:  R dplyr包学习（下）&lt;br&gt;category: 学习&lt;br&gt;tags:  数据处理&lt;br&gt;keywords: dplyr &lt;/p&gt;
+&lt;p&gt;layout: post&lt;br&gt;title: R dplyr包学习（下）&lt;br&gt;category: 学习&lt;br&gt;tags: 数据处理&lt;br&gt;keywords: dplyr &lt;/p&gt;
 &lt;h2 id=&quot;description-利用dplyr包处理数据&quot;&gt;&lt;a href=&quot;#description-利用dplyr包处理数据&quot; class=&quot;headerlink&quot; title=&quot;description: 利用dplyr包处理数据&quot;&gt;&lt;/a&gt;description: 利用dplyr包处理数据&lt;/h2&gt;&lt;p&gt;介绍完dplyr包中的基础函数后，我们可以看看dplyr包中的一些高级函数，这些函数的作用有：数据连接，数据分组，数据合并，数据框随机抽取数据行，管道操作符。对于数据框的每一列数据进行统计计算&lt;br&gt;可以用plyr包中的colwise函数。&lt;/p&gt;
 &lt;h3 id=&quot;数据的连接&quot;&gt;&lt;a href=&quot;#数据的连接&quot; class=&quot;headerlink&quot; title=&quot;数据的连接&quot;&gt;&lt;/a&gt;数据的连接&lt;/h3&gt;&lt;p&gt;学过数据库对这个应该不陌生。这里主要介绍4种连接方式及其作用,首先建立测试数据。&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;id &amp;lt;- c(1:5)
@@ -633,7 +633,7 @@ Groups: cyl, vs
 1   4  0  1 120.3000 26.00000
 2   4  1  0 135.8667 22.90000
 3   6  0  1 155.0000 20.56667
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;do（不太明白）&quot;&gt;&lt;a href=&quot;#do（不太明白）&quot; class=&quot;headerlink&quot; title=&quot;do（不太明白）&quot;&gt;&lt;/a&gt;do（不太明白）&lt;/h3&gt;&lt;p&gt;对分组数据进行函数操作&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;do&quot;&gt;&lt;a href=&quot;#do&quot; class=&quot;headerlink&quot; title=&quot;do&quot;&gt;&lt;/a&gt;do&lt;/h3&gt;&lt;p&gt;对分组数据进行函数操作&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;by_cyl &amp;lt;- group_by(mtcars, cyl)
 do(by_cyl, head(., 2))
 Source: local data frame [6 x 11]
@@ -777,47 +777,45 @@ Source: local data frame [3 x 2]
 2   4  44
 3   6  42
 &lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
-&lt;li&gt;如果没有加权变量，则是计数&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;code&gt;&lt;/code&gt;&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;如果没有加权变量，则是计数&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;tally(mtcars , sort= T)
    n
-1 32
+ 1 32
 tally(mtcars2 , sort= T)
 Source: local data frame [3 x 2]
   cyl  n
 1   8 14
 2   4 11
 3   6  7
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;count(x, …, wt = NULL, sort = FALSE)&lt;br&gt;…,vars    Variables to group by&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;不分组，不加权    &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;code&gt;&lt;/code&gt;&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;不分组，不加权    &lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;count(mtcars2,sort = T)
 Source: local data frame [1 x 1]
 
    n
 1 32
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;
-&lt;ul&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;分组，不加权&lt;/p&gt;
-&lt;p&gt;  count(mtcars,cyl,sort=T)&lt;br&gt;  Source: local data frame [3 x 2]&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;cyl  n
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;  1   8 14&lt;br&gt;  2   4 11&lt;br&gt;  3   6  7&lt;/p&gt;
-&lt;/li&gt;
+&lt;pre&gt;&lt;code&gt;count(mtcars,cyl,sort=T)
+Source: local data frame [3 x 2]
+
+  cyl  n
+1   8 14
+2   4 11
+3   6  7
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;既分组又加权&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;code&gt;&lt;/code&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;count(mtcars,cyl, wt = cyl ,sort = T)
 Source: local data frame [3 x 2]
   cyl   n
 1   8 112
 2   4  44
 3   6  42
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;Count比tally更灵活：count可以在函数中进行指定分组变量，无须先分组。类似的有一个group_size，但也没有这个灵活。&lt;/p&gt;
 &lt;h3 id=&quot;Cum系列函数&quot;&gt;&lt;a href=&quot;#Cum系列函数&quot; class=&quot;headerlink&quot; title=&quot;Cum系列函数&quot;&gt;&lt;/a&gt;Cum系列函数&lt;/h3&gt;&lt;p&gt;Cumall()是否都满足要求，这个是累积函数，查询每个点是否累积满足要求，类似于求概率分布函数&lt;br&gt;Cumany() 是否有一个满足要求&lt;br&gt;Cummean() 累积均值&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;mtcars$mpg
@@ -877,8 +875,8 @@ sample_frac(mtcars, 0.1)
     <summary type="html">
     
       &lt;hr&gt;
-&lt;p&gt;layout: post&lt;br&gt;title:  R dplyr包学习（下）&lt;br&gt;category: 学习&lt;br&gt;tags:  数据处理&lt;br&gt;keywords: dplyr &lt;/p&gt;
-&lt;h2 id=&quot;description-利用dplyr包处理数据&quot;&gt;&lt;a hr
+&lt;p&gt;layout: post&lt;br&gt;title: R dplyr包学习（下）&lt;br&gt;category: 学习&lt;br&gt;tags: 数据处理&lt;br&gt;keywords: dplyr &lt;/p&gt;
+&lt;h2 id=&quot;description-利用dplyr包处理数据&quot;&gt;&lt;a href
     
     </summary>
     
