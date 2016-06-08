@@ -7,14 +7,14 @@
   <meta name="360-site-verification" content="67fbcc5a67f4c65c057315b28fa0b2c8" />
 <meta name="google-site-verification" content="2GzxQ0VtXwTSUdmGm6DzcmhTzM_I9QmzCb_pzpMzD88" />
   
-    <title>时间序列数据格式处理 | 统苑</title>
+    <title>R 时间序列数据格式处理 | 统苑</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="statistics">
     
-    <meta name="description" itemprop="description" content="用R和Python处理时间序列格式数据的总结">
+    <meta name="description" itemprop="description" content="用R处理时间序列格式数据的总结">
     
-    <meta name="keywords" content="时间序列  time-series R Python">
+    <meta name="keywords" content="时间序列  time-series R">
     
     
     <link rel="alternate" href="atom.xml" title="统苑" type="application/atom+xml">
@@ -73,7 +73,7 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2016/06/01/2016-04-29-time-series/" title="时间序列数据格式处理" itemprop="url">时间序列数据格式处理</a>
+      <a href="/2016/06/01/2016-04-29-time-series/" title="R 时间序列数据格式处理" itemprop="url">R 时间序列数据格式处理</a>
   </h1>
   <p class="article-author">By
     
@@ -81,7 +81,7 @@
     </p>
   <p class="article-time">
     <time datetime="2016-06-01T06:29:25.096Z" itemprop="datePublished">2016-06-01</time>
-    更新日期:<time datetime="2016-04-30T04:39:57.386Z" itemprop="dateModified">2016-04-30</time>
+    更新日期:<time datetime="2016-06-08T01:52:52.699Z" itemprop="dateModified">2016-06-08</time>
     
   </p>
 </header>
@@ -90,12 +90,11 @@
 		
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
-		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#R"><span class="toc-number">1.</span> <span class="toc-text">R</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Python"><span class="toc-number">2.</span> <span class="toc-text">Python</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#后记"><span class="toc-number">3.</span> <span class="toc-text">后记</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考资料"><span class="toc-number">4.</span> <span class="toc-text">参考资料</span></a></li></ol>
+		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#参考资料"><span class="toc-number">1.</span> <span class="toc-text">参考资料</span></a></li></ol>
 		</div>
 		
-		<p>最近一段时间，和时间序列打上了交道，当然，原始的数据免不了<strong>脏乱差</strong>，是不能直接使用的，必须经过一番清洗整理，才能用于最终的分析。</p>
-<p>对于时间序列数据，<strong>R</strong>和<strong>Python</strong>都有一整套的处理方法，从原始数据到建模预测，这里仅仅对两个软件中的时间序列数据格式处理做一总结，以供后续翻看之用。</p>
-<h2 id="R"><a href="#R" class="headerlink" title="R"></a><strong>R</strong></h2><p>R中用来表示日期和时间的对象有三类：</p>
+		<p>对于时间序列数据，<strong>R</strong>都有一整套的处理方法，从原始数据到建模预测，这里仅仅对软件中的时间序列数据格式处理做一总结，以供后续翻看之用。</p>
+<p>R中用来表示日期和时间的对象有三类：</p>
 <ol>
 <li>Date　　　 仅仅表示日期</li>
 <li>POSIXct　　表示时间与1970年1月1日中午12：00的时间间隔换算为秒后得到的数据</li>
@@ -253,9 +252,7 @@ Start = 2
 End = 4 
 Frequency = 1 
 </code></pre><p>使用以上这些函数就可以实现对时间序列数据的基础处理了，当然，R中也有开发的专门对时间序列处理的包<code>zoo</code>，有人已经总结的很详细了，可以查看这篇博文<a href="http://blog.fens.me/r-zoo/" target="_blank" rel="external">R语言时间序列基础库zoo</a>。</p>
-<h2 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h2><p>Python中也提供了完整的时间序列处理方式，详见《利用Python 做数据处理》中时间序列一章。</p>
-<p>鉴于有人已经对Python中的时间序列总结的很详细了，详见博文<a href="http://my.oschina.net/lionets/blog/280855#OSC_h3_12" target="_blank" rel="external">pandas 时间序列操作</a>，在此不再赘述。</p>
-<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>后续用R和Python做时间序列的其他方法会陆陆续续补上。</p>
+<p>掌握了以上资料，就可以用R处理基本的时间序列数据了。</p>
 <h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p>【1】 <a href="http://127.0.0.1:14653/library/base/html/strptime.html" target="_blank" rel="external">时间格式对照</a></p>
 <p>【2】<a href="http://blog.fens.me/r-xts/" target="_blank" rel="external">可扩展的时间序列xts</a></p>
 <p>【3】 <a href="https://cran.r-project.org/web/views/TimeSeries.html" target="_blank" rel="external">CRAN Task View: Time Series Analysis</a></p>
@@ -280,7 +277,7 @@ Frequency = 1
 
 <div class="article-share" id="share">
 
-  <div data-url="http://ncutsta.github.io/2016/06/01/2016-04-29-time-series/" data-title="时间序列数据格式处理 | 统苑" data-tsina="null" class="share clearfix">
+  <div data-url="http://ncutsta.github.io/2016/06/01/2016-04-29-time-series/" data-title="R 时间序列数据格式处理 | 统苑" data-tsina="null" class="share clearfix">
   </div>
 
 </div>
@@ -289,6 +286,14 @@ Frequency = 1
 	
 <nav class="article-nav clearfix">
  
+ <div class="prev" >
+ <a href="/2016/06/08/2015-10-20-python-numpy2/" title="Python numpy数组元素属性及访问">
+  <strong>PREVIOUS:</strong><br/>
+  <span>
+  Python numpy数组元素属性及访问</span>
+</a>
+</div>
+
 
 <div class="next">
 <a href="/2016/06/01/2016-04-12-logistic-regression/"  title="逻辑回归">
@@ -303,7 +308,7 @@ Frequency = 1
 	
 <section class="comment">
 	
-	<div class="ds-thread" data-title="时间序列数据格式处理" data-thread-key="2016-04-29-time-series" data-author-key="statistics" data-url="http://ncutsta.github.io/post/2016-04-29-time-series"></div>
+	<div class="ds-thread" data-title="R 时间序列数据格式处理" data-thread-key="2016-04-29-time-series" data-author-key="statistics" data-url="http://ncutsta.github.io/post/2016-04-29-time-series"></div>
 	
 </section>
 
@@ -313,7 +318,7 @@ Frequency = 1
 
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
-  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#R"><span class="toc-number">1.</span> <span class="toc-text">R</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Python"><span class="toc-number">2.</span> <span class="toc-text">Python</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#后记"><span class="toc-number">3.</span> <span class="toc-text">后记</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考资料"><span class="toc-number">4.</span> <span class="toc-text">参考资料</span></a></li></ol>
+  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#参考资料"><span class="toc-number">1.</span> <span class="toc-text">参考资料</span></a></li></ol>
   </div>
 
 <div id="asidepart">
@@ -335,9 +340,7 @@ Frequency = 1
 	<p class="asidetitle">分类</p>
 		<ul>
 		
-			<li><a href="/categories/学习/" title="学习">学习<sup>10</sup></a></li>
-		
-			<li><a href="/categories/测试/" title="测试">测试<sup>2</sup></a></li>
+			<li><a href="/categories/学习/" title="学习">学习<sup>11</sup></a></li>
 		
 			<li><a href="/categories/网站日志/" title="网站日志">网站日志<sup>1</sup></a></li>
 		
@@ -349,7 +352,7 @@ Frequency = 1
   <div class="tagcloudlist">
     <p class="asidetitle">标签云</p>
     <div class="tagcloudlist clearfix">
-       <a href="/tags/便利化程序/" style="font-size: 10px;">便利化程序</a> <a href="/tags/可视化/" style="font-size: 10px;">可视化</a> <a href="/tags/数据处理/" style="font-size: 20px;">数据处理</a> <a href="/tags/模型学习/" style="font-size: 10px;">模型学习</a> <a href="/tags/测试/" style="font-size: 15px;">测试</a> <a href="/tags/网站优化/" style="font-size: 10px;">网站优化</a> <a href="/tags/自动便利/" style="font-size: 10px;">自动便利</a> <a href="/tags/软件安装/" style="font-size: 15px;">软件安装</a>
+       <a href="/tags/便利化程序/" style="font-size: 10px;">便利化程序</a> <a href="/tags/可视化/" style="font-size: 10px;">可视化</a> <a href="/tags/数据处理/" style="font-size: 20px;">数据处理</a> <a href="/tags/模型学习/" style="font-size: 10px;">模型学习</a> <a href="/tags/网站优化/" style="font-size: 10px;">网站优化</a> <a href="/tags/自动便利/" style="font-size: 10px;">自动便利</a> <a href="/tags/软件安装/" style="font-size: 15px;">软件安装</a>
     </div>
   </div>
 

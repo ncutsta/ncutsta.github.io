@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://ncutsta.github.io/2016/06/01/2015-10-01-Anaconda-install/</loc>
+    
+    <lastmod>2016-06-08T02:20:34.298Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ncutsta.github.io/2016/06/08/2015-10-20-python-numpy2/</loc>
+    
+    <lastmod>2016-06-08T02:20:25.120Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ncutsta.github.io/2016/03/01/2015-12-03-knitr/</loc>
+    
+    <lastmod>2016-06-08T01:54:37.809Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ncutsta.github.io/2016/06/01/2016-04-29-time-series/</loc>
+    
+    <lastmod>2016-06-08T01:52:52.699Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://ncutsta.github.io/2016/06/01/2015-11-10-R-dplyr-1/</loc>
     
     <lastmod>2016-06-01T06:57:30.928Z</lastmod>
@@ -23,13 +51,6 @@
   </url>
   
   <url>
-    <loc>http://ncutsta.github.io/2016/06/01/2016-04-29-time-series/</loc>
-    
-    <lastmod>2016-04-30T04:39:57.386Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://ncutsta.github.io/2016/06/01/2016-04-12-logistic-regression/</loc>
     
     <lastmod>2016-04-15T02:40:10.995Z</lastmod>
@@ -44,30 +65,9 @@
   </url>
   
   <url>
-    <loc>http://ncutsta.github.io/2016/03/01/2015-12-03-knitr/</loc>
-    
-    <lastmod>2016-03-11T03:29:23.104Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://ncutsta.github.io/2016/03/01/hello-world/</loc>
     
     <lastmod>2016-03-01T08:37:06.154Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ncutsta.github.io/2016/03/01/video/</loc>
-    
-    <lastmod>2016-03-01T08:36:40.090Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ncutsta.github.io/2016/03/01/pic/</loc>
-    
-    <lastmod>2016-03-01T08:36:37.953Z</lastmod>
     
   </url>
   
@@ -96,13 +96,6 @@
     <loc>http://ncutsta.github.io/2016/06/01/2015-10-28-R-reshape2-pivot/</loc>
     
     <lastmod>2016-02-29T09:42:32.554Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ncutsta.github.io/2016/06/01/2015-10-01-Anaconda-install/</loc>
-    
-    <lastmod>2016-02-29T09:42:32.552Z</lastmod>
     
   </url>
   
